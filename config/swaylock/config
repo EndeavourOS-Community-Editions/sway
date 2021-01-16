@@ -6,7 +6,7 @@ indicator-caps-lock
 timestr=%a, %B %d
 datestr=%I:%M %p
 # datestr=%A
-image=$HOME/Pictures/wallpapers/wallpaper.png
+image=$HOME/.config/sway/wallpaper.png
 screenshots
 scaling=fill
 effect-scale=1.4

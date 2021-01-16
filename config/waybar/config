@@ -78,7 +78,8 @@
         "states": {
           "warning": 70,
           "critical": 90
-        }
+        },
+         "on-click": "pavucontrol",
     },
 
     "custom/keyboard-layout": {

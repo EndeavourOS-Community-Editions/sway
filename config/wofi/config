@@ -1,4 +1,3 @@
-stylesheet=/home/test/.config/wofi/style.css
 hide_scroll=true
 show=drun,run
 width=700
