@@ -1,7 +1,6 @@
 # SwayEOS
 SwayEOS
-for later installs, if you have installed another DE on initial install from the ISO
-
+Unoffical - To Install
 1) get the dot files
 
 2) copy files to the right directories (.config of your user):
@@ -23,3 +22,6 @@ for later installs, if you have installed another DE on initial install from the
       sudo pacman -S --needed - < packages-repository.txt
       
   Also please install "wlogout" available in the AUR    
+
+To-Do
+Maninly I want to work on the bar - everything else is working fine (I think)
