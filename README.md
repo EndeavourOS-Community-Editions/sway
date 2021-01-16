@@ -10,10 +10,10 @@ for later installs, if you have installed another DE on initial install from the
 
 4) install needed packages
 
-    git clone https://github.com/OdiousImp2604/SwayEOS.git
+       git clone https://github.com/OdiousImp2604/SwayEOS.git
 
-    cd SwayEOS
+       cd SwayEOS
 
-    cp -R .config/* ~/.config/
+       cp -R .config/* ~/.config/
 
-    chmod -R +x ~/.config/sway/scripts (make scripts executable)
+       chmod -R +x ~/.config/sway/scripts (make scripts executable)
