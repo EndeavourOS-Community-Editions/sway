@@ -13,31 +13,30 @@
 
     "layer": "top",
 
-    "position": "bottom",
+    "position": "top",
 
     // If height property would be not present, it'd be calculated dynamically
     "height": 30,
 
     "modules-left": [
-        "custom/launcher",
         "sway/workspaces",
         "sway/mode"
     ],
     "modules-center": [
-        
+
     ],
     "modules-right": [
         "network",
-        "pulseaudio",
         "memory",
         "cpu",
         "temperature",
+        "pulseaudio",
         "custom/keyboard-layout",
         "battery",
         "backlight",
-        "tray",
         "clock#date",
         "clock#time",
+        "tray",
         "custom/power"
     ],
 
@@ -47,23 +46,18 @@
     // -------------------------------------------------------------------------
 
     "battery": {
-        "interval": 10,
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        // Connected to AC
-        "format": "  {icon}  {capacity}%", // Icon: bolt
-        // Not connected to AC
-        "format-discharging": "{icon}  {capacity}%",
-        "format-icons": [
-            "", // Icon: battery-full
-            "", // Icon: battery-three-quarters
-            "", // Icon: battery-half
-            "", // Icon: battery-quarter
-            ""  // Icon: battery-empty
-        ],
-        "tooltip": true
+    "states": {
+      // "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "format-alt": "{time} {icon}",
+    // "format-good": "", // An empty format will hide the module
+    // "format-full": "",
+    "format-icons": ["", "", "", "", ""]
     },
 
     "clock#time": {
@@ -99,7 +93,7 @@
 
     "memory": {
         "interval": 5,
-        "format": "  {}%", // Icon: memory
+        "format": " {}%", // Icon: memory
         "states": {
             "warning": 70,
             "critical": 90
@@ -112,6 +106,7 @@
         "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
         "format-disconnected": "⚠  Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}"
+        
     },
 
     "sway/mode": {
@@ -125,35 +120,41 @@
     },
 
     "sway/workspaces": {
-        "disable-scroll": false,
-    "all-outputs": true,
-    "format": "{icon}",
-      },
-    "format-icons": {
-      "1":  "",
-      "2":  "",
-      "3":  "",
-      "4":  "",
-      "5":  "",
-      }
+        "all-outputs": false,
+        "disable-scroll": true,
+        "format": "{icon} {name}",
+        "format-icons": {
+            "1:www": "龜", // Icon: firefox-browser
+            "2:mail": "", // Icon: mail
+            "3:editor": "", // Icon: code
+            "4:terminals": "", // Icon: terminal
+            "5:portal": "", // Icon: terminal
+            "urgent": "",
+            "focused": "",
+            "default": ""
+        }
     },
-
     "pulseaudio": {
-		"format": "{icon} 奄 {volume:2}%",
-		"format-bluetooth": "{icon}  {volume}%",
-		"format-muted": "",
-		"format-icons": {
-			"headphones": "",
-			"default": [
-				"",
-				""
-			]
-		},
+    "scroll-step": 1, // %, can be a float
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["奄"]
+    },
     "on-click": "pavucontrol",
-    "on-scroll-up": "pactl set-sink-volume 0 +3%",
-    "on-scroll-down": "pactl set-sink-volume 0 -3%",
-  },
-
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    },
 
     "temperature": {
       "critical-threshold": 80,
@@ -173,25 +174,19 @@
         "icon-size": 21,
         "spacing": 10
     },
-    
-     "custom/power": {
-    "format": "⏻",
-    "on-click": "exec wlogout",
-    "tooltip": false
-   },
-   "backlight": {
+    "backlight": {
     "interval": 5,
-    "format": "{percent}% {icon}",
+    "format": "{icon} {percent}%",
     "format-alt": "{percent}% {icon}",
     "format-alt-click": "click-right",
     "format-icons": ["🌕", "🌔", "🌓", "🌒", "🌑"],
     "on-scroll-down": "brightnessctl -c backlight set +5%",
     "on-scroll-up": "brightnessctl -c backlight set 5%-"
   },
-   
-   "custom/launcher": {
-    "format":" ",
-    "on-click": "exec wofi -c ~/.config/wofi/config -I",
+  "custom/power": {
+    "format": "⏻",
+    "on-click": "exec wlogout",
     "tooltip": false
-   }
+   },
+
 }

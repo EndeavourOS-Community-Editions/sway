@@ -58,6 +58,7 @@
 #battery,
 #clock,
 #cpu,
+#backlight
 #custom-keyboard-layout,
 #memory,
 #mode,
@@ -67,6 +68,10 @@
 #tray {
     padding-left: 10px;
     padding-right: 10px;
+    margin-right: 2px;
+	margin-top: 4px;
+	margin-bottom:4px;
+	margin-left: 2px;
 }
 
 
@@ -78,7 +83,10 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    
+   	background-color: #545157;
+   	margin-right: 8px;
+   	margin-left: 8px;
+   	font-size: 13px;
 }
 
 #battery.warning {
@@ -101,11 +109,12 @@
 
 #clock {
     font-weight: bold;
-    color: #dbcb75;
+    background-color: #545157;
+    margin-left: 2px;
 }
 
 #cpu {
-  color: #40e612;
+ background-color: #545157;
 }
 
 #cpu.warning {
@@ -120,7 +129,6 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    color: #96c6f8;
 }
 
 #memory.warning {
@@ -141,7 +149,8 @@
 }
 
 #network {
-    color: #3f6e22 ;
+  background-color: #545157;
+  
 }
 
 #network.disconnected {
@@ -149,11 +158,14 @@
 }
 
 #pulseaudio {
-   color: #208273;
+	color: @base07;
+    background-color: #545157;
+    margin-right: 8px;
 }
-
 #pulseaudio.muted {
-    color: #208273;
+   color: @base07;
+	margin-right: 8px;
+	
 }
 
 #custom-spotify {
@@ -169,7 +181,15 @@
 }
 
 #tray {
-    /* No styles */
+   
+    font-size: 17px;
+	margin-right: 7px;
+	margin-top: 4px;
+	margin-bottom:4px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px; 
 }
 
 #window {
@@ -195,20 +215,23 @@
     border-color: #c9545d;
     color: #c9545d;
 }
-
 #custom-power {
-   	font-size: 17px;
+    color: #eceff4;
+    font-size: 18px;
 	margin-right: 7px;
-	border-radius: 15px;
+	margin-top: 4px;
+	margin-bottom:4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #545157;
+  
+   
+    
+	
 }
-
-#custom-keyboard-layout {
-   color: #667c9d;
-}
-#custom-launcher {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 15px;
-  }
-
+#backlight { 
+  margin-right:5px;
+  
+}  
+ 
 

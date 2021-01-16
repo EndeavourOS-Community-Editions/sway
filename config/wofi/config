@@ -1,4 +1,4 @@
-stylesheet=/home/sway/.config/wofi/style.css
+stylesheet=/home/test/.config/wofi/style.css
 hide_scroll=true
 show=drun,run
 width=700
@@ -8,7 +8,6 @@ term=alacritty
 location=middle
 allow_markup=true
 always_parse_args=true
-#show_all=true
 print_command=true
 layer=overlay
 insensitive=true
