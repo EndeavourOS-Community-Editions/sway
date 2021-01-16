@@ -1,0 +1,16 @@
+# Autostart
+
+#Notification
+exec mako
+#Network Applet
+exec nm-applet --indicator
+#Polkit Agnet (don't remove please unless replacing)
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+#Night Filter
+#exec gammastep
+
+
+#Wallpaper
+exec swaybg -i $HOME/.config/sway/wallpaper.png
+
+
