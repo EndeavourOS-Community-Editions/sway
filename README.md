@@ -17,3 +17,9 @@ for later installs, if you have installed another DE on initial install from the
        cp -R config/* ~/.config/
 
        chmod -R +x ~/.config/sway/scripts (make scripts executable)
+ 
+ Install Needed Packages
+ 
+      sudo pacman -S --needed - < packages-repository.txt
+      
+  Also please install "wlogout" available in the AUR    
