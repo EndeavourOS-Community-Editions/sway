@@ -6,7 +6,7 @@ for later installs, if you have installed another DE on initial install from the
 
 2) copy files to the right directories (.config of your user):
 
-3) copy scripts inside ~/.config/i3/scripts must be executable ! [chmod +x] them please ;)
+3) copy scripts inside ~/.config/sway/scripts must be executable ! [chmod +x] them please ;)
 
 4) install needed packages
 
