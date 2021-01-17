@@ -1,3 +1,3 @@
 #!/bin/bash
 FILENAME="screenshot-`date +%F-%T`"
-grim /home/sway/FILENAME.png
+grim $HOME/Pictures/FILENAME.png

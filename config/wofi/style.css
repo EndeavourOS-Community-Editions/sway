@@ -12,7 +12,6 @@ margin: 0px 3px 3px 3px;
 #entry:selected {
 background-color:#4b3766;
 font-weight: bold;
-color: #d8dee9;
 }
  
 #text:selected {
@@ -50,7 +49,7 @@ margin-bottom: 10px;
 
 #text {
 padding: 5px;
-color: #ffffff;
+color: #d8dee9;
 background-color: transparent;
 } 
 

@@ -3,6 +3,13 @@
 # Modifier Key - Use Mod1 for Alt
 set $mod Mod4
 
+# Keyboard - Uncomment to Pick - Defualt is ENGLISH (UK)
+# All langauges and varinats in keyboard.conf
+input * xkb_layout "gb"
+#input * xkb_layout "us"
+#input * xkb_layout "de"
+#input * xkb_layout "nl"
+
 #Default Terminal Emulator
 set $term alacritty
 
@@ -186,6 +193,7 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym alt+tab scratchpad show
 bindsym $mod+minus scratchpad show
 
+
 # switch to workspace:
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
@@ -280,19 +288,15 @@ bindsym $mod+l exec ~/.config/sway/scripts/lockman.sh
 #Network Applet
 exec nm-applet --indicator
 
-set $bg-color            #2f343f
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
-set $inactive-text-color #676e7d
-set $urgent-bg-color     #e53935
-set $indicator-color     #a0a0a0
+# class                 border  bground text    indicator child_border
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 
-# set window colors:
-#                       border             background         text                 indicator
-client.focused          $bg-color          $bg-color          $text-color          $indicator-color
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color $indicator-color
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color $indicator-color
-client.urgent           $urgent-bg-color   $urgent-bg-color   $text-color          $indicator-color
+client.background       #F8F8F2
+
 
 
 # Input configuration

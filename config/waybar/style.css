@@ -64,6 +64,7 @@
 #mode,
 #network,
 #pulseaudio,
+#custom-weather,
 #temperature,
 #tray {
     padding-left: 10px;
@@ -111,6 +112,7 @@
     font-weight: bold;
     background-color: #545157;
     margin-left: 2px;
+    
 }
 
 #cpu {
@@ -129,6 +131,7 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    color: #a3be8c
 }
 
 #memory.warning {
@@ -223,15 +226,49 @@
 	margin-bottom:4px;
 	padding-left: 10px;
 	padding-right: 10px;
-	background-color: #545157;
-  
-   
-    
+	background-color: #545157;    
 	
 }
 #backlight { 
   margin-right:5px;
+  color: #c4b729;
   
 }  
- 
+#custom-weather {
+	color:#81a1c1;
+}
+#custom-firefox {
+  	font-size: 20px;
+	color: #d08770;
+}
+#custom-files {
+	color: #ebcb8b;
+	font-size: 20px;
+}
+#custom-seperator {
+	color: #a3be8c;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 20px;
+}
+#custom-big {
+   margin-right: 200px;
+}   
+#custom-des {
+  margin-left: 20px;
+  font-size: 15px;
+}
+#custom-keyboard-layout {
+   color: #c90000;
+}
+#custom-launcher {
+    color: #eceff4;
+    font-size: 25px;
+	margin-right: 7px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: #545157;    
+}
+   
+
 
