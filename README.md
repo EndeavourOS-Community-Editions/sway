@@ -24,4 +24,11 @@ Unoffical - To Install
   Also please install "wlogout" available in the AUR    
 
 To-Do
+
 Maninly I want to work on the bar - everything else is working fine (I think)
+
+Keybindings
+
+Everything is the same as the i3, there is not yet a reference file (working on it)
+
+One thing that changed : To launch wofi is is super+D , I recommend you look through the config for sway has some extra features which I added
