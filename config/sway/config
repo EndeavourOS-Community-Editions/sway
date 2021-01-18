@@ -39,7 +39,7 @@ default_border pixel 1
 
 
 # get auth work with polkit-gnome:
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # Default Font - Waybar's Is In's It's Config
 font pango:Noto Sans Regular 10
@@ -130,10 +130,10 @@ assign [class="TelegramDesktop"] 5
 for_window [class=TelegramDesktop] focus
 
 # Autostart apps:
-#exec --no-startup-id sleep 2 && xfce4-terminal
-#exec --no-startup-id firefox
-#exec --no-startup-id sleep 3 && thunar
-#exec --no-startup-id blueberry-tray
+#exec sleep 2 && xfce4-terminal
+#exec firefox
+#exec sleep 3 && thunar
+#exec blueberry-tray
 
 
 #set wallpaper:
@@ -151,7 +151,7 @@ exec swayidle -w\
 
 
 # Desktop notifications_
-exec --no-startup-id /usr/bin/mako
+exec /usr/bin/mako
 
 # set floating (nontiling)for apps needing it:
 for_window [class="Yad" instance="yad"] floating enable
