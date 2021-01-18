@@ -30,3 +30,7 @@ sysstat
 archlinux-xdg-menu
 htop
 alacritty
+wayland-protocols
+xorg-xwayland
+egl-wayland
+gtk-layer-shell
