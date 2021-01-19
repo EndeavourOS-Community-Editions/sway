@@ -145,7 +145,7 @@
         "disable-scroll": true,
         "format": "{icon} {name}",
         "format-icons": {
-            "1:www": "龜", // Icon: firefox-browser
+            "1:www": "", // Icon: firefox-browser
             "2:mail": "", // Icon: mail
             "3:editor": "", // Icon: code
             "4:terminals": "", // Icon: terminal
@@ -203,22 +203,22 @@
     "tooltip": false
    },
    "custom/firefox": {
-    "format": "browser ",
+    "format": " Firefox",
     "on-click": "exec firefox",
     "tooltip": false
   },
   "custom/terminal": {
-    "format": "terminal ",
+    "format": " Terminal",
     "on-click": "exec alacritty",
     "tooltip": false
   },
   "custom/files": {
-    "format": "files ",
+    "format": " Files",
     "on-click": "thunar",
     "tooltip": false
   },
   "custom/seperator": {
-    "format": "|",
+    "format": "  ",
     
   },
  "custom/launcher": {
