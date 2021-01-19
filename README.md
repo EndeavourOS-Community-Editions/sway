@@ -13,7 +13,7 @@ Unoffical - To Install
 
        cd SwayEOS
 
-       cp -R config/* ~/.config/
+       cp -R .config/* ~/.config/
 
        chmod -R +x ~/.config/sway/scripts (make scripts executable)
  
