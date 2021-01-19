@@ -25,9 +25,11 @@ Unoffical - To Install
       
   Also please install "wlogout" available in the AUR    
 
-To-Do
+To-Do (as of 19/1/21)
 
-Maninly I want to work on the bar - everything else is working fine (I think)
+- Bar is finished just need to clean up the config
+- Wlogout or A Sway Mode
+- Hmmm, I can't think of anything else? :
 
 Keybindings
 
