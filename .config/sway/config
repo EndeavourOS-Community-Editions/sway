@@ -10,6 +10,9 @@ input * xkb_layout "gb"
 #input * xkb_layout "de"
 #input * xkb_layout "nl"
 
+# apply gtk theming
+exec_always ~/.config/sway/scripts/import-gsettings
+
 #Default Terminal Emulator
 set $term alacritty
 
