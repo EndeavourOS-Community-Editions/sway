@@ -84,7 +84,6 @@
     - ttf-croscore
     - ttf-carlito
     - ttf-caladea
-    - firefox
     - alsa-utils
     - alsa-plugins
     - alsa-firmware
@@ -131,6 +130,21 @@
     - eos-log-tool
     - keyserver-rank
     - inxi
+- name: "Browser"
+  description: "choose your browser."
+  hidden: false
+  selected: false
+  critical: false
+  packages:
+    - firefox
+    - chromium
+    - vivaldi
+    - konqueror
+    - falkon
+    - epiphany
+    - midori
+    - dillo
+    - netsurf
 - name: "sway tiling on wayland"
   description: "Sway is a tiling Wayland compositor and a drop-in replacement for the i3 window manager."
   hidden: false
