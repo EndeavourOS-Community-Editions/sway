@@ -319,7 +319,7 @@ bar {
 #  Set GTK theme - Use qt5ct for QT configuration
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
-    gsettings set $gnome-schema gtk-theme 'X-Arc-Darker'
+    gsettings set $gnome-schema gtk-theme 'Arc-Dark'
     gsettings set $gnome-schema icon-theme 'Arc-X-D'
 }
 
