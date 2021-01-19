@@ -129,13 +129,6 @@ for_window [app_id=thunar] focus
 assign [class="TelegramDesktop"] 5
 for_window [class=TelegramDesktop] focus
 
-# Autostart apps:
-#exec sleep 2 && xfce4-terminal
-#exec firefox
-#exec sleep 3 && thunar
-#exec blueberry-tray
-
-
 #set wallpaper:
 exec swaybg -i ~/.config/sway/wallpaper.png
 
@@ -150,8 +143,8 @@ exec swayidle -w\
 # resumed. It will also lock your screen before your computer goes to sleep.
 
 
-# Desktop notifications_
-exec /usr/bin/mako
+# Desktop notifications
+exec mako
 
 # set floating (nontiling)for apps needing it:
 for_window [class="Yad" instance="yad"] floating enable
@@ -330,3 +323,16 @@ bindswitch --reload --locked lid:off output $laptop enable
 
 exec_always ~/.config/sway/scripts/clamshell.sh
 
+# Control shotdown etc
+set $mode_system (r)eboot, (s)hutdown, (l)ogout, suspen(d)
+mode "$mode_system" {
+    bindsym r exec systemctl reboot, mode "default"
+    bindsym s exec systemctl poweroff, mode "default"
+    bindsym l exec swaymsg exit, mode "default"
+    bindsym d exec systemctl suspend, mode "default"
+
+    # exit system mode: "Enter" or "Escape"
+    bindsym Return      mode "default"
+    #bindsym Enter    	mode "default"
+    bindsym Escape      mode "default"
+}
