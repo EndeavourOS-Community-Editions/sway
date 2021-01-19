@@ -12,9 +12,6 @@ thunar-volman
 grim
 slurp
 otf-font-awesome
-pulseaudio
-paprefs
-pavucontrol
 arc-x-icons-theme
 arc-gtk-theme
 gtk-engine-murrine
@@ -27,10 +24,11 @@ acpi
 bluez-utlis
 network-manager-applet
 sysstat
-archlinux-xdg-menu
 htop
 alacritty
 wayland-protocols
 xorg-xwayland
 egl-wayland
 gtk-layer-shell
+ttf-nerd-font-symbols
+xdg-desktop-portal-wlr
