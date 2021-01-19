@@ -31,16 +31,6 @@ gaps outer 0
 #do not show titlebar on windows: 
 default_border pixel 1
 
-#workspace_layout stacking
-
-#workspace_layout tabbed
-#Tiling mode is tabbed:
-#so each new window will open fullscreen as a tab, you can change between window-tabs with mouse or shortcut:
-#
-#    [mod]+Left focus left (left arrow key)
-#    [mod]+Right focus right (right arrow key)
-
-
 # get auth work with polkit-gnome:
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
@@ -58,9 +48,6 @@ bindsym $mod+Return exec $term
 
 # kill focused window:
 bindsym $mod+c kill
-
-# open keybindings overview:
-#bindsym $mod+F1 exec "xed ~/.config/i3/keybindings"
 
 # Launch Wofi 
 bindsym $mod+d exec $menu
@@ -114,7 +101,6 @@ bindsym $mod+a focus parent
 
 # focus the child container:
 #bindsym $mod+d focus child
-
 
 # autostart start applications + bind program to workspace:
 assign [app_id="Alacritty"] 1
@@ -220,9 +206,6 @@ bindsym $mod+Shift+c reload
 # restart sway inplace (preserves your layout/session, can be used to upgrade sway):
 bindsym $mod+Shift+r restart
 
-# exit i3 (logs you out of your X session):
-bindsym $mod+Shift+q exec wlogout
-
 # resize window (you can also use the mouse for that):
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -273,7 +256,6 @@ bindsym $mod+w exec "/usr/bin/firefox"
 bindsym $mod+n exec "/usr/bin/thunar"
 
 # Screenshots
-
 bindsym print exec ~/.config/sway/scripts/screenshotFull.sh
 bindsym Shift+print exec ~/.config/sway/scripts/screenshotArea.sh
 
@@ -312,13 +294,6 @@ bar {
    swaybar_command waybar
 }
 
-#  Set GTK theme - Use qt5ct for QT configuration
-set $gnome-schema org.gnome.desktop.interface
-exec_always {
-    gsettings set $gnome-schema gtk-theme 'Arc-Dark'
-    gsettings set $gnome-schema icon-theme 'Arc-X-D'
-}
-
 # Clamshell Mode
 set $laptop <eDP-1>
 bindswitch --reload --locked lid:on output $laptop disable
@@ -339,3 +314,4 @@ mode "$mode_system" {
     #bindsym Enter    	mode "default"
     bindsym Escape      mode "default"
 }
+bindsym $mod+Shift+q mode $mode_system
