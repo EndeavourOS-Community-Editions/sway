@@ -178,7 +178,7 @@
     },
 
      "custom/weather": {
-    "exec": "~/.config/sway/scripts/weather.sh Royal Tunbridge Wells",
+    "exec": "~/.config/waybar/scripts/weather.sh",
     "format": "{}",
     "return-type": "json",
     "interval": 600
