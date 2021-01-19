@@ -1,0 +1,332 @@
+# Welcome To Your Sway Config! #
+
+# Modifier Key - Use Mod1 for Alt
+set $mod Mod4
+
+# Keyboard - Uncomment to Pick - Defualt is ENGLISH (UK)
+# All langauges and varinats in keyboard.conf
+input * xkb_layout "gb"
+#input * xkb_layout "us"
+#input * xkb_layout "de"
+#input * xkb_layout "nl"
+
+#Default Terminal Emulator
+set $term alacritty
+
+# Your preferred application launcher - (You can also use dmenu or rofi)
+set $menu wofi -c ~/.config/wofi/config -I
+
+# workspace layouts:
+#default i3 tiling mode
+workspace_layout default
+
+
+# Set inner/outer gaps
+gaps inner 2
+gaps outer 0
+
+#do not show titlebar on windows: 
+default_border pixel 1
+
+#workspace_layout stacking
+
+#workspace_layout tabbed
+#Tiling mode is tabbed:
+#so each new window will open fullscreen as a tab, you can change between window-tabs with mouse or shortcut:
+#
+#    [mod]+Left focus left (left arrow key)
+#    [mod]+Right focus right (right arrow key)
+
+
+# get auth work with polkit-gnome:
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# Default Font - Waybar's Is In's It's Config
+font pango:Noto Sans Regular 10
+
+# thin borders:
+hide_edge_borders both
+
+# Use Mouse+$mod to drag floating windows to their wanted position:
+floating_modifier $mod
+
+# start a terminal:
+bindsym $mod+Return exec $term
+
+# kill focused window:
+bindsym $mod+c kill
+
+# open keybindings overview:
+#bindsym $mod+F1 exec "xed ~/.config/i3/keybindings"
+
+# Launch Wofi 
+bindsym $mod+d exec $menu
+
+# change focus:
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+u focus up
+bindsym $mod+ntilde focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window:
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+ntilde move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation:
+bindsym $mod+h split h
+
+# split in vertical orientation:
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container:
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split):
+bindsym $mod+Shift+s layout stacking
+bindsym $mod+Shift+w layout tabbed
+bindsym $mod+Shift+e layout toggle split
+
+# toggle tiling / floating:
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows:
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container:
+bindsym $mod+a focus parent
+
+# focus the child container:
+#bindsym $mod+d focus child
+
+
+# autostart start applications + bind program to workspace:
+assign [app_id="Alacritty"] 1
+for_window [app_id="Alacritty"] focus
+
+assign [app_id="firefox"] 2
+for_window [app_id="firefox"] focus
+
+assign [class="Thunar"] 3
+for_window [class=Thunar] focus
+
+assign [app_id=thunar] 4
+for_window [app_id=thunar] focus
+
+assign [class="TelegramDesktop"] 5
+for_window [class=TelegramDesktop] focus
+
+# Autostart apps:
+#exec --no-startup-id sleep 2 && xfce4-terminal
+#exec --no-startup-id firefox
+#exec --no-startup-id sleep 3 && thunar
+#exec --no-startup-id blueberry-tray
+
+
+#set wallpaper:
+exec swaybg -i ~/.config/sway/wallpaper.png
+
+# Idle Config
+exec swayidle -w\
+    timeout 1070 'swaylock -f -C ~/.config/swaylock/config'\
+    timeout 770 'swaymsg "output * dpms off"' \
+    resume 'swaymsg "output * dpms on"' \
+    before-sleep 'swaylock -C ~/.config/swaylock/config'
+# This will lock your screen after 300 seconds of inactivity, then turn off
+# your displays after another 300 seconds, and turn your screens back on when
+# resumed. It will also lock your screen before your computer goes to sleep.
+
+
+# Desktop notifications_
+exec --no-startup-id /usr/bin/mako
+
+# set floating (nontiling)for apps needing it:
+for_window [class="Yad" instance="yad"] floating enable
+for_window [class="Galculator" instance="galculator"] floating enable
+for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
+
+# set floating (nontiling) for special apps:
+for_window [class="Xsane" instance="xsane"] floating enable
+for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
+for_window [class="qt5ct" instance="qt5ct"] floating enable
+for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
+for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
+for_window [class="Pamac-manager"] floating enable
+
+# resize floating windows with mouse scroll:
+bindsym --whole-window --border $mod+button4 resize shrink height 5 px or 5 ppt
+bindsym --whole-window --border $mod+button5 resize grow height 5 px or 5 ppt
+bindsym --whole-window --border $mod+shift+button4 resize shrink width 5 px or 5 ppt
+bindsym --whole-window --border $mod+shift+button5 resize grow width 5 px or 5 ppt
+
+# Title format for windows
+for_window [shell="xdg_shell"] title_format "%title (%app_id)"
+for_window [shell="x_wayland"] title_format "%class - %title"
+
+#Remove Titlebars
+for_window [class="^.*"] border pixel 1
+
+# Scratchpad:
+
+# Sway has a "scratchpad", which is a bag of holding for windows.
+# You can send windows there and get them back later.
+
+#Move the currently focused window to the scratchpad
+bindsym $mod+Shift+minus move scratchpad
+	
+#Show the next scratchpad window or hide the focused scratchpad window.
+#If there are multiple scratchpad windows, this command cycles through them.
+   
+bindsym alt+tab scratchpad show
+bindsym $mod+minus scratchpad show
+
+
+# switch to workspace:
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+
+
+# move focused container to workspace:
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+
+
+# reload the configuration file:
+bindsym $mod+Shift+c reload
+
+# restart sway inplace (preserves your layout/session, can be used to upgrade sway):
+bindsym $mod+Shift+r restart
+
+# exit i3 (logs you out of your X session):
+bindsym $mod+Shift+q exec wlogout
+
+# resize window (you can also use the mouse for that):
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym ntilde resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+# Multimedia Keys:
+
+# volume
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume 0 +3%
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume 0 -3%
+
+# mute
+bindsym --locked XF86AudioMute exec pactl set-sink-mute 0 toggle
+
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+# backlight
+
+bindsym XF86MonBrightnessUp exec brightnessctl -c backlight set +5%
+bindsym XF86MonBrightnessDown exec brightnessctl -c backlight set 5%-
+
+# App shortcuts
+bindsym $mod+w exec "/usr/bin/firefox"
+bindsym $mod+n exec "/usr/bin/thunar"
+
+# Screenshots
+
+bindsym print exec ~/.config/sway/scripts/screenshotFull.sh
+bindsym Shift+print exec ~/.config/sway/scripts/screenshotArea.sh
+
+
+# Lock the system
+bindsym $mod+l exec ~/.config/sway/scripts/lockman.sh
+
+#Network Applet
+exec nm-applet --indicator
+
+# class                 border  bground text    indicator child_border
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+
+client.background       #F8F8F2
+
+
+
+# Input configuration
+  input "1267:12363:ELAN0650:01_04F3:304B_Touchpad" {
+       dwt enabled
+       tap enabled
+       natural_scroll enabled
+       middle_emulation enabled
+   }
+
+# You can get the names of your inputs by running: swaymsg -t get_input. 
+# Put your touchpad's ID to replace "1267:12363:ELAN0650:01_04F3:304B_Touchpad" (keep the quotation marks)
+
+# Status Bar:
+
+bar {
+   swaybar_command waybar
+}
+
+#  Set GTK theme - Use qt5ct for QT configuration
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'X-Arc-Darker'
+    gsettings set $gnome-schema icon-theme 'Arc-X-D'
+}
+
+# Clamshell Mode
+set $laptop <eDP-1>
+bindswitch --reload --locked lid:on output $laptop disable
+bindswitch --reload --locked lid:off output $laptop enable
+
+exec_always ~/.config/sway/scripts/clamshell.sh
+
