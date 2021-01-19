@@ -48,7 +48,7 @@
 
 /* The whole bar */
 #waybar {
-    background: #323232;
+    background: #000000;
     color: white;
     font-family: Cantarell, Noto Sans, sans-serif;
     font-size: 13px;
@@ -84,7 +84,9 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+/*
    	background-color: #545157;
+*/
    	margin-right: 8px;
    	margin-left: 8px;
    	font-size: 13px;
@@ -110,13 +112,18 @@
 
 #clock {
     font-weight: bold;
-    background-color: #545157;
+/*
+    color:#81a1c1;
+*/
     margin-left: 2px;
+    font-size: 15px;
     
 }
 
 #cpu {
+/*
  background-color: #545157;
+*/
 }
 
 #cpu.warning {
@@ -131,7 +138,9 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    color: #a3be8c
+/*
+   color: #a3be8c
+*/
 }
 
 #memory.warning {
@@ -152,7 +161,9 @@
 }
 
 #network {
-  background-color: #545157;
+/*
+no styles
+*/
   
 }
 
@@ -162,7 +173,7 @@
 
 #pulseaudio {
 	color: @base07;
-    background-color: #545157;
+
     margin-right: 8px;
 }
 #pulseaudio.muted {
@@ -219,14 +230,11 @@
     color: #c9545d;
 }
 #custom-power {
-    color: #eceff4;
+
     font-size: 18px;
-	margin-right: 7px;
-	margin-top: 4px;
-	margin-bottom:4px;
 	padding-left: 10px;
 	padding-right: 10px;
-	background-color: #545157;    
+	margin-top: 3px; 
 	
 }
 #backlight { 
@@ -235,20 +243,21 @@
   
 }  
 #custom-weather {
-	color:#81a1c1;
+/*
+ no styles
+*/
 }
 #custom-firefox {
-  	font-size: 20px;
+  	font-size: 15px;
 	color: #d08770;
 }
 #custom-files {
 	color: #ebcb8b;
-	font-size: 20px;
+	font-size: 15px;
 }
 #custom-seperator {
-	color: #a3be8c;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
 	font-size: 20px;
 }
 #custom-big {
@@ -259,7 +268,9 @@
   font-size: 15px;
 }
 #custom-keyboard-layout {
+/*
    color: #c90000;
+*/
 }
 #custom-launcher {
     color: #eceff4;

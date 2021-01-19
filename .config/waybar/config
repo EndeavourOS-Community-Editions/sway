@@ -2,6 +2,8 @@
 // Global 
 {
       "layer": "top",
+      
+     
 
     "position": "top",
 
@@ -16,7 +18,7 @@
     
     ],
     "modules-center": [
-        "custom/des",
+      
         "custom/seperator",
         "custom/firefox",
         "custom/seperator",
@@ -201,18 +203,18 @@
     "tooltip": false
    },
    "custom/firefox": {
-    "format": "",
-    "on-click": "exec usr/bin/firefox",
+    "format": "browser ",
+    "on-click": "exec firefox",
     "tooltip": false
   },
   "custom/terminal": {
-    "format": "",
-    "on-click": "exec usr/bin/alacritty",
+    "format": "terminal ",
+    "on-click": "exec alacritty",
     "tooltip": false
   },
   "custom/files": {
-    "format": "",
-    "on-click": "usr/bin/thunar",
+    "format": "files ",
+    "on-click": "thunar",
     "tooltip": false
   },
   "custom/seperator": {
@@ -225,11 +227,7 @@
     "tooltip": false
    },
    
-    "custom/des": {
-   "format": "Applications",
-   },
    
-  
 
 }
 //To set weather look in the weather script and replace $LOCATION with your LOCATION
