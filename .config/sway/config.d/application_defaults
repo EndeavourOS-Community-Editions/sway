@@ -2,11 +2,8 @@
 assign [app_id="Alacritty"] 1
 for_window [app_id="Alacritty"] focus
 
-assign [app_id="firefox"] 2
-for_window [app_id="firefox"] focus
-
-assign [class="Thunar"] 3
-for_window [class=Thunar] focus
+assign [class="firefox"] 2
+for_window [class="firefox"] focus
 
 assign [app_id=thunar] 4
 for_window [app_id=thunar] focus
