@@ -190,7 +190,6 @@ bindsym --whole-window --border $mod+shift+button5 resize grow width 5 px or 5 p
 #
 # App shortcuts
 #
-    bindsym $mod+w exec firefox
     bindsym $mod+n exec thunar
 #
 # Screenshots
