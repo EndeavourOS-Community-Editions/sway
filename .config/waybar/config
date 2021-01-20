@@ -40,7 +40,7 @@
         "clock#date",
         "clock#time",
         "tray",
-        "custom/power"
+        
     ],
 
 // Modules
@@ -197,11 +197,6 @@
     "on-scroll-down": "brightnessctl -c backlight set +5%",
     "on-scroll-up": "brightnessctl -c backlight set 5%-"
   },
-  "custom/power": {
-    "format": "⏻",
-    "on-click": "exec wlogout",
-    "tooltip": false
-   },
    "custom/firefox": {
     "format": " Firefox",
     "on-click": "exec firefox",
