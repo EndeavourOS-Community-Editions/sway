@@ -51,3 +51,13 @@ colors:
     magenta: '0xff46b0'
     cyan:    '0x59dffc'
     white:   '0xe6e6d1'
+    
+    # Font configuration (changes require restart)
+font:
+  # The size to use.
+  size: 12
+  # The normal (roman) font face to use.
+  normal:
+    family: UbuntuMono
+    # Style can be specified to pick a specific face.
+    style: Regular
