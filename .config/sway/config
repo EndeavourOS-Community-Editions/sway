@@ -19,16 +19,20 @@ set $term alacritty
 # Your preferred application launcher - (You can also use dmenu or rofi)
 set $menu wofi -c ~/.config/wofi/config -I
 
-# workspace layouts:
-#default i3 tiling mode
-workspace_layout default
+# set wallpaper:
+exec swaybg -i ~/.config/sway/wallpaper.png
 
+# Desktop notifications
+exec mako
+
+# workspace layouts:
+workspace_layout default
 
 # Set inner/outer gaps
 gaps inner 2
 gaps outer 0
 
-#do not show titlebar on windows: 
+# do not show titlebar on windows: 
 default_border pixel 1
 
 # get auth work with polkit-gnome:
@@ -118,9 +122,6 @@ for_window [app_id=thunar] focus
 assign [class="TelegramDesktop"] 5
 for_window [class=TelegramDesktop] focus
 
-#set wallpaper:
-exec swaybg -i ~/.config/sway/wallpaper.png
-
 # Idle Config
 exec swayidle -w\
     timeout 1070 'swaylock -f -C ~/.config/swaylock/config'\
@@ -130,10 +131,6 @@ exec swayidle -w\
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
-
-
-# Desktop notifications
-exec mako
 
 # set floating (nontiling)for apps needing it:
 for_window [class="Yad" instance="yad"] floating enable
@@ -147,6 +144,15 @@ for_window [class="qt5ct" instance="qt5ct"] floating enable
 for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
 for_window [class="Pamac-manager"] floating enable
+
+# set floating for window roles
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
+for_window [window_role="About"] floating enable
 
 # resize floating windows with mouse scroll:
 bindsym --whole-window --border $mod+button4 resize shrink height 5 px or 5 ppt
@@ -166,12 +172,11 @@ for_window [class="^.*"] border pixel 1
 # Sway has a "scratchpad", which is a bag of holding for windows.
 # You can send windows there and get them back later.
 
-#Move the currently focused window to the scratchpad
+# Move the currently focused window to the scratchpad
 bindsym $mod+Shift+minus move scratchpad
 	
-#Show the next scratchpad window or hide the focused scratchpad window.
-#If there are multiple scratchpad windows, this command cycles through them.
-   
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
 bindsym alt+tab scratchpad show
 bindsym $mod+minus scratchpad show
 
@@ -202,9 +207,6 @@ bindsym $mod+Shift+9 move container to workspace 9
 
 # reload the configuration file:
 bindsym $mod+Shift+c reload
-
-# restart sway inplace (preserves your layout/session, can be used to upgrade sway):
-bindsym $mod+Shift+r restart
 
 # resize window (you can also use the mouse for that):
 mode "resize" {
@@ -241,6 +243,7 @@ bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume 0 -3%
 # mute
 bindsym --locked XF86AudioMute exec pactl set-sink-mute 0 toggle
 
+# media
 bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
@@ -275,8 +278,6 @@ client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 
 client.background       #F8F8F2
 
-
-
 # Input configuration
   input "1267:12363:ELAN0650:01_04F3:304B_Touchpad" {
        dwt enabled
@@ -287,6 +288,15 @@ client.background       #F8F8F2
 
 # You can get the names of your inputs by running: swaymsg -t get_input. 
 # Put your touchpad's ID to replace "1267:12363:ELAN0650:01_04F3:304B_Touchpad" (keep the quotation marks)
+
+### Output configuration
+#
+# Example configuration: 
+#
+#   output HDMI1 pos 0 0 res 1920x1080
+#   output eDP1 pos 1920 0 res 1600x900
+#
+# You can get the names of your outputs by running: swaymsg -t get_outputs
 
 # Status Bar:
 
