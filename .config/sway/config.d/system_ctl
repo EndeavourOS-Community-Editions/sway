@@ -11,4 +11,4 @@ mode "$mode_system" {
     bindsym Return      mode "default"
     bindsym Escape      mode "default"
 }
-bindsym $mod+Shift+q mode $mode_system
+bindsym $mod+Shift+e mode $mode_system
