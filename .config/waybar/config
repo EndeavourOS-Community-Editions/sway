@@ -17,18 +17,15 @@
        
     
     ],
-    "modules-center": [
-      
-        "custom/seperator",
-        "custom/firefox",
+    "modules-center": [     
+         ],
+  
+    "modules-right": [
+       "custom/firefox",
         "custom/seperator",
         "custom/files",
         "custom/seperator",
         "custom/terminal",
-        "custom/seperator",
-
-    ],
-    "modules-right": [
         "network",
         "memory",
         "cpu",
@@ -197,17 +194,17 @@
     "on-scroll-up": "brightnessctl -c backlight set 5%-"
   },
     "custom/firefox": {
-    "format": " Firefox",
+    "format": " ",
     "on-click": "exec firefox",
     "tooltip": false
   },
   "custom/terminal": {
-    "format": " Terminal",
+    "format": " ",
     "on-click": "exec alacritty",
     "tooltip": false
   },
   "custom/files": {
-    "format": " Files",
+    "format": " ",
     "on-click": "exec thunar",
     "tooltip": false
   },

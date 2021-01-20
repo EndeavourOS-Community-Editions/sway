@@ -110,19 +110,17 @@
     animation-duration: 2s;
 }
 
-#clock {
-    font-weight: bold;
-/*
-    color:#81a1c1;
-*/
-    margin-left: 2px;
-    font-size: 15px;
-    
+#clock-date {
+        font-size: 13px;      
+}
+
+#clock-time{
+font-size : 20px
 }
 
 #cpu {
 /*
- background-color: #545157;
+ no styles
 */
 }
 
@@ -138,9 +136,6 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-/*
-   color: #a3be8c
-*/
 }
 
 #memory.warning {
@@ -161,9 +156,7 @@
 }
 
 #network {
-/*
-no styles
-*/
+margin-left: 20px;
   
 }
 
@@ -195,8 +188,7 @@ no styles
 }
 
 #tray {
-   
-    font-size: 17px;
+     font-size: 17px;
 	margin-right: 7px;
 	margin-top: 4px;
 	margin-bottom:4px;
@@ -259,7 +251,9 @@ no styles
 	margin-left: 10px;
 	margin-right: 10px;
 	font-size: 20px;
+   
 }
+
 #custom-big {
    margin-right: 200px;
 }   
@@ -269,7 +263,7 @@ no styles
 }
 #custom-keyboard-layout {
 /*
-   color: #c90000;
+ no styles
 */
 }
 #custom-launcher {
