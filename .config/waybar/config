@@ -214,7 +214,7 @@
   },
   "custom/files": {
     "format": " Files",
-    "on-click": "thunar",
+    "on-click": "exec thunar",
     "tooltip": false
   },
   "custom/seperator": {
@@ -230,4 +230,4 @@
    
 
 }
-//To set weather look in the weather script and replace $LOCATION with your LOCATION
+//To set weather look in the weather script
