@@ -32,12 +32,9 @@ To-Do (as of 20/1/21)
 - Bar is finished just need to clean up the config
 - Intergrate Power Menu
 - Hmmm, I can't think of anything else? 
-- Working on replicating sway's default keybindings over i3's
+- Working on replicating sway's default keybindings over i3's - DONE!
 
 Keybindings
 
-Everything is the same as the i3 (for now!) , there is not yet a reference file (working on it)
+Are sway defautls as of 7:45pm UK Time
 
-One thing that changed : To launch wofi is is super+D , I recommend you look through the config for sway has some extra features which I added.
-
-eg: - A scratchpad 
