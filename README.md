@@ -27,11 +27,10 @@ Unoffical - To Install
       
   Also please install "wlogout" available in the AUR  (No longer needed!)  
 
-To-Do (as of 20/1/21)
+To-Do (as of 21/1/21)
 
-- Bar is finished just need to clean up the config
-- Intergrate Power Menu
-- Hmmm, I can't think of anything else? 
+- Bar Fininshed - Done!
+- Intergrate Power Menu - Done !
 - Working on replicating sway's default keybindings over i3's - DONE!
 
 Keybindings
