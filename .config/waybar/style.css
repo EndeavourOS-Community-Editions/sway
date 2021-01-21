@@ -50,7 +50,7 @@
 #waybar {
     background: #000000;
     color: white;
-    font-family: Cantarell, Noto Sans, sans-serif;
+    font-family: UbuntuMono;
     font-size: 13px;
 }
 
@@ -245,18 +245,10 @@ margin-left: 20px;
 	font-size: 15px;
 }
 #custom-seperator {
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 3px;
+	margin-right: 3px;
 	font-size: 20px;
    
-}
-
-#custom-big {
-   margin-right: 200px;
-}   
-#custom-des {
-  margin-left: 20px;
-  font-size: 15px;
 }
 #custom-keyboard-layout {
 /*
