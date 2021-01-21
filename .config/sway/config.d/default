@@ -202,6 +202,3 @@ bindsym --whole-window --border $mod+shift+button5 resize grow width 5 px or 5 p
 #
     bindsym print exec /usr/share/sway/scripts/grimshot --notify save output
     bindsym Shift+print exec ~/.config/sway/scripts/screenshot.sh
-
-
-include @sysconfdir@/sway/config.d/*
