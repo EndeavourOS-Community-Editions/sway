@@ -1,11 +1,8 @@
 
 // Global 
 {
-      "layer": "top",
-      
-     
-
-    "position": "top",
+      "layer": "top",   
+      "position": "bottom",
 
     // If height property would be not present, it'd be calculated dynamically
     "height": 30,
