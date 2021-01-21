@@ -32,7 +32,8 @@
         "battery",
         "backlight",
         "clock",
-            "tray",
+          "tray",
+          "custom/power",
      ],
 
 // Modules
@@ -214,7 +215,11 @@
     "on-click": "exec /usr/bin/wofi",
     "tooltip": false
    },
-   
+    "custom/power": {
+    "format":"",
+    "on-click": "exec ~/.config/waybar/scripts/power-menu.sh",
+    "tooltip": false
+   },
    
 
 }
