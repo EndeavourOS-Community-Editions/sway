@@ -110,13 +110,10 @@
     animation-duration: 2s;
 }
 
-#clock-date {
+#clock{
         font-size: 13px;      
 }
 
-#clock-time{
-font-size : 20px
-}
 
 #cpu {
 /*
