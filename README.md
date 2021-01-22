@@ -18,7 +18,7 @@
 - Find bugs and fix
 
 
-## Tutorial for i3-wm settings:
+## Tutorial for sway-wm settings:
 
  - Background handled by swaybg
  - Gtk3 theme handled by lxappearance
