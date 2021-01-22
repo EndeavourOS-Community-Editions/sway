@@ -41,11 +41,11 @@
 * {
     border: none;  
     border-radius: 0;
-    margin: 0px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-     padding-left: 15;
-     padding-right: 15;  
+    margin-top: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+     padding-left: 10;
+     padding-right: 10;  
 }
  
 /* The whole bar */
@@ -110,10 +110,10 @@
 }
  
 #mode {
-        background: red;
-        margin-top:2.5px;
-        margin-bottom:2.5px;
- }
+    background: red;
+    border-bottom: 3px transparent;
+    margin: 3;
+  }
  
 #network.disconnected {
         color: orange;
@@ -132,16 +132,14 @@
 }
  
 #workspaces button {
-      color: #888888;
-       padding: 3px;   
-    }
- 
-#workspaces button.focused {
-        border-color: #4c7899;
-        color: white;
-        background-color: #285577;
+    padding: 0.5px;
+    border-bottom: 3px solid transparent;
 }
- 
+
+#workspaces button.focused {
+   border-bottom: 3px solid #ffffff;
+}
+
 #workspaces button.urgent {
         border-color: #c9545d;
         color: #c9545d;
