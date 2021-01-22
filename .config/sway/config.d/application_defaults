@@ -5,8 +5,8 @@ for_window [app_id="Alacritty"] focus
 assign [class="firefox"] 2
 for_window [class="firefox"] focus
 
-assign [app_id=thunar] 4
-for_window [app_id=thunar] focus
+assign [app_id=Thunar] 4
+for_window [app_id=Thunar] focus
 
 assign [class="TelegramDesktop"] 5
 for_window [class=TelegramDesktop] focus
