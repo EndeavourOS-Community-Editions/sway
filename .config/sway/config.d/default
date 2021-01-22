@@ -38,7 +38,7 @@ exec swayidle -w\
     bindsym $mod+Return exec $term
     
     # Open the power menu
-    bindsym $mod+Shift+e mode $powermenu
+    bindsym $mod+Shift+e exec $powermenu
 
     # Kill focused window
     bindsym $mod+q kill
