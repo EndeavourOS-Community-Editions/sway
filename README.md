@@ -13,21 +13,7 @@ Unoffical - To Install
 
        cd SwayEOS
 
-       cp -R .config/* ~/.config/
-       
-       cp .profile ~/.profile
-       
-       cp .gtkrc-2.0 ~/.gtkrc-2.0
-
-       chmod -R +x ~/.config/sway/scripts (make scripts executable)
-       
-       chmod -R +x ~/.config/waybar/scripts
- 
-       sudo pacman -Syu --needed --noconfirm - < packages-repository.txt
-       
-       systemctl enable lightdm
-       
-       systemctl start lightdm
+       bash testinstall.sh
   
 
 To-Do (as of 21/1/21)
