@@ -1,223 +1,211 @@
-
 // Global 
 {
-      "layer": "top",   
-      "position": "bottom",
-
-    // If height property would be not present, it'd be calculated dynamically
-    "height": 30,
-
-    "modules-left": [
-        "custom/launcher",
-        "sway/workspaces",
-        "sway/mode",
-       
-    
-    ],
-    "modules-center": [     
-         ],
-  
-    "modules-right": [
-       "custom/firefox",
-        "custom/seperator",
-        "custom/files",
-        "custom/seperator",
-        "custom/terminal",
-        "network",
-        "memory",
-        "cpu",
-        "custom/weather",
-        "pulseaudio",
-        "custom/keyboard-layout",
-        "battery",
-        "backlight",
-        "clock",
-          "tray",
-          "custom/power",
-     ],
-
+	"layer": "top",   
+      	"position": "bottom",
+	// If height property would be not present, it'd be calculated dynamically
+     "height": 30,
+ 
+    	"modules-left": [
+        	"custom/launcher",
+        	"sway/workspaces",
+        	"sway/mode",
+	],
+ 
+	"modules-center": [     
+      	],
+ 
+    	"modules-right": [
+        	"custom/firefox",
+	        "custom/files",
+        	"custom/terminal",
+	        "network",
+	        "memory",
+	        "cpu",
+	        // "custom/weather",
+	        "pulseaudio",
+	        "custom/keyboard-layout",
+	        "battery",
+	        "backlight",
+	        "clock",
+	        "tray",
+	        "custom/power",
+     	],
+ 
 // Modules
  
- "sway/workspaces": {
-        "disable-scroll": true,
+"sway/workspaces": {
+	"disable-scroll": true,
         "all-outputs": false,
         "format": "{icon}",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "6": "",
-            "urgent": "",
-            "focused": ",",
-            "default": ""
-        }
-    },    
-     "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
-
-     "battery": {
-    "states": {
-      // "good": 95,
-      "warning": 30,
-      "critical": 15
-    },
-    "format": "{capacity}% {icon}",
-    "format-charging": "{capacity}% ",
-    "format-plugged": "{capacity}% ",
-    "format-alt": "{time} {icon}",
-    // "format-good": "", // An empty format will hide the module
-    // "format-full": "",
-    "format-icons": ["", "", "", "", ""]
-    },
-
-    "clock#time": {
-        "interval": 1,
-        "format": "{:%H:%M:%S}",
-        "tooltip": false
-    },
-
-    "clock": {
-      "interval": 10,
-      "format-alt": "  {:%e %b %Y}", // Icon: calendar-alt
-      "format": "{:%H:%M}",
-      "tooltip-format": "{:%e %B %Y}"
-    },
-
-    "cpu": {
+            	"1": "",
+            	"2": "",
+            	"3": "",
+            	"4": "",
+            	"5": "",
+            	"6": "",
+            	"urgent": "",
+            	"focused": ",",
+            	"default": ""
+        	}
+},    
+ 
+"battery": {
+    	"states": {
+      		// "good": 95,
+      		"warning": 30,
+      		"critical": 15
+	},
+    	"format": "{capacity}% {icon}",
+    	"format-charging": "{capacity}% ",
+    	"format-plugged": "{capacity}% ",
+    	"format-alt": "{time} {icon}",
+    	// "format-good": "", // An empty format will hide the module
+    	// "format-full": "",
+    	"format-icons": ["", "", "", "", ""]
+},
+ 
+ 
+"clock": {
+      	"interval": 10,
+      	"format-alt": "  {:%e %b %Y}", // Icon: calendar-alt
+      	"format": "{:%H:%M}",
+      	"tooltip-format": "{:%e %B %Y}"
+},
+ 
+"cpu": {
         "interval": 5,
         "format": "  {usage}% ({load})", // Icon: microchip
         "states": {
-          "warning": 70,
-          "critical": 90
+        "warning": 70,
+        "critical": 90
         },
-         "on-click": "exec htop",
-    },
-
-    "custom/keyboard-layout": {
-      "exec": "swaymsg -t get_inputs | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
-      // Interval set only as a fallback, as the value is updated by signal
-      "interval": 30,
-      "format": "  {}", // Icon: keyboard
-      // Signal sent by Sway key binding (~/.config/sway/key-bindings)
-      "signal": 1, // SIGHUP
-      "tooltip": false
-    },
-
-    "memory": {
+        "on-click": "exec htop",
+},
+ 
+"custom/keyboard-layout": {
+      	"exec": "swaymsg -t get_inputs | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
+      	// Interval set only as a fallback, as the value is updated by signal
+      	"interval": 30,
+      	"format": "  {}", // Icon: keyboard
+      	// Signal sent by Sway key binding (~/.config/sway/key-bindings)
+      	"signal": 1, // SIGHUP
+      	"tooltip": false
+    	},
+ 
+"memory": {
         "interval": 5,
         "format": " {}%", // Icon: memory
         "states": {
-            "warning": 70,
-            "critical": 90
+            	"warning": 70,
+            	"critical": 90
         }
-    },
-
-    "network": {
-        "interval": 5,
+},
+ 
+"network": {
+      	"interval": 5,
         "format-wifi": "  {essid} ({signalStrength}%)", // Icon: wifi
         "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
         "format-disconnected": "⚠  Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}"
-        
-    },
-
-    "sway/mode": {
-        "format": "<span> {}</span>", // Icon: expand-arrows-alt
+},
+ 
+"sway/mode": {
+     	"format": "{}",
         "tooltip": false
-    },
-
-    "sway/window": {
+},
+ 
+"sway/window": {
         "format": "{}",
         "max-length": 120
-    },
-
-    "sway/workspaces": {
+},
+ 
+"sway/workspaces": {
         "all-outputs": false,
         "disable-scroll": true,
         "format": "{icon} {name}",
         "format-icons": {
-            "1:www": "", // Icon: firefox-browser
-            "2:mail": "", // Icon: mail
-            "3:editor": "", // Icon: code
-            "4:terminals": "", // Icon: terminal
-            "5:portal": "", // Icon: terminal
-            "urgent": "",
-            "focused": "",
-            "default": ""
+            	"1:www": "", // Icon: firefox-browser
+            	"2:mail": "", // Icon: mail
+            	"3:editor": "", // Icon: code
+            	"4:terminals": "", // Icon: terminal
+            	"5:portal": "", // Icon: terminal
+            	"urgent": "",
+            	"focused": "",
+            	"default": ""
         }
-    },
-    "pulseaudio": {
-    "scroll-step": 1, // %, can be a float
-    "format": "{volume}% {icon}",
-    "format-bluetooth": "{volume}% {icon}  {format_source}",
-    "format-bluetooth-muted": " {icon}  {format_source}",
-    "format-muted": " {format_source}",
-    "format-source": "{volume}%  ",
-    "format-source-muted": "",
-    "format-icons": {
-      "headphone": "",
-      "hands-free": "וֹ",
-      "headset": "  ",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": ["奄"]
-    },
-    "on-click": "pavucontrol",
-    "on-scroll-up": "pamixer -ui 2",
-    "on-scroll-down": "pamixer -ud 2",
-    },
-
-     "custom/weather": {
-    "exec": "~/.config/waybar/scripts/weather.sh",
-    "format": "{}",
-    "return-type": "json",
-    "interval": 600
-         },
-
-    "tray": {
-        "icon-size": 21,
-        "spacing": 10
-    },
-    "backlight": {
-    "interval": 5,
-    "format": "{icon} {percent}%",
-    "format-alt": "{percent}% {icon}",
-    "format-alt-click": "click-right",
-    "format-icons": ["🌕", "🌔", "🌓", "🌒", "🌑"],
-    "on-scroll-down": "brightnessctl -c backlight set +5%",
-    "on-scroll-up": "brightnessctl -c backlight set 5%-"
-  },
-    "custom/firefox": {
-    "format": " ",
-    "on-click": "exec firefox",
-    "tooltip": false
-  },
-  "custom/terminal": {
-    "format": " ",
-    "on-click": "exec alacritty",
-    "tooltip": false
-  },
-  "custom/files": {
-    "format": " ",
-    "on-click": "exec thunar",
-    "tooltip": false
-  },
-  "custom/seperator": {
-    "format": "  ",
-    
-  },
- "custom/launcher": {
-    "format":"",
-    "on-click": "exec wofi -c ~/.config/wofi/config -I",
-    "tooltip": false
-   },
-    "custom/power": {
-    "format":"",
-    "on-click": "exec ~/.config/waybar/scripts/power-menu.sh",
-    "tooltip": false
-   },
+},
+ 
+"pulseaudio": {
+    	"scroll-step": 1, // %, can be a float
+    	"format": "{volume}% {icon}",
+    	"format-bluetooth": "{volume}% {icon}  {format_source}",
+    	"format-bluetooth-muted": " {icon}  {format_source}",
+    	"format-muted": " {format_source}",
+    	"format-source": "{volume}%  ",
+    	"format-source-muted": "",
+    	"format-icons": {
+      		"headphone": "",
+      		"hands-free": "וֹ",
+      		"headset": "  ",
+      		"phone": "",
+      		"portable": "",
+      		"car": "",
+      		"default": ["奄"]
+	},
+    	"on-click": "pavucontrol",
+    	"on-scroll-up": "pamixer -ui 2",
+    	"on-scroll-down": "pamixer -ud 2",
+},
+ 
+"custom/weather": {
+    	"exec": "~/.config/waybar/scripts/weather.sh",
+    	"format": "{}",
+    	"return-type": "json",
+    	"interval": 600
+},
+ 
+"tray": {
+       	"icon-size": 18,
+ },
+ 
+"backlight": {
+    	"interval": 5,
+    	"format": "{icon} {percent}%",
+    	"format-alt": "{percent}% {icon}",
+    	"format-alt-click": "click-right",
+    	"format-icons": ["🌕", "🌔", "🌓", "🌒", "🌑"],
+    	"on-scroll-down": "brightnessctl -c backlight set +5%",
+    	"on-scroll-up": "brightnessctl -c backlight set 5%-"
+},
+ 
+"custom/firefox": {
+    	"format": " ",
+    	"on-click": "exec firefox",
+    	"tooltip": false
+},
+ 
+"custom/terminal": {
+    	"format": " ",
+    	"on-click": "exec alacritty",
+    	"tooltip": false
+},
+ 
+"custom/files": {
+    	"format": " ",
+    	"on-click": "exec thunar",
+    	"tooltip": false
+},
+ 
+"custom/launcher": {
+    	"format":" ",
+    	"on-click": "exec wofi -c ~/.config/wofi/config -I",
+    	"tooltip": false,
+},
+ 
+"custom/power": {
+    	"format":"",
+    	"on-click": "exec ~/.config/waybar/scripts/power-menu.sh",
+    	"tooltip": false,
+    	},
 }
