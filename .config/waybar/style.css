@@ -132,13 +132,16 @@
 }
  
 #workspaces button {
-    padding: 0.5px;
-    border-bottom: 3px solid transparent;
+     border-bottom: 3px solid transparent;
+    margin-bottom: 0;
+    padding-left: 1;
+    padding-right:1;
+    
 }
 
 #workspaces button.focused {
-   border-bottom: 3px solid #ffffff;
-}
+    border-bottom: 3px solid #ffffff;
+  }
 
 #workspaces button.urgent {
         border-color: #c9545d;
