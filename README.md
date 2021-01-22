@@ -13,6 +13,29 @@
 - Find bugs and fix
 
 
-## Keybindings
-- Are sway defautls as of 7:45pm UK Time
+## Tutorial for i3-wm settings:
+
+ - Background handled by swaybg
+ - Gtk3 theme handled by lxappearance
+ - Filebrowser = Thunar
+ - Default Terminal-Emulator = Alacritty
+ - Text-Editor = geany
+
+Main shortcuts:
+
+[mod] key is set to the winkey (or should i call it linkey?)
+
+ - [mod]+enter = open terminal (alacritty)
+ - [mod]+w = open Browser (firefox)
+ - [mod]+d = app menu (wofi)
+ - [mod]+q = close focused app [kill]
+ - (Shift) Print-key = screenshot (swaybg)
+
+## Tiling:
+
+Is set to default for swaywm and can be changed to:
+
+- stacking: Only the focused window in the container is displayed. You get a list of windows at the top of the container.
+
+- tabbed: so each new window will open fullscreen as a tab, you can change between window-tabs with mouse or shortcut: [mod]+Left focus left (left arrow key) [mod]+Right focus right (right arrow key)
 
