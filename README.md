@@ -23,7 +23,7 @@ Unoffical - To Install
        
        chmod -R +x ~/.config/waybar/scripts
  
-       sudo pacman -S --needed - < packages-repository.txt
+       sudo pacman -S --needed --noconfirm - < packages-repository.txt
        
        systemctl enable lightdm
        
