@@ -33,3 +33,4 @@ gtk-layer-shell
 ttf-nerd-fonts-symbols
 xdg-desktop-portal-wlr
 brightnessctl
+pamixer
