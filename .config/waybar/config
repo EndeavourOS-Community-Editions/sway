@@ -81,8 +81,8 @@
 
     "clock": {
       "interval": 10,
-      "format": "  {:%e %b %Y}", // Icon: calendar-alt
-       "format-alt": "{:%H:%M:%S}",
+      "format-alt": "  {:%e %b %Y}", // Icon: calendar-alt
+      "format": "{:%H:%M}",
       "tooltip-format": "{:%e %B %Y}"
     },
 
@@ -93,7 +93,7 @@
           "warning": 70,
           "critical": 90
         },
-         "on-click": "htop",
+         "on-click": "exec htop",
     },
 
     "custom/keyboard-layout": {
@@ -125,7 +125,7 @@
     },
 
     "sway/mode": {
-        "format": "<span style=\"italic\">  {}</span>", // Icon: expand-arrows-alt
+        "format": "<span> {}</span>", // Icon: expand-arrows-alt
         "tooltip": false
     },
 
@@ -167,8 +167,8 @@
       "default": ["奄"]
     },
     "on-click": "pavucontrol",
-    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
-    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    "on-scroll-up": "pamixer -ui 2",
+    "on-scroll-down": "pamixer -ud 2",
     },
 
      "custom/weather": {
@@ -212,7 +212,7 @@
   },
  "custom/launcher": {
     "format":"",
-    "on-click": "exec /usr/bin/wofi",
+    "on-click": "exec wofi",
     "tooltip": false
    },
     "custom/power": {
@@ -220,7 +220,4 @@
     "on-click": "exec ~/.config/waybar/scripts/power-menu.sh",
     "tooltip": false
    },
-   
-
 }
-//To set weather look in the weather script
