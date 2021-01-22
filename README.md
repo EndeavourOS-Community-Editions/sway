@@ -7,6 +7,11 @@
     cd SwayEOS
 
     bash testinstall.sh
+
+## Post install
+
+- Keyboard layout in: `~/.config/sway/config.d/input`
+- Screen settings in: `~/.config/sway/config.d/output`
   
 
 ## To-Do (as of 21/1/21)
