@@ -41,4 +41,4 @@ Is set to default for swaywm and can be changed to:
 
 ## Waybar:
 
-![waybar](https://forum.endeavouros.com/uploads/default/optimized/3X/7/b/7b6ebf9d022a09f4451b4b641924ac74c950adee_2_1035x313.png)
+![waybar](https://forum.endeavouros.com/uploads/default/original/3X/3/8/3863eb5c6905cfe2cbc5ef3905e0ac86f7074874.png)
