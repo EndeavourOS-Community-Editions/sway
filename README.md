@@ -41,4 +41,4 @@ Is set to default for swaywm and can be changed to:
 
 ## Waybar:
 
-![waybar]()
+
