@@ -21,11 +21,12 @@ Unoffical - To Install
        
        chmod -R +x ~/.config/waybar/scripts
  
- Install Needed Packages
- 
-      sudo pacman -S --needed - < packages-repository.txt
-      
-  Also please install "wlogout" available in the AUR  (No longer needed!)  
+       sudo pacman -S --needed - < packages-repository.txt
+       
+       systemctl enable lightdm
+       
+       systemctl start lightdm
+  
 
 To-Do (as of 21/1/21)
 
