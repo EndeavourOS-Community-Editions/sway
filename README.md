@@ -1,28 +1,18 @@
-# SwayEOS
-SwayEOS
-Unoffical - To Install
-1) get the dot files
+# SwayEOS - unofficial
 
-2) copy files to the right directories (.config of your user):
+## To Install
 
-3) copy scripts inside ~/.config/sway/scripts must be executable ! [chmod +x] them please ;)
+    git clone https://github.com/OdiousImp2604/SwayEOS.git
 
-4) install needed packages
+    cd SwayEOS
 
-       git clone https://github.com/OdiousImp2604/SwayEOS.git
-
-       cd SwayEOS
-
-       bash testinstall.sh
+    bash testinstall.sh
   
 
-To-Do (as of 21/1/21)
+## To-Do (as of 21/1/21)
+- Find bugs and fix
 
-- Bar Fininshed - Done!
-- Intergrate Power Menu - Done !
-- Working on replicating sway's default keybindings over i3's - DONE!
 
-Keybindings
-
-Are sway defautls as of 7:45pm UK Time
+## Keybindings
+- Are sway defautls as of 7:45pm UK Time
 
