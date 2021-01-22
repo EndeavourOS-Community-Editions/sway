@@ -16,6 +16,8 @@ Unoffical - To Install
        cp -R .config/* ~/.config/
        
        cp .profile ~/.profile
+       
+       cp .gtkrc-2.0 ~/.gtkrc-2.0
 
        chmod -R +x ~/.config/sway/scripts (make scripts executable)
        
