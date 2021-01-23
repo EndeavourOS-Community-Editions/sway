@@ -36,7 +36,7 @@ Main shortcuts:
  - [mod]+w = open Browser (firefox)
  - [mod]+d = app menu (wofi)
  - [mod]+q = close focused app [kill]
- - (Shift) Print-key = screenshot (swaybg)
+ - (Shift) Print-key = screenshot
 
 ## Tiling:
 
