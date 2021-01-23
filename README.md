@@ -16,6 +16,7 @@
 
 ## To-Do (as of 21/1/21)
 - Find bugs and fix
+- Set LightDM theme to Ark-Dark
 
 
 ## Tutorial for sway-wm settings:
