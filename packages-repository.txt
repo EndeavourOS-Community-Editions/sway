@@ -19,7 +19,6 @@ mako
 wofi
 lightdm
 lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
 acpi
 bluez-utils
 network-manager-applet
@@ -34,3 +33,5 @@ ttf-nerd-fonts-symbols
 xdg-desktop-portal-wlr
 brightnessctl
 pamixer
+wl-clipboard
+jq
