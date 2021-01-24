@@ -1,0 +1,5 @@
+hide_search=true
+hide_scroll=true
+width=1
+show=dmenu
+lines=5
