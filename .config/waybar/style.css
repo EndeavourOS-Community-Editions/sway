@@ -9,6 +9,14 @@
 /* -----------------------------------------------------------------------------
  * Keyframes
  * -------------------------------------------------------------------------- */
+ /*
+Arc-Dark Color Scheme
+*/
+
+@define-color highlight #5294e2 ;
+@define-color base1  #404552 ;
+
+ 
  
 @keyframes blink-warning {
     70% {
@@ -39,22 +47,39 @@
  
 /* Reset all styles */
 * {
-    border: none;  
+    border: none;
     border-radius: 0;
-    margin-top: 0px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-     padding-left: 10;
-     padding-right: 10;  
+    min-height: 0;
+    margin: 1px;
+    padding: 1.5;
 }
- 
+
 /* The whole bar */
 #waybar {
-    background: black;
-    color: white;
+    background: transparent;
+    color: #bebebe;
+    background-color: @base1;
     font-family: UbuntuMono;
     font-size: 14px;
 }
+
+/* Each module */
+#battery,
+#clock,
+#backlight,
+#cpu,
+#custom-keyboard-layout,
+#memory,
+#mode,
+#network,
+#pulseaudio,
+#temperature,
+#tray {
+    margin-left:10px;
+   margin-right:10px;
+}
+
+
  
  
 /* -----------------------------------------------------------------------------
@@ -112,7 +137,7 @@
 #mode {
     background: red;
     border-bottom: 3px transparent;
-    margin: 3;
+    margin: 3px;
   }
  
 #network.disconnected {
@@ -120,7 +145,7 @@
 }
  
 #pulseaudio.muted {
-    color: @base07; 
+    color: @highlight; 
 }
  
 #temperature.critical {
@@ -132,15 +157,16 @@
 }
  
 #workspaces button {
-     border-bottom: 3px solid transparent;
-    margin-bottom: 0;
-    padding-left: 1;
-    padding-right:1;
+    border-bottom: 3px solid transparent;
+    margin-bottom: 0px;
+    padding:0px;
     
 }
 
 #workspaces button.focused {
-    border-bottom: 3px solid #ffffff;
+      border-bottom: 3px solid  @highlight;
+     margin-bottom: 1px;
+     padding-left:0;
   }
 
 #workspaces button.urgent {
@@ -148,22 +174,14 @@
         color: #c9545d;
 }
  
-#custom-firefox {
-    color: #d08770;
-}
-#custom-files {
-    color: #ebcb8b;
-}
- 
-#custom-power {
-    font-size: 15px;
-    margin-right:1px;
-    padding:0;
-}
- 
-#custom-launcher {
-    font-size: 20px;
-    padding:0;
- }
+#custom-power,
+#custom-launcher{
+   margin-left:15px;
+   margin-right:15px;
+   font-size:15px;
+}   
+#custom-launcher{
+ font-size:20px;
+ }   
 
-  
+

@@ -1,59 +1,52 @@
-#entry {
-border-radius: 5px;
-padding: 3px;
-margin: 0px 3px 3px 3px;
+/*
+Arc-Dark Color Scheme
+*/
+
+@define-color highlight #5294e2;
+@define-color base1  #404552;
+@define-color base2 #40455;
+
+
+*{
+    font-family: UbuntuMono;
 }
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-#entry:selected {
-background-color:#4b3766;
-font-weight: bold;
-}
- 
-#text:selected {
-color: #d8dee9;
-}
- 
-#window {
-background-color: transparent;
-font-family: Ubuntu Mono;
+window {
 }
 
 #input {
-border: none;
-background-color: #4c566a;
-padding: 10px;
-margin: 15px 15px 10px 15px;
-border-radius: 5px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border:none;
+    color: white;
 }
 
 #inner-box {
-color: #4b3766;
-padding-top: 5px;
-margin: 0px 10px 10px 10px;
+    background-color: @base2;
+
 }
 
 #outer-box {
-margin: 15px;
-background-color: rgba(53,59,73,1.0);
-box-shadow: 0px 0px 5px 0  #0F0F0F;
+    margin: 3px;
+    padding:15px;
+    background-color: @base2;
 }
 
 #scroll {
-margin-bottom: 10px;
 }
 
 #text {
 padding: 5px;
-color: #d8dee9;
-background-color: transparent;
-} 
+color: white;
+}
 
-#img {
-  background-color: transparent;
-  padding: 5px;
+#entry:nth-child(even){
+    background-color: @base1;
+}
+
+#entry:selected {
+    background-color: @highlight;
+}
+
+#text:selected {
 }

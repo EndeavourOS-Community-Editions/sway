@@ -15,10 +15,7 @@
       	],
  
     	"modules-right": [
-        	"custom/firefox",
-	        "custom/files",
-        	"custom/terminal",
-	        "network",
+             "network",
 	        "memory",
 	        "cpu",
 	        // "custom/weather",
@@ -32,23 +29,6 @@
      	],
  
 // Modules
- 
-"sway/workspaces": {
-	"disable-scroll": true,
-        "all-outputs": false,
-        "format": "{icon}",
-        "format-icons": {
-            	"1": "",
-            	"2": "",
-            	"3": "",
-            	"4": "",
-            	"5": "",
-            	"6": "",
-            	"urgent": "",
-            	"focused": ",",
-            	"default": ""
-        	}
-},    
  
 "battery": {
     	"states": {
@@ -121,28 +101,26 @@
 },
  
 "sway/workspaces": {
-        "all-outputs": false,
-        "disable-scroll": true,
-        "format": "{icon} {name}",
-        "format-icons": {
-            	"1:www": "", // Icon: firefox-browser
-            	"2:mail": "", // Icon: mail
-            	"3:editor": "", // Icon: code
-            	"4:terminals": "", // Icon: terminal
-            	"5:portal": "", // Icon: terminal
-            	"urgent": "",
-            	"focused": "",
-            	"default": ""
-        }
-},
- 
+         "disable-scroll": true,
+         "disable-markup" : false,
+         "all-outputs": true,
+         "format": "  {icon}  ",
+         //"format":"{icon}",
+         "format-icons": {
+             "1": "",
+             "2": "",
+             "3": "",
+             "4": "",
+             "5": "",
+           }
+     },
 "pulseaudio": {
     	"scroll-step": 1, // %, can be a float
     	"format": "{volume}% {icon}",
     	"format-bluetooth": "{volume}% {icon}  {format_source}",
     	"format-bluetooth-muted": " {icon}  {format_source}",
-    	"format-muted": " {format_source}",
-    	"format-source": "{volume}%  ",
+    	"format-muted": "婢 {format_source}",
+    	"format-source": "{volume}% ",
     	"format-source-muted": "",
     	"format-icons": {
       		"headphone": "",
@@ -151,7 +129,7 @@
       		"phone": "",
       		"portable": "",
       		"car": "",
-      		"default": ["奄"]
+      		"default": [""]
 	},
     	"on-click": "pavucontrol",
     	"on-scroll-up": "pamixer -ui 2",
@@ -167,6 +145,7 @@
  
 "tray": {
        	"icon-size": 18,
+       	"spacing":10,
  },
  
 "backlight": {
@@ -208,4 +187,12 @@
     	"on-click": "exec ~/.config/waybar/scripts/power-menu.sh",
     	"tooltip": false,
     	},
+}
+"wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 14,
+    "icon-theme": "Numix-Circle",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close"
 }
