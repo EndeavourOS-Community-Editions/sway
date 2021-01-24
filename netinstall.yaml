@@ -185,6 +185,7 @@
     - ttf-nerd-fonts-symbols
     - xdg-desktop-portal-wlr
     - brightnessctl
+    - geany
 - name: "Printing-Support"
   description: "Support for printing (Cups)"
   hidden: false
