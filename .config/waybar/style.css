@@ -135,9 +135,11 @@ Arc-Dark Color Scheme
 }
  
 #mode {
-    background: red;
+    background: @highlight;
     border-bottom: 3px transparent;
-    margin: 3px;
+    color:white;
+    margin-left: 5px;
+    padding:7;
   }
  
 #network.disconnected {
