@@ -35,4 +35,4 @@ brightnessctl
 pamixer
 wl-clipboard
 jq
-alacritty
+
