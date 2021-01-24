@@ -18,6 +18,7 @@
 - Find bugs and fix
 - Powermenu and screenshot menu, does not center well, with with width 100
 - When swaylock is run from terminal, is says that --clock is not an option
+- swaylock has as `--clock` bug when run from terminal
 - Check if idle settings in sway config makes sense
 - Make qt themeing guide
 
