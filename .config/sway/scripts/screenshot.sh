@@ -2,7 +2,7 @@
  
 entries="Active Screen Output Area Window"
  
-selected=$(printf '%s\n' $entries | wofi --width 300 --height 150 --show=dmenu --cache-file /dev/null | awk '{print tolower($1)}')
+selected=$(printf '%s\n' $entries | wofi --style=$HOME/.config/wofi/style.power.css --conf=$HOME/.config/wofi/config.screenshot | awk '{print tolower($1)}')
  
 case $selected in
   active)
