@@ -1,20 +1,23 @@
 font=UbuntuMono 12.5
 
-background-color=#4b3766
+background-color=#404552
 text-color=#e5e9f0
 width=315
 height=200
 padding=10
 margin=10
 progress-color=over #eceff480
-icon-path=/usr/share/icons/Papirus-Dark
+icon-path=/usr/share/icons/Arc-X-D
 max-icon-size=70
+layer=overlay
 
 border-size=5
 border-radius=0
-border-color=#280436
+border-color=#5294e2
 
 default-timeout=5000
 
 [urgency=high]
+
 ignore-timeout=1
+
