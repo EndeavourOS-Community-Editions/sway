@@ -14,7 +14,7 @@
 - Screen settings in: `~/.config/sway/config.d/output`
   
 
-## To-Do (as of 21/1/21)
+## To-Do (as of 24/1/21)
 - Find bugs and fix
 - Set LightDM theme to Ark-Dark
 - Make seperate wofi config for powermenu and screenshot, so that they only have 4 and 5 lines each
