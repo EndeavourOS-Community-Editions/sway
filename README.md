@@ -16,7 +16,8 @@
 
 ## To-Do (as of 24/1/21)
 - Find bugs and fix
-- Make seperate wofi config for powermenu and screenshot, so that they only have 4 and 5 lines each
+- Powermenu and screenshot menu, does not center well, with with width 100
+- When swaylock is run from terminal, is says that --clock is not an option
 - Check if idle settings in sway config makes sense
 - Make qt themeing guide
 
