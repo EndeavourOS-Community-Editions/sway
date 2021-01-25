@@ -34,7 +34,8 @@ Main shortcuts:
 [mod] key is set to the winkey (or should i call it linkey?)
 
  - [mod]+enter = open terminal (alacritty)
- - [mod]+w = open Browser (firefox)
+ - [mod]+o = open Browser (firefox)
+ - [mod]+n = open File Manager (thunar)
  - [mod]+d = app menu (wofi)
  - [mod]+q = close focused app [kill]
  - (Shift) Print-key = screenshot
