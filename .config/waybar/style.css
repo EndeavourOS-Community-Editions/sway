@@ -75,8 +75,9 @@ Arc-Dark Color Scheme
 #pulseaudio,
 #temperature,
 #tray {
-    margin-left:10px;
+   margin-left:10px;
    margin-right:10px;
+   padding:2;
 }
 
 
