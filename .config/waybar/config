@@ -111,8 +111,7 @@
              "2": "",
              "3": "",
              "4": "",
-             "5": "",
-           }
+          }
      },
 "pulseaudio": {
     	"scroll-step": 1, // %, can be a float
