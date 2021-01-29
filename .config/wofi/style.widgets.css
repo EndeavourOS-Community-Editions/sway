@@ -13,7 +13,8 @@ Arc-Dark Color Scheme
 }
 
 #window {
-	border: 1px solid @highlight;
+	  border: 1px solid @highlight;
+    margin: 0px 5px 0px 5px;
 
 }
 
@@ -23,10 +24,10 @@ Arc-Dark Color Scheme
 }
 
 #outer-box {
-    	margin: 5px;
-    	padding:15px;
-    	background-color: @base2;
-	margin-top: -20px;
+  margin: 5px;
+  padding:10px;
+  background-color: @base2;
+	margin-top: -22px;
 }
 
 #scroll {
