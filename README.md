@@ -16,9 +16,10 @@
 
 ## To-Do (as of 24/1/21)
 - Find bugs and fix
-- Powermenu and screenshot menu, does not center well, with with width 100
+- Screenshot menu, does not center well, with with width 100
 - Check if idle settings in sway config makes sense
-- Make qt themeing guide
+- Make qt themeing guide 
+- Write WIKI
 
 
 ## Tutorial for sway-wm settings:
