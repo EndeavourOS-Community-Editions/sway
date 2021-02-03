@@ -27,19 +27,19 @@
  - Background handled by swaybg
  - Gtk3 theme handled by lxappearance
  - Filebrowser = Thunar
- - Default Terminal-Emulator = Alacritty
- - Text-Editor = geany
+ - Default Terminal-Emulator = Alacritty - Termite(ARM)
+ - Text-Editor = xed
 
 Main shortcuts:
 
 [mod] key is set to the winkey (or should i call it linkey?)
 
- - [mod]+enter = open terminal (alacritty)
+ - [mod]+enter = open terminal (alacritty) - (termite ARM)
  - [mod]+o = open Browser (firefox)
  - [mod]+n = open File Manager (thunar)
  - [mod]+d = app menu (wofi)
  - [mod]+q = close focused app [kill]
- - (Shift) Print-key = screenshot
+ - (Shift) Print-key = screenshot/bring up screenshot menu
 
 ## Tiling:
 
