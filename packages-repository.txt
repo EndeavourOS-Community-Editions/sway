@@ -36,3 +36,4 @@ pamixer
 wl-clipboard
 jq
 xed
+ttf-jetbrains-mono
