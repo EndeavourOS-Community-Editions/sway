@@ -1,7 +1,7 @@
 [colors]
 cursor = #d8dee9
 cursor_foreground = #2e3440
-background = rgba(63, 63, 63, 0.8)
+
 
 foreground = #d8dee9
 foreground_bold = #d8dee9
@@ -27,5 +27,5 @@ color14 = #8fbcbb
 color15 = #eceff4
 
 [options]
-font = UbuntuMono
-font-size = 20px
+font = JetBrainsMonoNL 13
+
