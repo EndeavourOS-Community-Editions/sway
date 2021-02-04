@@ -159,6 +159,9 @@ Arc-Dark Color Scheme
         font-weight: bold;
 }
  
+#workspaces{
+font-size:15px;
+}
 #workspaces button {
     border-bottom: 3px solid transparent;
     margin-bottom: 0px;

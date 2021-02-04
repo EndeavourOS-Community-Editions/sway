@@ -89,6 +89,13 @@
         "format-disconnected": "⚠  Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}"
 },
+"network#vpn": {
+            "interface": "tun0",
+            "format": "嬨  {essid} ({signalStrength}%)",
+            "format-disconnected": "⚠  Disconnected",
+            "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
+            "on-click": "nm-connection-editor"
+},
  
 "sway/mode": {
      	"format": "{}",
@@ -108,9 +115,9 @@
          //"format":"{icon}",
          "format-icons": {
              "1": "",
-             "2": "",
+             "2": "",
              "3": "",
-             "4": "",
+             "4": "",
           }
      },
 "pulseaudio": {
@@ -128,7 +135,7 @@
       		"phone": "",
       		"portable": "",
       		"car": "",
-      		"default": [""]
+      		"default": ["墳"]
 	},
     	"on-click": "pavucontrol",
     	"on-scroll-up": "pamixer -ui 2",
@@ -182,7 +189,7 @@
 },
  
 "custom/power": {
-    	"format":"",
+    	"format":"⏻",
     	"on-click": "exec ~/.config/waybar/scripts/power-menu.sh",
     	"tooltip": false,
     	},

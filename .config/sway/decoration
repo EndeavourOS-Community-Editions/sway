@@ -1,0 +1,17 @@
+# Window decoration
+# class                 border  backgr. text    indicator child_border
+client.focused          #4b6789 #4b6789 #eceff4 #434c5e   #4b6789
+client.focused_inactive #353b49 #353b49 #d8dee9 #3b4252   #353b49
+client.unfocused        #353b49 #353b49 #d8dee9 #3b4252   #353b49
+client.urgent           #bf616a #bf616a #eceff4 #900000   #bf616a
+client.placeholder      #000000 #0c0c0c #eceff4 #000000   #0c0c0c
+
+# Title format for windows
+for_window [shell="xdg_shell"] title_format "%title (%app_id)"
+for_window [shell="x_wayland"] title_format "%class - %title"
+
+# Borders
+default_border pixel 3
+default_floating_border pixel 3
+
+# smart_gaps on

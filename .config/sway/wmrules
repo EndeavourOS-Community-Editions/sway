@@ -1,0 +1,26 @@
+# Windows Rules 
+for_window [workspace="6"] layout tabbed
+for_window [app_id="imv"] floating enable, border pixel 3
+for_window [title=".+[Ss]haring (Indicator|your screen)"] floating enable, move to scratchpad
+for_window [title="Copying"] floating enable
+for_window [title="Authenticate"] resize set height 210px
+for_window [app_id="dolphin" window_type="utility"] floating enable
+for_window [title="Discord Updater"] floating enable
+for_window [title="File Already Exist"] floating enable
+for_window [app_id="pavucontrol"] floating enable, sticky enable, resize set width 550 px height 600px, move position cursor, move down 330
+# Gaps on second monitor
+smart_borders no_gaps
+workspace 6 gaps outer 0
+workspace 6 gaps inner 0
+workspace 7 gaps outer 5
+workspace 7 gaps inner 5
+workspace 8 gaps outer 5
+workspace 8 gaps inner 5
+# Assignments
+assign [app_id="lutris"] 4
+assign [app_id="gamehub"] 4
+assign [class="steam"] 4
+assign [class="Signal"] 6
+assign [app_id="discord"] 6
+assign [title="discord"] 6
+

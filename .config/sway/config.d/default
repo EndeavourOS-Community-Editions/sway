@@ -7,8 +7,8 @@ set $down j
 set $up k
 set $right l
 
-# Your preferred terminal emulator
-set $term alacritty
+# Your preferred terminal emulator :  Alt terminal is termite change below + line 1 in application_defaults 
+set $term xfce4-terminal
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened

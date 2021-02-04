@@ -1,15 +1,18 @@
 # Assign workspaces
-assign [app_id="Alacritty"] 1
-for_window [app_id="Alacritty"] focus
+assign [app_id="xfce4-terminal"] 1
+for_window [app_id="xfce4-terminal"] focus
 
 assign [app_id="firefox"] 2
 for_window [app_id="firefox"] focus
 
+assign [class="firefox"] 2
+for_window [class="firefox"] focus
+
 assign [app_id=thunar] 3
 for_window [app_id=thunar] focus
 
-assign [class="tutanota-desktop"] 4
-for_window [class="tutanota-desktop"] focus
+assign [class="Telegram"] 4
+for_window [class="Telegram"] focus
 
 # set floating (nontiling)for apps needing it:
 for_window [class="Yad" instance="yad"] floating enable
