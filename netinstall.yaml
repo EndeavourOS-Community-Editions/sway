@@ -177,7 +177,8 @@
     - sysstat
     - archlinux-xdg-menu
     - htop
-    - alacritty
+    - xfce4-terminal
+    - termite
     - wayland-protocols
     - xorg-xwayland
     - egl-wayland
