@@ -24,7 +24,7 @@ bluez-utils
 network-manager-applet
 sysstat
 htop
-alacritty
+termite
 wayland-protocols
 xorg-xwayland
 egl-wayland
@@ -37,3 +37,4 @@ wl-clipboard
 jq
 xed
 ttf-jetbrains-mono
+xfce4-terminal
