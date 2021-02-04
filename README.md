@@ -27,7 +27,7 @@ Community Edition
 - Screen settings in: `~/.config/sway/config.d/output`
   
 
-## To-Do (as of 24/1/21)
+## To-Do
 - Find bugs and fix
 - Screenshot menu, does not center well, with with width 100 - might just move it to the right
 - Make qt themeing guide 
