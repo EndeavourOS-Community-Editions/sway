@@ -16,8 +16,7 @@
 
 ## To-Do (as of 24/1/21)
 - Find bugs and fix
-- Screenshot menu, does not center well, with with width 100
-- Check if idle settings in sway config makes sense
+- Screenshot menu, does not center well, with with width 100 - might just move it to the right
 - Make qt themeing guide 
 - Write WIKI
 
@@ -27,14 +26,14 @@
  - Background handled by swaybg
  - Gtk3 theme handled by lxappearance
  - Filebrowser = Thunar
- - Default Terminal-Emulator = Alacritty - Termite(ARM)
+ - Default Terminal-Emulator = XFCE4-Terminal and/or Termite
  - Text-Editor = xed
 
 Main shortcuts:
 
 [mod] key is set to the winkey (or should i call it linkey?)
 
- - [mod]+enter = open terminal (alacritty) - (termite ARM)
+ - [mod]+enter = open terminal (XFCE4-Terminal and/or Termite)
  - [mod]+o = open Browser (firefox)
  - [mod]+n = open File Manager (thunar)
  - [mod]+d = app menu (wofi)
@@ -49,6 +48,5 @@ Is set to default for swaywm and can be changed to:
 
 - tabbed: so each new window will open fullscreen as a tab, you can change between window-tabs with mouse or shortcut: [mod]+Left focus left (left arrow key) [mod]+Right focus right (right arrow key)
 
-## Waybar:
 
 
