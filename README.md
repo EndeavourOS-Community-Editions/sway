@@ -1,4 +1,5 @@
-# SwayEOS - unofficial
+# Sway-EndeavourOS Sway-WM setup and theme
+***
 
 ## To Install
 
