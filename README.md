@@ -61,6 +61,6 @@ Is set to default for swaywm and can be changed to:
 
 - tabbed: so each new window will open fullscreen as a tab, you can change between window-tabs with mouse or shortcut: [mod]+Left focus left (left arrow key) [mod]+Right focus right (right arrow key)
 
-![alt text](https://pasteboard.co/JMP4UL4.png)
+
 
 
