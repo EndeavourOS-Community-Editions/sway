@@ -1,0 +1,33 @@
+### Input configuration
+#
+# Example configuration:
+#
+#   input "2:14:SynPS/2_Synaptics_TouchPad" {
+#       dwt enabled
+#       tap enabled
+#       natural_scroll enabled
+#       middle_emulation enabled
+#   }
+#
+# You can get the names of your inputs by running: swaymsg -t get_inputs
+# Read `man 5 sway-input` for more information about this section.
+#
+# Keyboard - Uncomment to Pick - Defualt is ENGLISH (UK)
+#
+# All langauges and varinats in keyboard.conf
+#
+# input * xkb_layout "gb"
+# input * xkb_layout "de"
+# input * xkb_layout "nl"
+
+input * xkb_layout "us"
+
+# You can get the names of your inputs by running: swaymsg -t get_input. 
+# Put your touchpad's ID to replace "1267:12363:ELAN0650:01_04F3:304B_Touchpad" (keep the quotation marks)
+input "1267:12363:ELAN0650:01_04F3:304B_Touchpad" {
+    dwt enabled
+    tap enabled
+    natural_scroll enabled
+    middle_emulation enabled
+}
+

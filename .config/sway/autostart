@@ -1,0 +1,22 @@
+# Autostart
+exec ~/.azotebg
+exec mako
+exec autotiling
+exec /usr/lib/kdeconnectd
+exec kdeconnect-indicator
+exec nm-applet --indicator
+exec mpd ~/.config/mpd/mpd.conf
+exec mpDris2
+exec "syncthing -no-browser"
+exec sed -i 's/hidden-mode=river-auto/hidden-mode=always/g' ~/.config/lavalauncher/config.conf
+exec lavalauncher -c ~/.config/lavalauncher/config.conf
+exec sh /home/bryan/.nix-profile/etc/profile.d/nix.sh
+exec_always /usr/share/sway/scripts/inactive-windows-transparency.py --opacity 0.8
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec mkfifo $SWAYSOCK.wob && tail -f $SWAYSOCK.wob | wob --border-color '#ff5e81ac' --background-color '#cc2e3440' --bar-color '#ff5e81ac'
+exec 'fish -c "set -Ux XDG_CURRENT_DESKTOP sway"'
+
+# Dynamic Wallpaper
+# exec "oguri -c ~/.config/oguri/config"
+# exec dwall -s flcl &
+
