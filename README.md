@@ -73,6 +73,7 @@ Is set to default for swaywm and can be changed to:
 
 - tabbed: so each new window will open fullscreen as a tab, you can change between window-tabs with mouse or shortcut: [mod]+Left focus left (left arrow key) [mod]+Right focus right (right arrow key)
 
-![sway](https://forum.endeavouros.com/uploads/default/original/3X/3/8/380dbcba102eea5ebab9bf4057056eecb11748b5.png)
+![sway](https://forum.endeavouros.com/uploads/default/optimized/3X/b/c/bc09b71d718cb09a8efd4545cc65366c5f855441_2_690x388.png)
+![wofi](https://forum.endeavouros.com/uploads/default/optimized/3X/9/d/9daff7f842bd9db097e0bb9d6be5cf5b65e6baa0_2_690x388.jpeg)
 
 
