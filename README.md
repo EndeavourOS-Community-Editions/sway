@@ -23,6 +23,10 @@ Community Edition
     
     sudo pacman -Syu --needed --noconfirm - < packages-repository.txt
     
+    dbus-launch dconf load / < xed.dconf
+    
+Lightdm Setup is Commented by Default
+
     sudo cp lightdm-gtk-greeter.conf /etc/lightdm/
     
     systemctl enable lightdm
