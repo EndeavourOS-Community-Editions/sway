@@ -125,6 +125,9 @@
     - eos-log-tool
     - keyserver-rank
     - inxi
+    - wayland-protocols
+    - xorg-xwayland
+    - egl-wayland
 - name: "Browser"
   description: "choose your browser."
   hidden: false
@@ -179,9 +182,6 @@
     - htop
     - xfce4-terminal
     - termite
-    - wayland-protocols
-    - xorg-xwayland
-    - egl-wayland
     - gtk-layer-shell
     - ttf-nerd-fonts-symbols
     - xdg-desktop-portal-wlr
