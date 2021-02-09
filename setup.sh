@@ -1,13 +1,19 @@
-#bin/sh
-git clone https://github.com/OdiousImp2604/Sway-EndeavourOS.git
-pushd SwayEOS >/dev/null
-cp -R .config /home/$NEW_USER/
-cp -R .config ~/
-cp .profile ~/
+#bin/bash
+
+if [ -f /tmp/new_username.txt ]
+then
+    NEW_USER=$(cat /tmp/new_username.txt)
+else
+    NEW_USER=$(cat /tmp/$chroot_path/etc/passwd | grep "/home" |cut -d: -f1 |head -1)
+fi
+
+git clone https://github.com/killajoe/SwayEOS.git
+cd SwayEOS
+cp -R .config /home/$NEW_USER/                                               
+chmod -R +x /home/$NEW_USER/.config/sway/scripts
+chmod +x /home/$NEW_USER/.config/waybar/scripts/weather.sh
 cp .profile /home/$NEW_USER/
-cp lightdm-gtk-greeter.conf /etc/lightdm/
-chmod -R +x ~/.config/Sway/scripts /home/$NEW_USER/.config/Sway/scripts
-chmod +x ~/home/$NEW_USER/.config/waybar/scripts/weather.sh
-chown -R $NEW_USER:users /home/$NEW_USER/.config /home/$NEW_USER/.profile
-popd >/dev/null
+chown -R $NEW_USER:$NEW_USER /home/$NEW_USER/.config
+chown $NEW_USER:$NEW_USER /home/$NEW_USER/.profile
+cd ..
 rm -rf SwayEOS
