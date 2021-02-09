@@ -41,8 +41,6 @@ Lightdm Setup is Commented by Default
 
 ## To-Do
 - Find bugs and fix
-- Screenshot menu, does not center well, with with width 100 - might just move it to the right
-- Make qt themeing guide 
 - Write WIKI
 
 
@@ -64,14 +62,24 @@ Main shortcuts:
  - [mod]+d = app menu (wofi)
  - [mod]+q = close focused app [kill]
  - (Shift) Print-key = screenshot/bring up screenshot menu
+ - [mod]+(Shift)+e = power-menu
+ - [mod]+r = resize mode
+ - [mod]+(Shift)+(Space) = float window
+     - {HOLD DOWN} [mod] = drag floating window
+ - [mod]+(Arrow Keys) = switch focus respectively 
+ - [mod]+(Shift)+(Minus) = send to scratchpad
+ - [mod]+(Minus) = cycle through scratchpad
+ 
 
 ## Tiling:
 
 Is set to default for swaywm and can be changed to:
 
-- stacking: Only the focused window in the container is displayed. You get a list of windows at the top of the container.
+- stacking: Only the focused window in the container is displayed. You get a list of windows at the top of the container. 
+   - [mod]+s ([mod]+e = to go back to tiling)
 
-- tabbed: so each new window will open fullscreen as a tab, you can change between window-tabs with mouse or shortcut: [mod]+Left focus left (left arrow key) [mod]+Right focus right (right arrow key)
+- views: swtich between tiling horizontally and vertically
+   - [mod]+e
 
 ![sway](https://forum.endeavouros.com/uploads/default/original/3X/b/c/bc09b71d718cb09a8efd4545cc65366c5f855441.png)
 ![wofi](https://forum.endeavouros.com/uploads/default/original/3X/9/d/9daff7f842bd9db097e0bb9d6be5cf5b65e6baa0.jpeg)
