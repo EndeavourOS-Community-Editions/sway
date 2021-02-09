@@ -1,5 +1,5 @@
 #bin/sh
-git clone https://github.com/OdiousImp2604/SwayEOS.git
+git clone https://github.com/OdiousImp2604/Sway-EndeavourOS.git
 pushd SwayEOS >/dev/null
 cp -R .config /home/$NEW_USER/
 cp -R .config ~/
