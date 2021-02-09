@@ -15,6 +15,7 @@
     - xf86-video-ati
     - xf86-video-fbdev
     - xf86-video-intel
+    - xorg-server
     - xdg-utils
     - xdg-user-dirs
     - gvfs
@@ -146,7 +147,7 @@
 - name: "sway tiling on wayland"
   description: "Sway is a tiling Wayland compositor and a drop-in replacement for the i3 window manager."
   hidden: false
-  selected: false
+  selected: true
   critical: false
   packages:
     - sway
