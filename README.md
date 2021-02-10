@@ -51,6 +51,8 @@ Lightdm Setup is Commented by Default
  - Filebrowser = Thunar
  - Default Terminal-Emulator = XFCE4-Terminal and/or Termite
  - Text-Editor = xed/nano
+ - Bar = Waybar
+ - Sound = Pulseaudio
 
 Main shortcuts:
 
