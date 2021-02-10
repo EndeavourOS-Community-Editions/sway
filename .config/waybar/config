@@ -135,7 +135,7 @@
       		"phone": "",
       		"portable": "",
       		"car": "",
-      		"default": ["墳"]
+      		"default": ["墳"]
 	},
     	"on-click": "pavucontrol",
     	"on-scroll-up": "pamixer -ui 2",
