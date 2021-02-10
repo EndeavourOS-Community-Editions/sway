@@ -56,12 +56,13 @@ Main shortcuts:
 
 [mod] key is set to the winkey (or should i call it linkey?)
 
- - [mod]+enter = open terminal (XFCE4-Terminal and/or Termite)
+ - [mod]+Return = open floating terminal (XFCE4-Terminal)
+ - [mod]+(Shift)+Return = open fixed terminal (Termite)
  - [mod]+o = open Browser (firefox)
  - [mod]+n = open File Manager (thunar)
  - [mod]+d = app menu (wofi)
  - [mod]+q = close focused app [kill]
- - (Shift) Print-key = screenshot/bring up screenshot menu
+ - (Shift)+(Print-Key) = screenshot/bring up screenshot menu
  - [mod]+(Shift)+e = power-menu
  - [mod]+r = resize mode
  - [mod]+(Shift)+(Space) = float window
@@ -78,7 +79,7 @@ Is set to default for swaywm and can be changed to:
 - stacking: Only the focused window in the container is displayed. You get a list of windows at the top of the container. 
    - [mod]+s (Vertical List)
    - [mod]+w (Horizontal List)
-    - navigate lists with [mod]+(Arrow Keys)
+     - navigate lists with [mod]+(Arrow Keys)
    - [mod]+e = to go back to tiling
    
 
