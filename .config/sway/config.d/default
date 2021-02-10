@@ -7,8 +7,9 @@ set $down j
 set $up k
 set $right l
 
-# Your preferred terminal emulator :  Alt terminal is termite change below + line 1 in application_defaults 
-set $term xfce4-terminal
+# Your preferred terminal emulators
+set $term-float xfce4-terminal
+set $term-fixed termite
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
@@ -34,9 +35,12 @@ exec swayidle -w\
 #
 # Basics:
 #
-    # Start a terminal
-    bindsym $mod+Return exec $term
-    
+    # Start a floating terminal
+    bindsym $mod+Return exec $term-float
+      
+    # Start a fixed terminal
+    bindsym $mod+Shift+Return exec $term-fixed 
+         
     # Open the power menu
     bindsym $mod+Shift+e exec $powermenu
 
