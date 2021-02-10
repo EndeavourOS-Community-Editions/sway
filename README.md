@@ -6,7 +6,7 @@ Community Edition (Unoffical - For Now Wink)
 
     git clone https://github.com/OdiousImp2604/Sway-EndeavourOS.git
 
-    cd SwayEOS
+    cd Sway-EndeavourOS
 
     bash sway-install.sh
    
