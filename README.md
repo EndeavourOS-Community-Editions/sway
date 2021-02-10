@@ -76,10 +76,12 @@ Main shortcuts:
 Is set to default for swaywm and can be changed to:
 
 - stacking: Only the focused window in the container is displayed. You get a list of windows at the top of the container. 
-   - [mod]+s ([mod]+e = to go back to tiling)
+   - [mod]+s (Vertical List)
+   - [mod]+w (Horizontal List)
+    - navigate lists with [mod]+(Arrow Keys)
+   - [mod]+e = to go back to tiling
+   
 
-- views: swtich between tiling horizontally and vertically
-   - [mod]+e
 
 ![sway](https://forum.endeavouros.com/uploads/default/original/3X/b/c/bc09b71d718cb09a8efd4545cc65366c5f855441.png)
 ![wofi](https://forum.endeavouros.com/uploads/default/original/3X/9/d/9daff7f842bd9db097e0bb9d6be5cf5b65e6baa0.jpeg)
