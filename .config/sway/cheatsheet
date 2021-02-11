@@ -47,10 +47,10 @@ EndeavourOS Sway-WM CheatSheet :
 +Shift+Up move up
 +Shift+Right move right
 
-# split in horizontal orientation:
+# split in horizontal orientation (changes take place on next opened window):
 +b 
 
-# split in vertical orientation:
+# split in vertical orientation (changes take place on next opened window):
 +v
 
 # enter fullscreen mode for the focused container:
