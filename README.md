@@ -54,7 +54,7 @@ Lightdm Setup is Commented by Default
  - Bar = Waybar
  - Sound = Pulseaudio
 
-Main shortcuts:
+Main shortcuts: ~/.config/sway/cheatsheet
 
 [mod] key is set to the winkey (or should i call it linkey?)
 
