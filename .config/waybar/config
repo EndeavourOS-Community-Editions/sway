@@ -58,9 +58,9 @@
         "format": "  {usage}% ({load})", // Icon: microchip
         "states": {
         "warning": 70,
-        "critical": 90
+        "critical": 90,
         },
-        "on-click": "exec htop",
+        "on-click": "xfce4-terminal -e 'htop'",
 },
  
 "custom/keyboard-layout": {
@@ -70,12 +70,14 @@
       	"format": "  {}", // Icon: keyboard
       	// Signal sent by Sway key binding (~/.config/sway/key-bindings)
       	"signal": 1, // SIGHUP
-      	"tooltip": false
-    	},
+      	"tooltip": false,
+        "on-click": "xed ~/.config/sway/cheatsheet",
+},
  
 "memory": {
         "interval": 5,
         "format": " {}%", // Icon: memory
+        "on-click": "xfce4-terminal -e 'htop'", 
         "states": {
             	"warning": 70,
             	"critical": 90
@@ -87,14 +89,14 @@
         "format-wifi": "  {essid} ({signalStrength}%)", // Icon: wifi
         "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
         "format-disconnected": "⚠  Disconnected",
-        "tooltip-format": "{ifname}: {ipaddr}"
+        "tooltip-format": "{ifname}: {ipaddr}",
+        "on-click": "xfce4-terminal -e 'nmtui'",
 },
 "network#vpn": {
             "interface": "tun0",
             "format": "嬨  {essid} ({signalStrength}%)",
             "format-disconnected": "⚠  Disconnected",
-            "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
-            "on-click": "nm-connection-editor"
+           "tooltip-format": "{ifname}: {ipaddr}/{cidr}",          
 },
  
 "sway/mode": {
