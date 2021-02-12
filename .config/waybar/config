@@ -71,7 +71,7 @@
       	// Signal sent by Sway key binding (~/.config/sway/key-bindings)
       	"signal": 1, // SIGHUP
       	"tooltip": false,
-        "on-click": "xed ~/.config/sway/cheatsheet",
+        "on-click": "~/.config/waybar/scripts/keyhint.sh",
 },
  
 "memory": {
