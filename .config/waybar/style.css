@@ -134,9 +134,11 @@ Arc-Dark Color Scheme
  }
  
 #memory.critical {
-    color: red;
+        color: red;
         animation-name: blink-critical;
         animation-duration: 2s;
+        padding-left:5px;
+        padding-right:5px;
 }
  
 #mode {
