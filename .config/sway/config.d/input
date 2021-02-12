@@ -12,15 +12,12 @@ input type:touchpad {
 
 # Read `man 5 sway-input` for more information about this section.
 #
-# Keyboard - Uncomment to Pick - Defualt is ENGLISH (US)
-#
-# All langauges and varinats in keyboard.conf
-#
-# input * xkb_layout "gb"
-# input * xkb_layout "de"
-# input * xkb_layout "nl"
-input * xkb_layout "us"
+input type:keyboard xkb_layout "us"
 
+exec {
+   'swaymsg input type:keyboard xkb_layout "$(localectl status | grep "X11 Layout" | sed -e "s/^.*X11 Layout://")"'
+   'swaymsg input type:keyboard xkb_variant "$(localectl status | grep "X11 Variant" | sed -e "s/^.*X11 Variant://")"'
+}
 
 
 
