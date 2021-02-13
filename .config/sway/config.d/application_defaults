@@ -14,6 +14,10 @@ for_window [app_id=thunar] focus
 assign [class="Telegram"] 4
 for_window [class="Telegram"] focus
 
+
+for_window [app_id="xed"] focus
+
+
 # set floating (nontiling)for apps needing it:
 for_window [class="Yad" instance="yad"] floating enable
 for_window [app_id="yad"] floating enable
