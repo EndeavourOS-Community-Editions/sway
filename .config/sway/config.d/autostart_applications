@@ -6,3 +6,6 @@ exec mako
 
 # Network Applet
 exec nm-applet --indicator
+
+# Sway Fader
+# exec python3 ~/.config/sway/scripts/swayfader.py      
