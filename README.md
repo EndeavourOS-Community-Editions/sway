@@ -37,6 +37,7 @@ Lightdm Setup is Commented by Default
 
 - Keyboard layout in: `~/.config/sway/config.d/input`
 - Screen settings in: `~/.config/sway/config.d/output`
+- Keybings Cheatsheet: press keyboard icon in waybar
 
 - If your experiencing issus with your cursor - edit file `~/.profile` and comment out `export WLR_NO_HARDWARE_CURSORS=1`     
  
