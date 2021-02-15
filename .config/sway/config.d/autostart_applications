@@ -11,6 +11,9 @@ exec nm-applet --indicator
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+     
+# Welcome App
+exec dex --wait /etc/xdg/autostart/welcome.desktop  
 
 # Sway Fader
 # exec python3 ~/.config/sway/scripts/swayfader.py      
