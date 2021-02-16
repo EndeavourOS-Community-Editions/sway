@@ -74,7 +74,8 @@ Arc-Dark Color Scheme
 #network,
 #pulseaudio,
 #temperature,
-#tray {
+#tray 
+#custom-PBPbattery{
    margin-left:10px;
    margin-right:10px;
    padding:0;

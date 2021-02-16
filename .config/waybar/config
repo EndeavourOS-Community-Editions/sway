@@ -22,6 +22,7 @@
 	        "pulseaudio",
 	        "custom/keyboard-layout",
 	        "battery",
+            //"custom/PBPbattery",
 	        "backlight",
 	        "clock",
 	        "tray",
@@ -43,6 +44,11 @@
     	// "format-good": "", // An empty format will hide the module
     	// "format-full": "",
     	"format-icons": ["", "", "", "", ""]
+},
+
+"custom/PBPbattery": {
+    	"exec": "~/.config/waybar/scripts/PBPbattery.sh",
+    	"format": "{}",
 },
  
  
@@ -195,12 +201,6 @@
     	"on-click": "exec ~/.config/waybar/scripts/power-menu.sh",
     	"tooltip": false,
     	},
+
 }
-"wlr/taskbar": {
-    "format": "{icon}",
-    "icon-size": 14,
-    "icon-theme": "Numix-Circle",
-    "tooltip-format": "{title}",
-    "on-click": "activate",
-    "on-click-middle": "close"
-}
+
