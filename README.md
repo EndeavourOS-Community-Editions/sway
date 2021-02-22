@@ -1,5 +1,5 @@
 # Sway-WM Setup and Theme for EndeavourOS
-Community Edition (Unoffical)
+Community Edition 
 ***
 
 ## To Install
