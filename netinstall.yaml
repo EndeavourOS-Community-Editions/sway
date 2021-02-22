@@ -90,6 +90,7 @@
     - pulseaudio
     - pavucontrol
     - paprefs
+    - pamixer
     - ffmpegthumbnailer
     - poppler-glib
     - libgsf 
