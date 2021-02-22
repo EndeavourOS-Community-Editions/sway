@@ -71,14 +71,14 @@ Arc-Dark Color Scheme
 #custom-keyboard-layout,
 #memory,
 #mode,
+#custom-weather,
 #network,
 #pulseaudio,
 #temperature,
 #tray 
 #custom-PBPbattery{
-   margin-left:10px;
-   margin-right:10px;
-   padding:0;
+      padding:0.3rem 0.6rem;
+      margin: 0px 0px;
 }
 
 
@@ -89,7 +89,7 @@ Arc-Dark Color Scheme
  * -------------------------------------------------------------------------- */
  
 #battery {
-        margin-top:3px;
+        
         animation-timing-function: linear;
         animation-iteration-count: infinite;
         animation-direction: alternate;
@@ -114,7 +114,7 @@ Arc-Dark Color Scheme
 }
 
 #cpu{
- margin-top:2.5px;
+ 
 }
 #cpu.warning {
         color: orange;
@@ -155,7 +155,7 @@ Arc-Dark Color Scheme
 }
 
 #pulseaudio{
- margin-top:2px;
+padding-top:7px;
 } 
 #pulseaudio.muted {
     color: @highlight; 
@@ -170,7 +170,7 @@ Arc-Dark Color Scheme
 }
  
 #workspaces{
-font-size:18px;
+font-size:15px;
 }
 #workspaces button {
     border-bottom: 3px solid transparent;
@@ -200,5 +200,10 @@ font-size:18px;
    margin-left:15px;
    margin-right:10px;
  }   
+
+#backlight.icon{
+ padding-right:1px;
+ font-size: 20px;	
+}
 
 

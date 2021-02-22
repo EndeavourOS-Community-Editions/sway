@@ -4,6 +4,7 @@
       	"position": "top",
 	// If height property would be not present, it'd be calculated dynamically
      "height": 30,
+     "width" : 10,
  
     	"modules-left": [
         	"custom/launcher",
@@ -23,9 +24,11 @@
 	        "custom/keyboard-layout",
 	        "battery",
             //"custom/PBPbattery",
-	        "backlight",
+	        "backlight#icon",
+           "backlight#value",
 	        "clock",
 	        "tray",
+            "custom/weather",
 	        "custom/power",
      	],
  
@@ -40,8 +43,7 @@
     	"format": "{capacity}% {icon}",
     	"format-charging": "{capacity}% ",
     	"format-plugged": "{capacity}% ",
-    	"format-alt": "{time} {icon}",
-    	// "format-good": "", // An empty format will hide the module
+    	 // "format-good": "", // An empty format will hide the module
     	// "format-full": "",
     	"format-icons": ["", "", "", "", ""]
 },
@@ -152,24 +154,29 @@
  
 "custom/weather": {
     	"exec": "~/.config/waybar/scripts/weather.sh",
-    	"format": "{}",
+    	"format": "{text} {icon}",
     	"return-type": "json",
-    	"interval": 600
+    	"interval": 600,
+        "tooltip-format": "{tooltip}"
 },
- 
+
 "tray": {
        	"icon-size": 18,
        	"spacing":10,
  },
  
-"backlight": {
-    	"interval": 5,
-    	"format": "{icon} {percent}%",
-    	"format-alt": "{percent}% {icon}",
-    	"format-alt-click": "click-right",
-    	"format-icons": ["🌕", "🌔", "🌓", "🌒", "🌑"],
+"backlight#icon": {
+    	"format": "{icon}",
+    	"format-icons": [""],
     	"on-scroll-down": "brightnessctl -c backlight set +5%",
     	"on-scroll-up": "brightnessctl -c backlight set 5%-"
+},
+
+"backlight#value" :{
+     "format": "{percent}%",
+     "on-scroll-down": "brightnessctl -c backlight set +5%",
+      "on-scroll-up": "brightnessctl -c backlight set 5%-"
+
 },
  
 "custom/firefox": {
