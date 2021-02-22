@@ -176,7 +176,7 @@
     - lightdm-gtk-greeter
     - lightdm-gtk-greeter-settings
     - acpi
-    - bluez-utlis
+    - bluez-utils
     - network-manager-applet
     - sysstat
     - archlinux-xdg-menu
