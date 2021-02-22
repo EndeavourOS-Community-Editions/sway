@@ -2,11 +2,11 @@
 Community Edition 
 ***
 
-## To Install
+## To Install manually
 
-    git clone https://github.com/OdiousImp2604/Sway-EndeavourOS.git
+    git clone https://github.com/EndeavourOS-Community-Editions/sway.git
 
-    cd Sway-EndeavourOS
+    cd sway
 
     bash sway-install.sh
    
