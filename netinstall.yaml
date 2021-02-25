@@ -190,6 +190,14 @@
     - brightnessctl
     - ttf-jetbrains-mono 
     - xed
+- name: "Zen Kernel"
+  description: "https://github.com/zen-kernel/zen-kernel"
+  hidden: false
+  selected: false
+  critical: false
+  packages:
+    - linux-zen
+    - linux-zen-headers
 - name: "Printing-Support"
   description: "Support for printing (Cups)"
   hidden: false
