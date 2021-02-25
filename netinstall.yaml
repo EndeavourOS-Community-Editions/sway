@@ -190,6 +190,7 @@
     - brightnessctl
     - ttf-jetbrains-mono 
     - xed
+    - dex
 - name: "Zen Kernel"
   description: "https://github.com/zen-kernel/zen-kernel"
   hidden: false
