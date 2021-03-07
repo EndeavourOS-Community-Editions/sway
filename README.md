@@ -4,7 +4,7 @@ Community Edition
 The place where we test and add any new features before pushing to the main repository! Naturally it will mean things will be buggy so use at risk!
 
 ## What is different or to be different?
-- Switch completely to Font Awesome 5 Free to solve the icon sizing problem you face with Nerd
+- FInd a way to make the fonts on waybar look the same....Might maunally add a patched font instead....
 - Find a way to make the tray not look weird when it's empty
 - Anything else anyone would like and makes sense!
 
