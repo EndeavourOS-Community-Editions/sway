@@ -1,6 +1,7 @@
 # Sway-WM Setup and Theme for EndeavourOS
-Community Edition 
-***
+
+**Sway EndeavourOS Community Edition**
+
 ## To Install manually
 
     git clone https://github.com/EndeavourOS-Community-Editions/sway.git
@@ -40,9 +41,8 @@ Lightdm Setup is Commented by Default
 
 - If your experiencing issus with your cursor - edit file `~/.profile` and comment out `export WLR_NO_HARDWARE_CURSORS=1`     
  
-## To-Do
-- Find bugs and fix
-- Write WIKI
+## Get involved at our forum:
+https://forum.endeavouros.com/t/sway-edition-general-conversation
 
 ## Tutorial for sway-wm settings:
 

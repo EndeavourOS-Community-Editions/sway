@@ -13,7 +13,7 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
      
 # Welcome App
-exec dex --wait /etc/xdg/autostart/welcome.desktop  
+exec dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
 
 # Sway Fader
 # exec python3 ~/.config/sway/scripts/swayfader.py      

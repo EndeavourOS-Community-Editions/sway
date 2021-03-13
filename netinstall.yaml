@@ -70,13 +70,16 @@
     - solid
     - mlocate
     - ttf-dejavu
-    - gnu-free-fonts
     - ttf-liberation
     - ttf-bitstream-vera
-    - ttf-ubuntu-font-family
     - cantarell-fonts
     - noto-fonts
-    - noto-fonts-cjk
+    - adobe-source-han-sans-jp-fonts
+    - adobe-source-han-sans-kr-fonts
+    - adobe-source-han-sans-cn-fonts
+    - opendesktop-fonts
+    - ttf-opensans
+    - firefox
     - ttf-croscore
     - ttf-carlito
     - ttf-caladea
@@ -130,21 +133,6 @@
     - wayland-protocols
     - xorg-xwayland
     - egl-wayland
-- name: "Browser"
-  description: "choose your browser."
-  hidden: false
-  selected: false
-  critical: false
-  packages:
-    - firefox
-    - chromium
-    - vivaldi
-    - konqueror
-    - falkon
-    - epiphany
-    - midori
-    - dillo
-    - netsurf
 - name: "sway tiling on wayland"
   description: "Sway is a tiling Wayland compositor and a drop-in replacement for the i3 window manager."
   hidden: false
