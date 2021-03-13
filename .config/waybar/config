@@ -168,17 +168,17 @@
 "backlight#icon": {
     	"format": "{icon}",
     	"format-icons": [""],
-    	"on-scroll-down": "brightnessctl -c backlight set +5%",
-    	"on-scroll-up": "brightnessctl -c backlight set 5%-"
+    	"on-scroll-down": "brightnessctl -c backlight set 5%",
+    	"on-scroll-up": "brightnessctl -c backlight set +5%-"
 },
 
 "backlight#value" :{
      "format": "{percent}%",
-     "on-scroll-down": "brightnessctl -c backlight set +5%",
-      "on-scroll-up": "brightnessctl -c backlight set 5%-"
+     "on-scroll-down": "brightnessctl -c backlight set 5%",
+      "on-scroll-up": "brightnessctl -c backlight set +5%"
 
 },
- 
+
 "custom/firefox": {
     	"format": " ",
     	"on-click": "exec firefox",
