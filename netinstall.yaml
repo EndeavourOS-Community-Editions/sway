@@ -70,13 +70,15 @@
     - solid
     - mlocate
     - ttf-dejavu
-    - gnu-free-fonts
     - ttf-liberation
     - ttf-bitstream-vera
-    - ttf-ubuntu-font-family
     - cantarell-fonts
     - noto-fonts
-    - noto-fonts-cjk
+    - adobe-source-han-sans-jp-fonts
+    - adobe-source-han-sans-kr-fonts
+    - adobe-source-han-sans-cn-fonts
+    - opendesktop-fonts
+    - ttf-opensans
     - firefox
     - ttf-croscore
     - ttf-carlito
