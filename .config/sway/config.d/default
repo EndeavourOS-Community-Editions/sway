@@ -51,7 +51,7 @@ exec swayidle -w\
     bindsym $mod+d exec $menu
     
     # Activities
-    bindsym $mod+p exec ~/.config/wofi/window.sh
+    bindsym $mod+p exec ~/.config/wofi/window.py
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
