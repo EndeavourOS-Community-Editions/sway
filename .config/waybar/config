@@ -95,14 +95,14 @@
 "network": {
       	"interval": 5,
         "format-wifi": "  {essid} ({signalStrength}%)", // Icon: wifi
-        "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
+        "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
         "format-disconnected": "⚠  Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}",
         "on-click": "xfce4-terminal -e 'nmtui'",
 },
 "network#vpn": {
             "interface": "tun0",
-            "format": "嬨  {essid} ({signalStrength}%)",
+            "format": "  {essid} ({signalStrength}%)",
             "format-disconnected": "⚠  Disconnected",
            "tooltip-format": "{ifname}: {ipaddr}/{cidr}",          
 },
