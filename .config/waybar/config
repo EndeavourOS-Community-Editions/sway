@@ -84,7 +84,7 @@
  
 "memory": {
         "interval": 5,
-        "format": " {}%", // Icon: memory
+        "format": " {}%", // Icon: memory
         "on-click": "xfce4-terminal -e 'htop'", 
         "states": {
             	"warning": 70,
@@ -125,9 +125,9 @@
          //"format":"{icon}",
          "format-icons": {
              "1": "",
-             "2": "",
-             "3": "",
-             "4": "",
+             "2": "",
+             "3": "",
+             "4": "",
           }
      },
 "pulseaudio": {
@@ -145,7 +145,7 @@
       		"phone": "",
       		"portable": "",
       		"car": "",
-      		"default": ["墳"]
+      		"default": [""]
 	},
     	"on-click": "pavucontrol",
     	"on-scroll-up": "pamixer -ui 2",
@@ -167,7 +167,7 @@
  
 "backlight#icon": {
     	"format": "{icon}",
-    	"format-icons": [""],
+    	"format-icons": [""],
     	"on-scroll-down": "brightnessctl -c backlight set 5%",
     	"on-scroll-up": "brightnessctl -c backlight set +5%-"
 },
@@ -198,7 +198,7 @@
 },
  
 "custom/launcher": {
-    	"format":" ",
+    	"format":" ",
     	"on-click": "exec wofi -c ~/.config/wofi/config -I",
     	"tooltip": false,
 },
