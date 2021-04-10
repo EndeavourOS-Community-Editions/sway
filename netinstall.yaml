@@ -102,7 +102,6 @@
     - gst-libav
     - gst-plugins-bad
     - gst-plugins-ugly
-    - mplayer
     - libdvdcss
     - efibootmgr
     - dosfstools
@@ -179,6 +178,7 @@
     - ttf-jetbrains-mono 
     - xed
     - dex
+    - celluloid
 - name: "Zen Kernel"
   description: "https://github.com/zen-kernel/zen-kernel"
   hidden: false
