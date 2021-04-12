@@ -179,7 +179,8 @@
     - xed
     - dex
     - celluloid
-    - meld
+    - xorg-xhost
+    - diffuse
 - name: "Zen Kernel"
   description: "https://github.com/zen-kernel/zen-kernel"
   hidden: false
