@@ -179,6 +179,7 @@
     - xed
     - dex
     - celluloid
+    - meld
 - name: "Zen Kernel"
   description: "https://github.com/zen-kernel/zen-kernel"
   hidden: false
