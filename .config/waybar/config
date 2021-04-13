@@ -17,6 +17,7 @@
  
     	"modules-right": [
              "network",
+	        "idle_inhibitor",
 	        "memory",
 	        "cpu",
 	        // "custom/weather",
@@ -33,6 +34,16 @@
      	],
  
 // Modules
+
+
+"idle_inhibitor": {
+  "format": "{icon} ",
+  "format-icons":{
+      "activated": "零",
+      "deactivated": "鈴"
+
+   }
+},
  
 "battery": {
     	"states": {
