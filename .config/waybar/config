@@ -198,7 +198,7 @@
 },
  
 "custom/launcher": {
-    	"format":" ",
+    	"format":" ",
     	"on-click": "exec wofi -c ~/.config/wofi/config -I",
     	"tooltip": false,
 },
