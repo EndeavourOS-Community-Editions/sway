@@ -75,10 +75,11 @@ Arc-Dark Color Scheme
 #network,
 #pulseaudio,
 #temperature,
-#tray 
+#tray,
+#idle_inhibitor,
 #custom-PBPbattery{
       padding:0.5rem 0.6rem;
-      margin: 2px 0px;
+      margin: 1px 0px;
 }
 
 
