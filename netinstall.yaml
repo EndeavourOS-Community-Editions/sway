@@ -182,6 +182,7 @@
     - celluloid
     - xorg-xhost
     - diffuse
+    - imv
 - name: "Zen Kernel"
   description: "https://github.com/zen-kernel/zen-kernel"
   hidden: false
