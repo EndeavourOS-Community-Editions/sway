@@ -39,8 +39,8 @@
 "idle_inhibitor": {
   "format": "{icon} ",
   "format-icons":{
-      "activated": "零",
-      "deactivated": "鈴"
+      "activated": "",
+      "deactivated": ""
 
    }
 },
