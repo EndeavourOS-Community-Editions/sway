@@ -176,6 +176,7 @@
     - xdg-desktop-portal-wlr
     - brightnessctl
     - ttf-jetbrains-mono 
+    - ttf-ubuntu-font-family 
     - xed
     - dex
     - celluloid
