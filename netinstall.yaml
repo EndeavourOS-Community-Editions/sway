@@ -170,7 +170,6 @@
     - archlinux-xdg-menu
     - htop
     - xfce4-terminal
-    - termite
     - gtk-layer-shell
     - ttf-nerd-fonts-symbols
     - xdg-desktop-portal-wlr

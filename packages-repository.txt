@@ -24,7 +24,6 @@ bluez-utils
 network-manager-applet
 sysstat
 htop
-termite
 wayland-protocols
 xorg-xwayland
 egl-wayland
