@@ -1,7 +1,4 @@
 # Assign workspaces
-assign [app_id="termite"] 1
-for_window [app_id="termite"] focus
-
 assign [app_id="firefox"] 2
 for_window [app_id="firefox"] focus
 
