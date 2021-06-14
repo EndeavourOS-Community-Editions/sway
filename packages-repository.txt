@@ -13,7 +13,7 @@ grim
 slurp
 otf-font-awesome
 arc-x-icons-theme
-arc-gtk-theme
+arc-gtk-theme-eos
 gtk-engine-murrine
 mako
 wofi
