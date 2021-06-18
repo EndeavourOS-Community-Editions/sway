@@ -16,7 +16,7 @@
       	],
  
     	"modules-right": [
-             "network",
+                "network",
 	        "idle_inhibitor",
 	        "memory",
 	        "cpu",
@@ -24,12 +24,12 @@
 	        "pulseaudio",
 	        "custom/keyboard-layout",
 	        "battery",
-            //"custom/PBPbattery",
+                //"custom/PBPbattery",
 	        "backlight#icon",
-           "backlight#value",
+                "backlight#value",
 	        "clock",
 	        "tray",
-            "custom/weather",
+                "custom/weather",
 	        "custom/power",
      	],
  
@@ -186,7 +186,7 @@
 "backlight#value" :{
      "format": "{percent}%",
      "on-scroll-down": "brightnessctl -c backlight set 5%",
-      "on-scroll-up": "brightnessctl -c backlight set +5%"
+     "on-scroll-up": "brightnessctl -c backlight set +5%"
 
 },
 
