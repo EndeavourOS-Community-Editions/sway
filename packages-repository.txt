@@ -17,8 +17,7 @@ arc-gtk-theme-eos
 gtk-engine-murrine
 mako
 wofi
-lightdm
-lightdm-gtk-greeter
+ly
 acpi
 bluez-utils
 network-manager-applet
