@@ -11,7 +11,7 @@ file-roller
 thunar-volman
 grim
 slurp
-otf-font-awesome
+awesome-terminal-fonts
 arc-x-icons-theme
 arc-gtk-theme-eos
 gtk-engine-murrine
