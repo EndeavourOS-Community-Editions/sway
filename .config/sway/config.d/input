@@ -5,9 +5,9 @@
 # Put your touchpad's ID to replace "Touchpad-ID" (keep the quotation marks)
 
 input type:touchpad {
-      dwt enabled
-      tap enabled
-      natural_scroll enabled
+    dwt enabled
+    tap enabled
+    natural_scroll enabled
 }
 
 # Read `man 5 sway-input` for more information about this section.
@@ -15,9 +15,6 @@ input type:touchpad {
 input type:keyboard xkb_layout "us"
 
 exec_always {
-   'swaymsg input type:keyboard xkb_layout "$(localectl status | grep "X11 Layout" | sed -e "s/^.*X11 Layout://")"'
-   'swaymsg input type:keyboard xkb_variant "$(localectl status | grep "X11 Variant" | sed -e "s/^.*X11 Variant://")"'
+    'swaymsg input type:keyboard xkb_layout "$(localectl status | grep "X11 Layout" | sed -e "s/^.*X11 Layout://")"'
+    'swaymsg input type:keyboard xkb_variant "$(localectl status | grep "X11 Variant" | sed -e "s/^.*X11 Variant://")"'
 }
-
-
-
