@@ -29,7 +29,7 @@
         "backlight#value",
         "clock",
         "tray",
-        "custom/weather",
+        //"custom/weather",
         "custom/power",
     ],
 
