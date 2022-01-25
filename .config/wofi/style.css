@@ -7,13 +7,12 @@ Arc-Dark Color Scheme
 @define-color base2 #40455;
 @define-color base3  #4b5160;
 
-
 *{
     font-family: UbuntuMono;
 }
 
 window {
-	border: 1px solid @highlight;
+    border: 1px solid @highlight;
 }
 
 #input {
@@ -26,7 +25,6 @@ window {
 
 #inner-box {
     background-color: @base3;
-
 }
 
 #outer-box {
@@ -35,21 +33,15 @@ window {
     background-color: @base2;
 }
 
-#scroll {
-}
-
 #text {
-padding: 5px;
-color: white;
+    padding: 5px;
+    color: white;
 }
 
-#entry:nth-child(even){
+#entry:nth-child(even) {
     background-color: @base1;
 }
 
 #entry:selected {
     background-color: @highlight;
-}
-
-#text:selected {
 }

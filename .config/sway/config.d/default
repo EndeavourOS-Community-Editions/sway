@@ -28,15 +28,15 @@ exec swayidle -w\
 # resumed. It will also lock your screen before your computer goes to sleep.
 
 ## Lock Screen
- bindsym $mod+f1 exec ~/.config/sway/scripts/lockman.sh
+    bindsym $mod+f1 exec ~/.config/sway/scripts/lockman.sh
 
 ### Key bindings
 #
 # Basics:
 #
     # Start a floating terminal
-    bindsym $mod+Return exec $term-float    
-         
+    bindsym $mod+Return exec $term-float
+
     # Open the power menu
     bindsym $mod+Shift+e exec $powermenu
 
@@ -45,7 +45,7 @@ exec swayidle -w\
 
     # Start your launcher
     bindsym $mod+d exec $menu
-    
+
     # Activities
     bindsym $mod+p exec ~/.config/wofi/windows.py
 
@@ -156,27 +156,28 @@ mode "resize" {
     # up will shrink the containers height
     # down will grow the containers height
     bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
     bindsym $right resize grow width 10px
+    bindsym $up resize shrink height 10px
+    bindsym $down resize grow height 10px
 
     # Ditto, with arrow keys
     bindsym Left resize shrink width 10px
-    bindsym Down resize grow height 10px
-    bindsym Up resize shrink height 10px
     bindsym Right resize grow width 10px
+    bindsym Up resize shrink height 10px
+    bindsym Down resize grow height 10px
 
     # Return to default mode
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+
 bindsym $mod+r mode "resize"
 
 # Resize floating windows with mouse scroll:
-bindsym --whole-window --border $mod+button4 resize shrink height 5 px or 5 ppt
-bindsym --whole-window --border $mod+button5 resize grow height 5 px or 5 ppt
-bindsym --whole-window --border $mod+shift+button4 resize shrink width 5 px or 5 ppt
-bindsym --whole-window --border $mod+shift+button5 resize grow width 5 px or 5 ppt
+    bindsym --whole-window --border $mod+button4 resize shrink height 5 px or 5 ppt
+    bindsym --whole-window --border $mod+button5 resize grow height 5 px or 5 ppt
+    bindsym --whole-window --border $mod+Shift+button4 resize shrink width 5 px or 5 ppt
+    bindsym --whole-window --border $mod+Shift+button5 resize grow width 5 px or 5 ppt
 
 #
 # Volume
@@ -209,4 +210,4 @@ bindsym --whole-window --border $mod+shift+button5 resize grow width 5 px or 5 p
 #
 # Keybindings List
 #
-   bindsym $mod+t exec xed ~/.config/sway/cheatsheet    
+    bindsym $mod+t exec xed ~/.config/sway/cheatsheet
