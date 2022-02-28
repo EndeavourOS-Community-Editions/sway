@@ -64,7 +64,7 @@ def build_wofi_string(windows):
 # Executes wofi with the given input string
 def show_wofi(windows):
 
-    command="wofi -c ~/.config/wofi/menu -s ~/.config/wofi/sway.css -p \"Windows: \" -d -i --hide-scroll"
+    command="wofi -c ~/.config/wofi/menu -s ~/.config/wofi/style.css -p \"Windows: \" -d -i --hide-scroll"
     
     process = subprocess.Popen(command,shell=True,stdin=subprocess.PIPE,stdout=subprocess.PIPE)
     return process.communicate(input=windows)[0]
