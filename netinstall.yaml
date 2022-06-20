@@ -160,7 +160,6 @@
     - gtk-engine-murrine
     - mako
     - wofi
-    - ly
     - acpi
     - bluez-utils
     - network-manager-applet
