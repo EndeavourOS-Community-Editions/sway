@@ -25,13 +25,11 @@
     
     dbus-launch dconf load / < xed.dconf
     
-Lightdm Setup is Commented by Default
-
-    sudo cp lightdm-gtk-greeter.conf /etc/lightdm/
+SDDM is the default display manager
     
-    systemctl enable lightdm
+    systemctl enable sddm.service
     
-    systemctl start lightdm
+    systemctl start sddm.service
     
 ## Post install
 
