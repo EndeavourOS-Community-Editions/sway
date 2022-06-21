@@ -194,7 +194,7 @@
 
     "custom/terminal": {
         "format": " ",
-        "on-click": "exec alacritty",
+        "on-click": "exec xfce4-terminal",
         "tooltip": false
     },
 
