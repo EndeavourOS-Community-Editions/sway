@@ -2,7 +2,9 @@
 
 **Sway EndeavourOS Community Edition**
 
-## To Install manually
+[![Maintenance](https://img.shields.io/maintenance/yes/2022.svg)]()
+
+## To Install Manually
 
     git clone https://github.com/EndeavourOS-Community-Editions/sway.git
 
