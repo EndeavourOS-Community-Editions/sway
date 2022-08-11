@@ -160,12 +160,12 @@
         "on-scroll-down": "pamixer -ud 2",
     },
 
+    // to use the weather module replace <your_location> with your city or town
+    // note: do not use spaces: new york would be newyork
     "custom/weather": {
-        "exec": "~/.config/waybar/scripts/weather.sh",
-        "format": "{text} {icon}",
+        "exec": "~/.config/waybar/scripts/weather.sh <your_location>", 
         "return-type": "json",
         "interval": 600,
-        "tooltip-format": "{tooltip}"
     },
 
     "tray": {
