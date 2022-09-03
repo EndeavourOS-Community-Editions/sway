@@ -168,7 +168,7 @@
     - htop
     - xfce4-terminal
     - gtk-layer-shell
-    - ttf-nerd-fonts-symbols
+    - ttf-nerd-fonts-symbols-2048-em
     - xdg-desktop-portal-wlr
     - brightnessctl
     - ttf-jetbrains-mono 
