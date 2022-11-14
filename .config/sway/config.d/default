@@ -7,6 +7,14 @@ set $down j
 set $up k
 set $right l
 
+# audio control
+set $sink_volume pactl get-sink-volume @DEFAULT_SINK@ | grep '^Volume:' | cut -d / -f 2 | tr -d ' ' | sed 's/%//'
+set $source_volume pactl get-source-volume @DEFAULT_SOURCE@ | grep '^Volume:' | cut -d / -f 2 | tr -d ' ' | sed 's/%//'
+set $volume_down $(pactl set-sink-volume @DEFAULT_SINK@ -5% && $sink_volume)
+set $volume_up $(pactl set-sink-volume @DEFAULT_SINK@ +5% && $sink_volume)
+set $volume_mute $(pactl set-sink-mute @DEFAULT_SINK@ toggle && pactl get-sink-mute @DEFAULT_SINK@ | sed -En "/no/ s/.*/$($sink_volume)/p; /yes/ s/.*/0/p")
+set $mic_mute $(pactl set-source-mute @DEFAULT_SOURCE@ toggle && pactl get-source-mute @DEFAULT_SOURCE@ | sed -En "/no/ s/.*/$($source_volume)/p; /yes/ s/.*/0/p")
+
 # Your preferred terminal emulators
 set $term-float xfce4-terminal
 
@@ -182,9 +190,15 @@ bindsym $mod+r mode "resize"
 #
 # Volume
 #
-    bindsym --locked XF86AudioRaiseVolume exec pamixer -ui 2
-    bindsym --locked XF86AudioLowerVolume exec pamixer -ud 2
-    bindsym --locked XF86AudioMute exec pamixer -t
+    # Control volume trough pamixer
+    # bindsym --locked XF86AudioRaiseVolume exec pamixer -ui 2
+    # bindsym --locked XF86AudioLowerVolume exec pamixer -ud 2
+    # bindsym --locked XF86AudioMute exec pamixer -t
+    
+    # Control volume directly trough pactl
+    bindsym --locked XF86AudioRaiseVolume exec $volume_up
+    bindsym --locked XF86AudioLowerVolume exec $volume_down
+    bindsym --locked XF86AudioMute exec $volume_mute
 #
 # Player
 #
