@@ -156,8 +156,8 @@
             "default": [""]
         },
         "on-click": "pavucontrol",
-        "on-scroll-up": "pamixer -ui 2",
-        "on-scroll-down": "pamixer -ud 2",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%",
     },
 
     // to use the weather module replace <your_location> with your city or town
