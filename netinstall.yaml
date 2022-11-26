@@ -93,10 +93,9 @@
     - pulseaudio
     - pavucontrol
     - paprefs
-    - pamixer
     - ffmpegthumbnailer
     - poppler-glib
-    - libgsf 
+    - libgsf
     - libopenraw
     - freetype2
     - gst-libav
@@ -125,7 +124,7 @@
     - eos-hooks
     - nvidia-installer-dkms
     - mkinitcpio-openswap
-    - pcurses    
+    - pcurses
     - eos-log-tool
     - keyserver-rank
     - inxi
@@ -171,8 +170,8 @@
     - ttf-nerd-fonts-symbols-2048-em
     - xdg-desktop-portal-wlr
     - brightnessctl
-    - ttf-jetbrains-mono 
-    - ttf-ubuntu-font-family 
+    - ttf-jetbrains-mono
+    - ttf-ubuntu-font-family
     - xed
     - dex
     - celluloid
@@ -193,17 +192,17 @@
   selected: false
   critical: false
   packages:
-    - cups 
-    - cups-filters 
-    - cups-pdf 
-    - ghostscript 
-    - gsfonts 
+    - cups
+    - cups-filters
+    - cups-pdf
+    - ghostscript
+    - gsfonts
     - foomatic-db-engine
-    - foomatic-db 
-    - foomatic-db-ppds 
-    - foomatic-db-nonfree 
-    - foomatic-db-nonfree-ppds 
-    - gutenprint 
+    - foomatic-db
+    - foomatic-db-ppds
+    - foomatic-db-nonfree
+    - foomatic-db-nonfree-ppds
+    - gutenprint
     - foomatic-db-gutenprint-ppds
     - splix
     - system-config-printer
@@ -225,5 +224,3 @@
   packages:
     - orca
     - mousetweaks
-
-  

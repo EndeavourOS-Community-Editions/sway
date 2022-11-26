@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Easy setup for testing
@@ -10,4 +9,3 @@ chmod -R +x ~/.config/sway/scripts
 chmod -R +x ~/.config/waybar/scripts
 sudo pacman -Syu --needed --noconfirm - < packages-repository.txt
 dbus-launch dconf load / < xed.dconf
-
