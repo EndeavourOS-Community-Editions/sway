@@ -21,7 +21,7 @@
   Edition and make sure you join the Forum or our Telegram. We'd love to hear
   from you!
 
-MOD = windows key
+MOD key is set to the WINKEY/LINKEY
 
 # start floating xfce4-terminal
 MOD+Return
