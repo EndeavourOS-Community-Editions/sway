@@ -1,17 +1,17 @@
 EndeavourOS Sway-WM CheatSheet :
 
-- Hello! Welcome to EndeavourOS and our Sway-WM Edition! Now we'll admit this is not vanilla Sway and it wasn't desinged to be. It is loosely themed around the ArcDark
-colorscheme chosen for it's stability and ease of implementation. The default bar is Waybar not Swaybar - once again chosen it's ease of use and stability as well
+- Hello and welcome to EndeavourOS Sway Edition! We'll admit this is not vanilla Sway and it isn't desinged to be. It's loosely themed around the ArcDark
+colorscheme chosen for stability and ease of implementation. The default bar is Waybar, not Swaybar -- once again chosen for ease of use, stability and
 the options it offers.
 
-- Sway is documentated through man pages unlike i3.To get a overview of what to expect you can read 'man 5 sway'. The pages are then spilt into topics - some the
-important ones are listed at the bottom of the document. Waybar is also documented through man pages - 'man 5 waybar'.
+- Sway is documented through man pages -- unlike i3. To get a overview of what to expect, read 'man 5 sway'. The pages are spilt into topics. Some of the
+important ones are listed at the bottom of the document. Waybar is also documented through man pages, see 'man 5 waybar'.
 
-- Our file structure is spilt for easier use - the names of the files eg; 'output' referring to the part they play.
+- Our file structure is split for easier use. The names of the files (e.g. 'output') refer to the part they play.
 
-- If your experiencing issus with your cursor - edit file '~/.profile' and comment out 'export WLR_NO_HARDWARE_CURSORS=1'
+- If you experience issues with your cursor, edit '~/.profile' and comment out 'export WLR_NO_HARDWARE_CURSORS=1'
 
-- Other than that enjoy your time here and welcome! You can join the Forum or our Telegram - we'd love to hear from you!
+- We hope you enjoy your time with it. Again, welcome to EndeavorOS Sway Edition and make sure you join the Forum or our Telegram. We'd love to hear from you!
 
  = windows key
 
