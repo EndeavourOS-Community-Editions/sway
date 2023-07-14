@@ -1,22 +1,22 @@
-EndeavourOS Sway-WM CheatSheet : 
+EndeavourOS Sway-WM CheatSheet :
 
 - Hello! Welcome to EndeavourOS and our Sway-WM Edition! Now we'll admit this is not vanilla Sway and it wasn't desinged to be. It is loosely themed around the ArcDark
-colorscheme chosen for it's stability and ease of implementation. The default bar is Waybar not Swaybar - once again chosen it's ease of use and stability as well 
-the options it offers. 
+colorscheme chosen for it's stability and ease of implementation. The default bar is Waybar not Swaybar - once again chosen it's ease of use and stability as well
+the options it offers.
 
-- Sway is documentated through man pages unlike i3.To get a overview of what to expect you can read 'man 5 sway'. The pages are then spilt into topics - some the 
-important ones are listed at the bottom of the document. Waybar is also documented through man pages - 'man 5 waybar'. 
+- Sway is documentated through man pages unlike i3.To get a overview of what to expect you can read 'man 5 sway'. The pages are then spilt into topics - some the
+important ones are listed at the bottom of the document. Waybar is also documented through man pages - 'man 5 waybar'.
 
-- Our file structure is spilt for easier use - the names of the files eg; 'output' referring to the part they play. 
+- Our file structure is spilt for easier use - the names of the files eg; 'output' referring to the part they play.
 
 - If your experiencing issus with your cursor - edit file '~/.profile' and comment out 'export WLR_NO_HARDWARE_CURSORS=1'
 
-- Other than that enjoy your time here and welcome! You can join the Forum or our Telegram - we'd love to hear from you! 
+- Other than that enjoy your time here and welcome! You can join the Forum or our Telegram - we'd love to hear from you!
 
  = windows key
 
 # start floating xfce4-terminal
-+Return 
++Return
 
 # start fixed termite-terminal
 +Shift+Return
@@ -64,7 +64,7 @@ important ones are listed at the bottom of the document. Waybar is also document
 +Shift+Right move right
 
 # split in horizontal orientation (changes take place on next opened window):
-+b 
++b
 
 # split in vertical orientation (changes take place on next opened window):
 +v
@@ -136,13 +136,13 @@ Return or Escape
    +Shift+6 move container to workspace number 6
    +Shift+7 move container to workspace number 7
    +Shift+8 move container to workspace number 8
-   +Shift+9 move container to workspace number 9  
+   +Shift+9 move container to workspace number 9
    +Shift+0 move container to workspace number 10
 
 
 # Multimedia Keys (be aware that these may not work for every keyboard):
 They are enabled -  you may need to hold down the function key while doing so.
-  
+
    # Screenshots:
     PrintSrc for full screenshot
     Shift+PrintSrc for screenshot options
@@ -158,22 +158,17 @@ They are enabled -  you may need to hold down the function key while doing so.
     # You can get the names of your inputs by running: swaymsg -t get_inputs
     # Put your touchpad's IDENFICATOR to replace "Touchpad-ID" (keep the quotation marks)
     # Read `man 5 sway-input` for more information about this section.
-  
+
   # Output - ~/.config/sway/config.d/output
     # You can get the names of your outputs by running: swaymsg -t get_outputs
     # Read `man 5 sway-output` for more information about this section.
-  
+
   # Wallpaper - ~/.config/sway/config.d/theme
     # exec swaybg -i /path/to/wallpaper
-  
+
   # Waybar - ~/.config/waybar/config : ~/.config/waybar/style.css
     # It is an external bar we have chosen because of the option's it allows.
     # If you wish to use the default swaybar - ~/.config/sway/config.d/theme and change waybar to sway-bar
     # Read `man 5 sway-bar` for more information about this section
-  
+
   # Autostart - ~/.config/sway/config.d/autostart_applications
-
-
-  
-    
-
