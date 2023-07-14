@@ -1,17 +1,25 @@
 # EndeavourOS Sway Edition Cheatsheet
 
-- Hello and welcome to EndeavourOS Sway Edition! We'll admit this is not vanilla Sway and it isn't desinged to be. It's loosely themed around the ArcDark
-colorscheme chosen for stability and ease of implementation. The default bar is Waybar, not Swaybar -- once again chosen for ease of use, stability and
-the options it offers.
+- Hello and welcome to EndeavourOS Sway Edition! We'll admit this is not
+  vanilla Sway and it isn't desinged to be. It's loosely themed around the
+  ArcDark colorscheme chosen for stability and ease of implementation. The
+  default bar is Waybar, not Swaybar -- once again chosen for ease of use,
+  stability and the options it offers.
 
-- Sway is documented through man pages -- unlike i3. To get a overview of what to expect, read 'man 5 sway'. The pages are spilt into topics. Some of the
-important ones are listed at the bottom of the document. Waybar is also documented through man pages, see 'man 5 waybar'.
+- Sway is documented through man pages -- unlike i3. To get a overview of what
+  to expect, read 'man 5 sway'. The pages are spilt into topics. Some of the
+  important ones are listed at the bottom of the document. Waybar is also
+  documented through man pages, see 'man 5 waybar'.
 
-- Our file structure is split for easier use. The names of the files (e.g. 'output') refer to the part they play.
+- Our file structure is split for easier use. The names of the files (e.g.
+  'output') refer to the part they play.
 
-- If you experience issues with your cursor, edit '~/.profile' and comment out 'export WLR_NO_HARDWARE_CURSORS=1'
+- If you experience issues with your cursor, edit '~/.profile' and comment out
+  'export WLR_NO_HARDWARE_CURSORS=1'
 
-- We hope you enjoy your time with it. Again, welcome to EndeavorOS Sway Edition and make sure you join the Forum or our Telegram. We'd love to hear from you!
+- We hope you enjoy your time with it. Again, welcome to EndeavorOS Sway
+  Edition and make sure you join the Forum or our Telegram. We'd love to hear
+  from you!
 
 MOD = windows key
 
