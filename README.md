@@ -1,3 +1,6 @@
+## unmaintained needs contributors or maintainer
+
+
 # Sway-WM Setup and Theme for EndeavourOS
 
 **Sway EndeavourOS Community Edition**
