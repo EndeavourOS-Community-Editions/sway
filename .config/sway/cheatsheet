@@ -1,103 +1,111 @@
-EndeavourOS Sway-WM CheatSheet : 
+# EndeavourOS Sway Edition Cheatsheet
 
-- Hello! Welcome to EndeavourOS and our Sway-WM Edition! Now we'll admit this is not vanilla Sway and it wasn't desinged to be. It is loosely themed around the ArcDark
-colorscheme chosen for it's stability and ease of implementation. The default bar is Waybar not Swaybar - once again chosen it's ease of use and stability as well 
-the options it offers. 
+- Hello and welcome to EndeavourOS Sway Edition! We'll admit this is not
+  vanilla Sway and it isn't desinged to be. It's loosely themed around the
+  ArcDark colorscheme chosen for stability and ease of implementation. The
+  default bar is Waybar, not Swaybar -- once again chosen for ease of use,
+  stability and the options it offers.
 
-- Sway is documentated through man pages unlike i3.To get a overview of what to expect you can read 'man 5 sway'. The pages are then spilt into topics - some the 
-important ones are listed at the bottom of the document. Waybar is also documented through man pages - 'man 5 waybar'. 
+- Sway is documented through man pages -- unlike i3. To get a overview of what
+  to expect, read 'man 5 sway'. The pages are spilt into topics. Some of the
+  important ones are listed at the bottom of the document. Waybar is also
+  documented through man pages, see 'man 5 waybar'.
 
-- Our file structure is spilt for easier use - the names of the files eg; 'output' referring to the part they play. 
+- Our file structure is split for easier use. The names of the files (e.g.
+  'output') refer to the part they play.
 
-- If your experiencing issus with your cursor - edit file '~/.profile' and comment out 'export WLR_NO_HARDWARE_CURSORS=1'
+- If you experience issues with your cursor, edit '~/.profile' and comment out
+  'export WLR_NO_HARDWARE_CURSORS=1'
 
-- Other than that enjoy your time here and welcome! You can join the Forum or our Telegram - we'd love to hear from you! 
+- We hope you enjoy your time with it. Again, welcome to EndeavorOS Sway
+  Edition and make sure you join the Forum or our Telegram. We'd love to hear
+  from you!
 
- = windows key
+MOD key is set to the WINKEY/LINKEY
 
 # start floating xfce4-terminal
-+Return 
+MOD+Return
 
 # start fixed termite-terminal
-+Shift+Return
+MOD+Shift+Return
 
 # kill focused window
-+q
+MOD+q
 
 # Application menu - wofi:
-+d
+MOD+d
 
 # Activities:
-+p
+MOD+p
 
 # Power-Menu:
-+Shift+e
+MOD+Shift+e
 
 # Lock the system
-+f1
+MOD+f1
 
 # reload the configuration file
-+Shift+c
+MOD+Shift+c
 
 # change window focus,like vim
-+h focus left
-+j focus down
-+k focus up
-+l focus right
+MOD+h focus left
+MOD+j focus down
+MOD+k focus up
+MOD+l focus right
 
 # alternatively, you can use the cursor keys:
-+Left focus left
-+Down focus down
-+Up focus up
-+Right focus right
+MOD+Left focus left
+MOD+Down focus down
+MOD+Up focus up
+MOD+Right focus right
 
 # move a focused window
-+Shift+h move left
-+Shift+j move down
-+Shift+k move up
-+Shift+l move right
+MOD+Shift+h move left
+MOD+Shift+j move down
+MOD+Shift+k move up
+MOD+Shift+l move right
 
 # alternatively, you can use the cursor keys:
-+Shift+Left move left
-+Shift+Down move down
-+Shift+Up move up
-+Shift+Right move right
+MOD+Shift+Left move left
+MOD+Shift+Down move down
+MOD+Shift+Up move up
+MOD+Shift+Right move right
 
 # split in horizontal orientation (changes take place on next opened window):
-+b 
+MOD+b
 
 # split in vertical orientation (changes take place on next opened window):
-+v
+MOD+v
 
 # enter fullscreen mode for the focused container:
-+f fullscreen toggle
+MOD+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split):
-+s layout stacking
-+w layout tabbed
-+e layout toggle split
+MOD+s layout stacking
+MOD+w layout tabbed
+MOD+e layout toggle split
 
 # toggle tiling / floating:
-+Shift+space floating toggle
+MOD+Shift+space floating toggle
 
 # change focus between tiling / floating windows:
-+space focus mode_toggle
+MOD+space focus mode_toggle
 
 # focus the parent container:
-+a focus parent
+MOD+a focus parent
 
 # resize floating window:
-+right mouse button
+MOD+right mouse button
 
 # move floating window:
-+left mouse button
+MOD+left mouse button
 
 # scratchpad:
-+Shift+Minus move scratchpad
-+minus scratchpad cycle
+MOD+Shift+Minus move scratchpad
+MOD+minus scratchpad cycle
 
 # resize mode:
-+r
+MOD+r
 
 # resize,like vim:
 h focus left
@@ -117,39 +125,39 @@ Return or Escape
 # Workspaces:
 #
  # Switch to workspace
-   +1 workspace number 1
-   +2 workspace number 2
-   +3 workspace number 3
-   +4 workspace number 4
-   +5 workspace number 5
-   +6 workspace number 6
-   +7 workspace number 7
-   +8 workspace number 8
-   +9 workspace number 9
-   +0 workspace number 10
+   MOD+1 workspace number 1
+   MOD+2 workspace number 2
+   MOD+3 workspace number 3
+   MOD+4 workspace number 4
+   MOD+5 workspace number 5
+   MOD+6 workspace number 6
+   MOD+7 workspace number 7
+   MOD+8 workspace number 8
+   MOD+9 workspace number 9
+   MOD+0 workspace number 10
   # Move focused container to workspace:
-   +Shift+1 move container to workspace number 1
-   +Shift+2 move container to workspace number 2
-   +Shift+3 move container to workspace number 3
-   +Shift+4 move container to workspace number 4
-   +Shift+5 move container to workspace number 5
-   +Shift+6 move container to workspace number 6
-   +Shift+7 move container to workspace number 7
-   +Shift+8 move container to workspace number 8
-   +Shift+9 move container to workspace number 9  
-   +Shift+0 move container to workspace number 10
+   MOD+Shift+1 move container to workspace number 1
+   MOD+Shift+2 move container to workspace number 2
+   MOD+Shift+3 move container to workspace number 3
+   MOD+Shift+4 move container to workspace number 4
+   MOD+Shift+5 move container to workspace number 5
+   MOD+Shift+6 move container to workspace number 6
+   MOD+Shift+7 move container to workspace number 7
+   MOD+Shift+8 move container to workspace number 8
+   MOD+Shift+9 move container to workspace number 9
+   MOD+Shift+0 move container to workspace number 10
 
 
 # Multimedia Keys (be aware that these may not work for every keyboard):
 They are enabled -  you may need to hold down the function key while doing so.
-  
+
    # Screenshots:
     PrintSrc for full screenshot
     Shift+PrintSrc for screenshot options
 
 # App Shortcuts:
-+n thunar
-+o firefox
+MOD+n thunar
+MOD+o firefox
 
 
 # Other Things:
@@ -158,22 +166,17 @@ They are enabled -  you may need to hold down the function key while doing so.
     # You can get the names of your inputs by running: swaymsg -t get_inputs
     # Put your touchpad's IDENFICATOR to replace "Touchpad-ID" (keep the quotation marks)
     # Read `man 5 sway-input` for more information about this section.
-  
+
   # Output - ~/.config/sway/config.d/output
     # You can get the names of your outputs by running: swaymsg -t get_outputs
     # Read `man 5 sway-output` for more information about this section.
-  
+
   # Wallpaper - ~/.config/sway/config.d/theme
     # exec swaybg -i /path/to/wallpaper
-  
+
   # Waybar - ~/.config/waybar/config : ~/.config/waybar/style.css
     # It is an external bar we have chosen because of the option's it allows.
     # If you wish to use the default swaybar - ~/.config/sway/config.d/theme and change waybar to sway-bar
     # Read `man 5 sway-bar` for more information about this section
-  
+
   # Autostart - ~/.config/sway/config.d/autostart_applications
-
-
-  
-    
-
