@@ -6,6 +6,12 @@
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 #
+# You can also bind workspaces 1,2,3 to specific outputs
+#
+# workspace 1 output eDP-2
+# workspace 2 output HDMI-A-1
+# workspace 3 output DP-1
+#
 # Wacom Tablet - Example
 #   input "1386:884:Wacom_Intuos_S_Pad" map_to_output HDMI-A-1
 #   input "1386:884:Wacom_Intuos_S_Pen" map_to_output HDMI-A-1
