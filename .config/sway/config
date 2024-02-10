@@ -5,10 +5,7 @@ exec ~/set_once.sh
 #
 # Read `man 5 sway` for a complete reference.
 
-# announce a running sway session to systemd
-exec systemctl --user import-environment XDG_SESSION_TYPE XDG_CURRENT_DESKTOP
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
-
+#
 # user config directory
 include $HOME/.config/sway/config.d/*
 

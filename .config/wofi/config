@@ -15,3 +15,4 @@ prompt=
 image_size=15
 display_generic=true
 location=center
+columns=2
