@@ -17,6 +17,7 @@ gtk-engine-murrine
 mako
 wofi
 sddm
+eos-sddm-theme
 acpi
 bluez-utils
 network-manager-applet
