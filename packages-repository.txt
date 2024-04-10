@@ -3,7 +3,7 @@ swayidle
 swaylock
 swaybg
 waybar
-lxappearance
+nwg-look
 polkit-gnome
 thunar
 thunar-archive-plugin
