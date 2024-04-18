@@ -1,4 +1,5 @@
 sway
+sway-contrib
 swayidle
 swaylock
 swaybg
