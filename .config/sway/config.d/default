@@ -219,7 +219,7 @@ bindsym $mod+r mode "resize"
 #
 # Screenshots
 #
-    bindsym print exec /usr/share/sway/scripts/grimshot --notify save output
+    bindsym print exec /usr/share/sway-contrib/grimshot --notify save output
     bindsym Shift+print exec ~/.config/sway/scripts/screenshot.sh
 #
 # Keybindings List
