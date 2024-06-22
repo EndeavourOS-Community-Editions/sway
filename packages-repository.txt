@@ -38,3 +38,4 @@ xed
 ttf-jetbrains-mono
 ttf-ubuntu-font-family
 xfce4-terminal
+nwg-look
