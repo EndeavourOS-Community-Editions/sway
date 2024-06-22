@@ -14,4 +14,5 @@ cd ..
 rm -rf sway
 wget https://raw.githubusercontent.com/EndeavourOS-Community-Editions/sway/main/packages-repository.txt
 pacman -S --needed --noconfirm - < packages-repository.txt
+rm packages-repository.txt
 systemctl enable sddm
