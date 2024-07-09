@@ -1,5 +1,5 @@
 ## unmaintained needs contributors or maintainer
-but still working..
+but still working.. as it is fixed for the moment. joekamprad tested by installing it over the ISO script (June 2024)
 
 # Sway-WM Setup and Theme for EndeavourOS
 
