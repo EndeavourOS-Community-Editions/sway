@@ -23,7 +23,6 @@
         "pulseaudio",
         "custom/keyboard-layout",
         "battery",
-        //"custom/PBPbattery",
         "backlight#icon",
         "backlight#value",
         "clock",
@@ -41,24 +40,14 @@
             "deactivated": ""
         }
     },
-
+    
     "battery": {
         "states": {
-            // "good": 95,
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
+        "format": "{icon} {capacity}%",
         "format-icons": ["", "", "", "", ""]
-    },
-
-    "custom/PBPbattery": {
-        "exec": "~/.config/waybar/scripts/PBPbattery.sh",
-        "format": "{}",
     },
 
     "clock": {
