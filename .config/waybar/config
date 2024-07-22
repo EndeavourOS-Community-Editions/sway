@@ -10,6 +10,7 @@
         "custom/launcher",
         "sway/workspaces",
         "sway/mode",
+        "sway/window",
     ],
  
     "modules-center": [
