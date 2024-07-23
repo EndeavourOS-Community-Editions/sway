@@ -219,8 +219,12 @@ bindsym $mod+r mode "resize"
 #
 # Screenshots
 #
-    bindsym print exec /usr/share/sway-contrib/grimshot --notify save output
-    bindsym Shift+print exec ~/.config/sway/scripts/screenshot.sh
+	# Snip a selection and pipe to swappy
+	bindsym print exec grim -g "$(slurp)" - | swappy -f -
+	# Screenshot a window and pipe to swappy
+	bindsym Ctrl+Print exec ~/.config/sway/scripts/screenshot_window.sh
+	# Screenshot the current display and pipe to swappy
+	bindsym Shift+Print exec ~/.config/sway/scripts/screenshot_display.sh
 #
 # Keybindings List
 #
