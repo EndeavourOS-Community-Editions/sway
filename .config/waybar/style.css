@@ -56,7 +56,7 @@ Arc-Dark Color Scheme
     background: transparent;
     color: #bebebe;
     background-color: @base1;
-    font-family: UbuntuMono;
+    font-family: JetBrainsMono;
     font-size: 14px;
 }
 
@@ -73,8 +73,7 @@ Arc-Dark Color Scheme
 #pulseaudio,
 #temperature,
 #tray,
-#idle_inhibitor,
-#custom-PBPbattery {
+#idle_inhibitor {
     padding:0.5rem 0.6rem;
     margin: 1px 0px;
 }
