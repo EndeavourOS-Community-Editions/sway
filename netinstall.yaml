@@ -147,7 +147,6 @@
     - dex
     - diffuse
     - file-roller
-    - foot
     - grim
     - gtk-engine-murrine
     - gtk-layer-shell
@@ -178,6 +177,7 @@
     - wofi
     - xdg-desktop-portal-wlr
     - xed
+    - xfce4-terminal
     - xorg-xhost
 - name: "Zen Kernel"
   description: "https://github.com/zen-kernel/zen-kernel"
