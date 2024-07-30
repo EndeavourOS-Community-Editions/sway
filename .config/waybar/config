@@ -169,24 +169,6 @@
          "on-scroll-up": "brightnessctl -c backlight set +1%"
     },
 
-    "custom/firefox": {
-        "format": " ",
-        "on-click": "exec firefox",
-        "tooltip": false
-    },
-
-    "custom/terminal": {
-        "format": " ",
-        "on-click": "exec xfce4-terminal",
-        "tooltip": false
-    },
-
-    "custom/files": {
-        "format": " ",
-        "on-click": "exec thunar",
-        "tooltip": false
-    },
-
     "custom/launcher": {
         "format":"<span size='x-large'></span>",
         "on-click": "exec wofi -c ~/.config/wofi/config -I",
