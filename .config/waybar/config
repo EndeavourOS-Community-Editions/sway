@@ -10,6 +10,7 @@
         "custom/launcher",
         "sway/workspaces",
         "sway/mode",
+        "sway/window",
     ],
  
     "modules-center": [
@@ -23,7 +24,6 @@
         "pulseaudio",
         "custom/keyboard-layout",
         "battery",
-        //"custom/PBPbattery",
         "backlight#icon",
         "backlight#value",
         "clock",
@@ -41,24 +41,14 @@
             "deactivated": ""
         }
     },
-
+    
     "battery": {
         "states": {
-            // "good": 95,
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
+        "format": "{icon} {capacity}%",
         "format-icons": ["", "", "", "", ""]
-    },
-
-    "custom/PBPbattery": {
-        "exec": "~/.config/waybar/scripts/PBPbattery.sh",
-        "format": "{}",
     },
 
     "clock": {
@@ -75,24 +65,23 @@
             "warning": 70,
             "critical": 90,
         },
-        "on-click": "xfce4-terminal -e 'htop'",
+        "on-click": "footclient -T waybar_htop -e htop",
     },
 
     "custom/keyboard-layout": {
-        "exec": "swaymsg -t get_inputs | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
-        // Interval set only as a fallback, as the value is updated by signal
+      	"exec": "i=$(swaymsg -t get_inputs); echo \"\"; echo \"$i\" | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
+        "format": "",
+        // Interval set only as a fallback; use signal to update the module more immediately
         "interval": 30,
-        "format": "  {}", // Icon: keyboard
-        // Signal sent by Sway key binding (~/.config/sway/key-bindings)
-        "signal": 1, // SIGHUP
-        "tooltip": false,
+        // See example config for sending signal to Waybar in ~/.config/sway/config.d/input
+        "signal": 1,
         "on-click": "~/.config/waybar/scripts/keyhint.sh",
     },
 
     "memory": {
         "interval": 5,
         "format": " {}%", // Icon: memory
-        "on-click": "xfce4-terminal -e 'htop'", 
+        "on-click": "footclient -T waybar_htop -e htop", 
         "states": {
             "warning": 70,
             "critical": 90
@@ -105,7 +94,7 @@
         "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
         "format-disconnected": "⚠  Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}",
-        "on-click": "xfce4-terminal -e 'nmtui'",
+        "on-click": "footclient -T waybar_nmtui -e nmtui",
     },
     "network#vpn": {
         "interface": "tun0",
@@ -139,25 +128,19 @@
     },
 
     "pulseaudio": {
-        "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}  {format_source}",
-        "format-bluetooth-muted": " {icon}  {format_source}",
-        "format-muted": "婢 {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "scroll-step": 2,
+        "format": "{icon} {volume}%",
+        "format-muted":"󰝟 muted",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "וֹ",
-            "headset": "  ",
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
-            "default": [""]
+            "default": ["󰕿", "󰖀", "󰕾"]
         },
-        "on-click": "pavucontrol",
-        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
-        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%",
+        "on-click": "pavucontrol"
     },
 
     // to use the weather module replace <your_location> with your city or town
@@ -205,7 +188,7 @@
     },
 
     "custom/launcher": {
-        "format":" ",
+        "format":"<span size='x-large'></span>",
         "on-click": "exec wofi -c ~/.config/wofi/config -I",
         "tooltip": false,
     },

@@ -137,47 +137,48 @@
   selected: true
   critical: false
   packages:
-    - sway
-    - swayidle
-    - swaylock
-    - swaybg
-    - waybar
-    - lxappearance
-    - polkit-gnome
-    - thunar
-    - thunar-archive-plugin
+    - acpi
+    - arc-gtk-theme-eos
+    - archlinux-xdg-menu
+    - arc-x-icons-theme
+    - bluez-utils
+    - brightnessctl
+    - celluloid
+    - dex
+    - diffuse
     - file-roller
-    - thunar-volman
+    - foot
     - grim
-    - slurp
+    - gtk-engine-murrine
+    - gtk-layer-shell
+    - htop
+    - imv
+    - lxappearance
+    - mako
+    - network-manager-applet
     - otf-font-awesome
-    - pulseaudio
     - paprefs
     - pavucontrol
-    - arc-gtk-theme-eos
-    - arc-x-icons-theme
-    - gtk-engine-murrine
-    - mako
-    - wofi
-    - acpi
-    - bluez-utils
-    - network-manager-applet
+    - polkit-gnome
+    - pulseaudio
+    - slurp
+    - swappy
+    - sway
+    - swaybg
+    - swayidle
+    - swaylock
     - sysstat
-    - archlinux-xdg-menu
-    - htop
-    - xfce4-terminal
-    - gtk-layer-shell
-    - ttf-nerd-fonts-symbols 
-    - xdg-desktop-portal-wlr
-    - brightnessctl
+    - thunar
+    - thunar-archive-plugin
+    - thunar-volman
     - ttf-jetbrains-mono
+    - ttf-nerd-fonts-symbols 
     - ttf-ubuntu-font-family
+    - waybar
+    - wofi
+    - xdg-desktop-portal-wlr
     - xed
-    - dex
-    - celluloid
     - xorg-xhost
-    - diffuse
-    - imv
 - name: "Zen Kernel"
   description: "https://github.com/zen-kernel/zen-kernel"
   hidden: false

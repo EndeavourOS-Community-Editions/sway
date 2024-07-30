@@ -15,8 +15,11 @@ set $volume_up $(pactl set-sink-volume @DEFAULT_SINK@ +5% && $sink_volume)
 set $volume_mute $(pactl set-sink-mute @DEFAULT_SINK@ toggle && pactl get-sink-mute @DEFAULT_SINK@ | sed -En "/no/ s/.*/$($sink_volume)/p; /yes/ s/.*/0/p")
 set $mic_mute $(pactl set-source-mute @DEFAULT_SOURCE@ toggle && pactl get-source-mute @DEFAULT_SOURCE@ | sed -En "/no/ s/.*/$($source_volume)/p; /yes/ s/.*/0/p")
 
-# Your preferred terminal emulators
-set $term-float xfce4-terminal
+# Start foot server
+exec_always --no-startup-id foot --server
+
+# Set default terminal emulator
+set $term footclient
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
@@ -42,8 +45,8 @@ exec swayidle -w\
 #
 # Basics:
 #
-    # Start a floating terminal
-    bindsym $mod+Return exec $term-float
+    # Launch the terminal
+    bindsym $mod+Return exec $term
 
     # Open the power menu
     bindsym $mod+Shift+e exec $powermenu
@@ -219,8 +222,12 @@ bindsym $mod+r mode "resize"
 #
 # Screenshots
 #
-    bindsym print exec /usr/share/sway-contrib/grimshot --notify save output
-    bindsym Shift+print exec ~/.config/sway/scripts/screenshot.sh
+    # Snip a selection and pipe to swappy
+    bindsym print exec grim -g "$(slurp)" - | swappy -f -
+    # Screenshot a window and pipe to swappy
+    bindsym Ctrl+Print exec ~/.config/sway/scripts/screenshot_window.sh
+    # Screenshot the current display and pipe to swappy
+    bindsym Shift+Print exec ~/.config/sway/scripts/screenshot_display.sh
 #
 # Keybindings List
 #

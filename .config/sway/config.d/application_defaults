@@ -40,8 +40,8 @@ for_window [title="File Operation Progress"] floating enable, border pixel 1, st
 for_window [app_id="firefox" title="^Library$"] floating enable, border pixel 1, sticky enable, resize set width 40 ppt height 30 ppt
 for_window [app_id="floating_shell_portrait"] floating enable, border pixel 1, sticky enable, resize set width 30 ppt height 40 ppt
 for_window [title="Picture in picture"] floating enable, sticky enable
-for_window [title="nmtui"] floating enable,  resize set width 50 ppt height 70 ppt
-for_window [title="htop"] floating enable, resize set width 50 ppt height 70 ppt
+for_window [title="waybar_htop"] floating enable, resize set width 70 ppt height 70 ppt
+for_window [title="waybar_nmtui"] floating enable
 for_window [app_id="xsensors"] floating enable
 for_window [title="Save File"] floating enable
 for_window [app_id="firefox" title="Firefox — Sharing Indicator"] kill
