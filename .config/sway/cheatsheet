@@ -23,11 +23,8 @@
 
 MOD key is set to the WINKEY/LINKEY
 
-# start floating xfce4-terminal
+# Launch the terminal
 MOD+Return
-
-# start fixed termite-terminal
-MOD+Shift+Return
 
 # kill focused window
 MOD+q

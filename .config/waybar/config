@@ -65,7 +65,7 @@
             "warning": 70,
             "critical": 90,
         },
-        "on-click": "xfce4-terminal -e 'htop'",
+        "on-click": "footclient -T waybar_htop -e htop",
     },
 
     "custom/keyboard-layout": {
@@ -82,7 +82,7 @@
     "memory": {
         "interval": 5,
         "format": " {}%", // Icon: memory
-        "on-click": "xfce4-terminal -e 'htop'", 
+        "on-click": "footclient -T waybar_htop -e htop", 
         "states": {
             "warning": 70,
             "critical": 90
@@ -95,7 +95,7 @@
         "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
         "format-disconnected": "⚠  Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}",
-        "on-click": "xfce4-terminal -e 'nmtui'",
+        "on-click": "footclient -T waybar_nmtui -e nmtui",
     },
     "network#vpn": {
         "interface": "tun0",
