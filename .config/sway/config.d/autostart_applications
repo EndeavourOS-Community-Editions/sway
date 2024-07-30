@@ -7,7 +7,8 @@ exec mako
 # Network Applet
 exec nm-applet --indicator
 
-
+# Autotiling
+exec_always ~/.config/sway/scripts/autotiling
      
 # Welcome App
 exec dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
