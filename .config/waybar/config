@@ -65,18 +65,14 @@
     },
 
     "network": {
-        "interval": 5,
-        "format-wifi": "  {essid} ({signalStrength}%)", // Icon: wifi
-        "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
-        "format-disconnected": "⚠  Disconnected",
-        "tooltip-format": "{ifname}: {ipaddr}",
+        "format-disabled": " Disabled  ",
+        "format-wifi": "  {bandwidthDownBits:>} 󰶡 {bandwidthUpBits:>} 󰶣  ",
+        "tooltip-format-wifi": "{essid}",
+        "format-ethernet": "  {bandwidthDownBits:>} 󰶡 {bandwidthUpBits:>} 󰶣  ",
+        "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
+        "format-disconnected": " Disconnected  ",
         "on-click": "footclient -T waybar_nmtui -e nmtui",
-    },
-    "network#vpn": {
-        "interface": "tun0",
-        "format": "  {essid} ({signalStrength}%)",
-        "format-disconnected": "⚠  Disconnected",
-        "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
+        "interval": 2,
     },
 
     "idle_inhibitor": {
