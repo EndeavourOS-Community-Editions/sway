@@ -24,8 +24,7 @@
         "pulseaudio",
         "custom/keyboard-layout",
         "battery",
-        "backlight#icon",
-        "backlight#value",
+        "backlight",
         "clock",
         "tray",
         //"custom/weather",
@@ -140,17 +139,12 @@
         "format-icons": ["", "", "", "", ""]
     },
 
-    "backlight#icon": {
-        "format": "{icon}",
-        "format-icons": [""],
-        "on-scroll-down": "brightnessctl -c backlight set 1%-",
-        "on-scroll-up": "brightnessctl -c backlight set +1%"
-    },
-
-    "backlight#value" :{
-         "format": "{percent}%",
-         "on-scroll-down": "brightnessctl -c backlight set 1%-",
-         "on-scroll-up": "brightnessctl -c backlight set +1%"
+    "backlight": {
+        "format": "{icon} {percent}% ",
+        "format-icons": ["󰄰", "󰪞", "󰪟", "󰪠", "󰪡", "󰪢", "󰪣", "󰪤", "󰪥"],
+        "tooltip-format": "Backlight (Scroll): {percent:}%",
+        "on-scroll-down": "brightnessctl -c backlight set 5%-",
+        "on-scroll-up": "brightnessctl -c backlight set +5%"
     },
 
     "clock": {
