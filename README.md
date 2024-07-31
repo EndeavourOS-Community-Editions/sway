@@ -53,7 +53,7 @@ https://forum.endeavouros.com/t/sway-edition-general-conversation
  - Background handled by swaybg
  - Gtk3 theme handled by lxappearance
  - Filebrowser = Thunar
- - Default Terminal-Emulator = XFCE4-Terminal and/or Termite
+ - Default Terminal-Emulator = Foot
  - Text-Editor = xed/nano
  - Bar = Waybar
  - Sound = Pulseaudio
@@ -63,7 +63,7 @@ Main shortcuts: `~/.config/sway/cheatsheet`
 
 <kbd>MOD</kbd> key is set to the <kbd>WINKEY</kbd>/<kbd>LINKEY</kbd>
 
- - <kbd>MOD</kbd>+<kbd>Return</kbd> = open floating terminal (XFCE4-Terminal)
+ - <kbd>MOD</kbd>+<kbd>Return</kbd> = open floating terminal (Foot)
  - <kbd>MOD</kbd>+<kbd>O</kbd> = open Browser (firefox)
  - <kbd>MOD</kbd>+<kbd>N</kbd> = open File Manager (thunar)
  - <kbd>MOD</kbd>+<kbd>D</kbd>= app menu (wofi)

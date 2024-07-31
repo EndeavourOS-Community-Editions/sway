@@ -24,8 +24,7 @@
         "pulseaudio",
         "custom/keyboard-layout",
         "battery",
-        "backlight#icon",
-        "backlight#value",
+        "backlight",
         "clock",
         "tray",
         //"custom/weather",
@@ -34,83 +33,10 @@
 
     // Modules
 
-    "idle_inhibitor": {
-        "format": "{icon} ",
-        "format-icons":{
-            "activated": "",
-            "deactivated": ""
-        }
-    },
-    
-    "battery": {
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon} {capacity}%",
-        "format-icons": ["", "", "", "", ""]
-    },
-
-    "clock": {
-        "interval": 10,
-        "format-alt": " {:%e %b %Y}", // Icon: calendar-alt
-        "format": "{:%H:%M}",
-        "tooltip-format": "{:%e %B %Y}"
-    },
-
-    "cpu": {
-        "interval": 5,
-        "format": "  {usage}% ({load})", // Icon: microchip
-        "states": {
-            "warning": 70,
-            "critical": 90,
-        },
-        "on-click": "footclient -T waybar_htop -e htop",
-    },
-
-    "custom/keyboard-layout": {
-      	"exec": "i=$(swaymsg -t get_inputs); echo \"\"; echo \"$i\" | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
-        "format": "",
-        // Interval set only as a fallback; use signal to update the module more immediately
-        "interval": 30,
-        // See example config for sending signal to Waybar in ~/.config/sway/config.d/input
-        "signal": 1,
-        "on-click": "~/.config/waybar/scripts/keyhint.sh",
-    },
-
-    "memory": {
-        "interval": 5,
-        "format": " {}%", // Icon: memory
-        "on-click": "footclient -T waybar_htop -e htop", 
-        "states": {
-            "warning": 70,
-            "critical": 90
-        }
-    },
-
-    "network": {
-        "interval": 5,
-        "format-wifi": "  {essid} ({signalStrength}%)", // Icon: wifi
-        "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
-        "format-disconnected": "⚠  Disconnected",
-        "tooltip-format": "{ifname}: {ipaddr}",
-        "on-click": "footclient -T waybar_nmtui -e nmtui",
-    },
-    "network#vpn": {
-        "interface": "tun0",
-        "format": "  {essid} ({signalStrength}%)",
-        "format-disconnected": "⚠  Disconnected",
-        "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
-    },
-
-    "sway/mode": {
-        "format": "{}",
-        "tooltip": false
-    },
-
-    "sway/window": {
-        "format": "{}",
-        "max-length": 120
+    "custom/launcher": {
+        "format":"<span size='x-large'></span>",
+        "on-click": "exec wofi -c ~/.config/wofi/config -I",
+        "tooltip": false,
     },
 
     "sway/workspaces": {
@@ -127,10 +53,61 @@
         }
     },
 
+    "sway/mode": {
+        "format": "{}",
+        "tooltip": false
+    },
+
+    "sway/window": {
+        "format": "{}",
+        "max-length": 120
+    },
+
+    "network": {
+        "format-disabled": " Disabled  ",
+        "format-wifi": "  {bandwidthDownBits:>} 󰶡 {bandwidthUpBits:>} 󰶣  ",
+        "tooltip-format-wifi": "{essid}",
+        "format-ethernet": "  {bandwidthDownBits:>} 󰶡 {bandwidthUpBits:>} 󰶣  ",
+        "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
+        "format-disconnected": " Disconnected  ",
+        "on-click": "footclient -T waybar_nmtui -e nmtui",
+        "interval": 2,
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}   ",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        },
+        "tooltip-format-activated": "Idle Inhibitor Activated",
+        "tooltip-format-deactivated": "Idle Inhibitor Deactivated"
+    },
+    
+    "memory": {
+        "interval": 5,
+        "format": "{:>3}% ",
+        "on-click": "footclient -T waybar_htop -e htop", 
+        "states": {
+            "warning": 70,
+            "critical": 90
+        }
+    },
+
+    "cpu": {
+        "interval": 5,
+        "format": "{usage:>3}% ",
+        "states": {
+            "warning": 70,
+            "critical": 90,
+        },
+        "on-click": "footclient -T waybar_htop -e htop",
+    },
+
     "pulseaudio": {
         "scroll-step": 2,
-        "format": "{icon} {volume}%",
-        "format-muted":"󰝟 muted",
+        "format": "{icon} {volume}% ",
+        "format-muted":"󰝟 muted ",
         "format-icons": {
             "headphones": "",
             "handsfree": "",
@@ -143,12 +120,52 @@
         "on-click": "pavucontrol"
     },
 
-    // to use the weather module replace <your_location> with your city or town
-    // note: do not use spaces: new york would be newyork
-    "custom/weather": {
-        "exec": "~/.config/waybar/scripts/weather.sh <your_location>", 
-        "return-type": "json",
-        "interval": 600,
+    "custom/keyboard-layout": {
+      	"exec": "i=$(swaymsg -t get_inputs); echo \"\"; echo \"$i\" | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
+        "format": "   ",
+        // Interval set only as a fallback; use signal to update the module more immediately
+        "interval": 30,
+        // See example config for sending signal to Waybar in ~/.config/sway/config.d/input
+        "signal": 1,
+        "on-click": "~/.config/waybar/scripts/keyhint.sh",
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}% ",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "backlight": {
+        "format": "{icon} {percent}% ",
+        "format-icons": ["󰄰", "󰪞", "󰪟", "󰪠", "󰪡", "󰪢", "󰪣", "󰪤", "󰪥"],
+        "tooltip-format": "Backlight (Scroll): {percent:}%",
+        "on-scroll-down": "brightnessctl -c backlight set 5%-",
+        "on-scroll-up": "brightnessctl -c backlight set +5%"
+    },
+
+    "clock": {
+        "interval": 10,
+        "format": "󰅐 {:%H:%M}",
+        "format-alt": "󰅐 {:%OI:%M %p}",
+        "tooltip-format": " {:%A %m/%d}\n\n<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "on-scroll": 1,
+            "format": {
+                "months":     "<span color='#ffead3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+            },
+        },
+        "actions": {
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        },
     },
 
     "tray": {
@@ -156,41 +173,12 @@
         "spacing":10,
      },
 
-    "backlight#icon": {
-        "format": "{icon}",
-        "format-icons": [""],
-        "on-scroll-down": "brightnessctl -c backlight set 1%-",
-        "on-scroll-up": "brightnessctl -c backlight set +1%"
-    },
-
-    "backlight#value" :{
-         "format": "{percent}%",
-         "on-scroll-down": "brightnessctl -c backlight set 1%-",
-         "on-scroll-up": "brightnessctl -c backlight set +1%"
-    },
-
-    "custom/firefox": {
-        "format": " ",
-        "on-click": "exec firefox",
-        "tooltip": false
-    },
-
-    "custom/terminal": {
-        "format": " ",
-        "on-click": "exec xfce4-terminal",
-        "tooltip": false
-    },
-
-    "custom/files": {
-        "format": " ",
-        "on-click": "exec thunar",
-        "tooltip": false
-    },
-
-    "custom/launcher": {
-        "format":"<span size='x-large'></span>",
-        "on-click": "exec wofi -c ~/.config/wofi/config -I",
-        "tooltip": false,
+    // to use the weather module replace <your_location> with your city or town
+    // note: do not use spaces: new york would be newyork
+    "custom/weather": {
+        "exec": "~/.config/waybar/scripts/weather.sh <your_location>", 
+        "return-type": "json",
+        "interval": 600,
     },
 
     "custom/power": {
