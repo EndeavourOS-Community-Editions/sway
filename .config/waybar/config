@@ -87,7 +87,7 @@
     
     "memory": {
         "interval": 5,
-        "format": " {}%", // Icon: memory
+        "format": "{:>3}% ",
         "on-click": "footclient -T waybar_htop -e htop", 
         "states": {
             "warning": 70,
@@ -97,7 +97,7 @@
 
     "cpu": {
         "interval": 5,
-        "format": "  {usage}% ({load})", // Icon: microchip
+        "format": "{usage:>3}% ",
         "states": {
             "warning": 70,
             "critical": 90,
@@ -107,8 +107,8 @@
 
     "pulseaudio": {
         "scroll-step": 2,
-        "format": "{icon} {volume}%",
-        "format-muted":"󰝟 muted",
+        "format": "{icon} {volume}% ",
+        "format-muted":"󰝟 muted ",
         "format-icons": {
             "headphones": "",
             "handsfree": "",
@@ -123,7 +123,7 @@
 
     "custom/keyboard-layout": {
       	"exec": "i=$(swaymsg -t get_inputs); echo \"\"; echo \"$i\" | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
-        "format": "",
+        "format": "   ",
         // Interval set only as a fallback; use signal to update the module more immediately
         "interval": 30,
         // See example config for sending signal to Waybar in ~/.config/sway/config.d/input
@@ -136,7 +136,7 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon} {capacity}%",
+        "format": "{icon} {capacity}% ",
         "format-icons": ["", "", "", "", ""]
     },
 
