@@ -14,15 +14,14 @@
 
 ### With the EOS Installer
 
-In the live environment, choose "Fetch your install customization file" from the Welcome app.
-
+1. In the live environment, choose "Fetch your install customization file" from the Welcome app.
+2. Type or paste the URL for the Sway user_commands.bash file.
+```
+https://github.com/EndeavourOS-Community-Editions/sway/blob/main/setup_sway_isomode.bash
+```
 ![welcome_install-file](https://github.com/user-attachments/assets/0e6d57c2-1254-4179-8084-8797b9644682)
 
-Type or paste the URL for the Sway user_commands.bash file.
-
-    https://github.com/EndeavourOS-Community-Editions/sway/blob/main/setup_sway_isomode.bash
-
-Proceed with the installation normally. Be sure to choose "no desktop" on the DE selection screen.
+3. Click <kbd> OK </kbd>, then proceed with the installation normally. Be sure to choose "no desktop" on the DE selection screen.
 
 ![installer_no-desktop](https://github.com/user-attachments/assets/ca5582a9-094e-45d7-af1a-ebcf45e4dea5)
 
@@ -35,10 +34,6 @@ Proceed with the installation normally. Be sure to choose "no desktop" on the DE
     bash sway-install.sh
    
 You can examine the contents of the script here: https://github.com/EndeavourOS-Community-Editions/sway/blob/main/sway-install.sh
-    
-Greetd is the default display manager
-    
-    systemctl enable --now greetd.service
     
 ## Post install
 
