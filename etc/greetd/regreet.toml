@@ -20,7 +20,7 @@ XDG_SESSION_DESKTOP = "sway"
 # Uncomment if you experience issues with your cursor
 #export WLR_NO_HARDWARE_CURSORS = "1"
 
-# Uncomment if you are running in a virtual machine
+# Uncomment if you are running in a virtual machine or have an underpowered GPU
 #export WLR_RENDERER_ALLOW_SOFTWARE = "1"
 
 [GTK]
