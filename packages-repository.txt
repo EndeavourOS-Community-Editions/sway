@@ -5,9 +5,10 @@ bluez-utils
 brightnessctl
 dex
 egl-wayland
-eos-sddm-theme
 file-roller
 foot
+greetd
+greetd-regreet
 grim
 gtk-engine-murrine
 gtk-layer-shell
@@ -17,7 +18,6 @@ mako
 network-manager-applet
 nwg-look
 polkit-gnome
-sddm
 slurp
 swappy
 sway

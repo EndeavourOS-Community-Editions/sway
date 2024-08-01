@@ -8,7 +8,21 @@ but still working.. as it is fixed for the moment. joekamprad tested by installi
 
 [![Maintenance](https://img.shields.io/maintenance/yes/2024.svg)]()
 
-## To Install Manually
+## To Install Sway
+
+### With the EOS Installer
+
+In the live environment, choose "Fetch your install customization file" from the Welcome app.
+
+![Welcome-user_commands.bash](https://private-user-images.githubusercontent.com/16797647/266017970-0b5fb0dc-609f-479e-9669-94b961db089d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjI0Nzk2MzIsIm5iZiI6MTcyMjQ3OTMzMiwicGF0aCI6Ii8xNjc5NzY0Ny8yNjYwMTc5NzAtMGI1ZmIwZGMtNjA5Zi00NzllLTk2NjktOTRiOTYxZGIwODlkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODAxVDAyMjg1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJkOGU4MTgyNDZlOGU2MzQ0YzBlNmYwMGY1ZmI5ZDIxOGM0ZjNlNTM5NGRkMjQ1ODdhNTI1OGY1MTJmMDU3NGEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.tltNjPruZnhUZ2JHXJsc6ZG5yo1sVBf_Vo7MFP5yGwY)
+
+Type or paste the URL for the Sway user_commands.bash file.
+
+    https://github.com/EndeavourOS-Community-Editions/sway/blob/main/setup_sway_isomode.bash
+
+Proceed with the installation normally. Be sure to choose "no desktop" on the DE selection screen.
+
+### Manually (Post-Installation)
 
     git clone https://github.com/EndeavourOS-Community-Editions/sway.git
 
@@ -16,26 +30,11 @@ but still working.. as it is fixed for the moment. joekamprad tested by installi
 
     bash sway-install.sh
    
-## Contained In The Script
-    cp -R .config/* ~/.config/
+You can examine the contents of the script here: https://github.com/EndeavourOS-Community-Editions/sway/blob/main/sway-install.sh
     
-    cp .profile ~/.profile
+Greetd is the default display manager
     
-    cp .gtkrc-2.0 ~/.gtkrc-2.0
-    
-    chmod -R +x ~/.config/sway/scripts
-    
-    chmod -R +x ~/.config/waybar/scripts
-    
-    sudo pacman -Syu --needed --noconfirm - < packages-repository.txt
-    
-    dbus-launch dconf load / < xed.dconf
-    
-SDDM is the default display manager
-    
-    systemctl enable sddm.service
-    
-    systemctl start sddm.service
+    systemctl enable --now greetd.service
     
 ## Post install
 

@@ -1,0 +1,51 @@
+# ReGreet configuration
+# See README at https://github.com/rharish101/ReGreet#configuration
+
+[background]
+# Path to the background image
+path = "/usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png"
+
+# How the background image covers the screen if the aspect ratio doesn't match
+# Available values: "Fill", "Contain", "Cover", "ScaleDown"
+# Refer to: https://docs.gtk.org/gtk4/enum.ContentFit.html
+# NOTE: This is ignored if ReGreet isn't compiled with GTK v4.8 support.
+fit = "Cover"
+
+# The entries defined in this section will be passed to the session as environment variables when it is started
+[env]
+XDG_SESSION_TYPE = "wayland"
+XDG_CURRENT_DESKTOP = "sway"
+XDG_SESSION_DESKTOP = "sway"
+
+# Uncomment if you experience issues with your cursor
+#export WLR_NO_HARDWARE_CURSORS = "1"
+
+# Uncomment if you are running in a virtual machine
+#export WLR_RENDERER_ALLOW_SOFTWARE = "1"
+
+[GTK]
+# Whether to use the dark theme
+application_prefer_dark_theme = true
+
+# Cursor theme name
+cursor_theme_name = "Adwaita"
+
+# Font name and size
+font_name = "Cantarell 12"
+
+# Icon theme name
+icon_theme_name = "Adwaita"
+
+# GTK theme name
+theme_name = "Adwaita"
+
+[commands]
+# The command used to reboot the system
+reboot = [ "systemctl", "reboot" ]
+
+# The command used to shut down the system
+poweroff = [ "systemctl", "poweroff" ]
+
+[appearance]
+# The message that initially displays on startup
+greeting_msg = "- custom message -"
