@@ -1,7 +1,8 @@
 ## unmaintained needs contributors or maintainer
 
 * still working.. as it is fixed for the moment. joekamprad tested by installing it over the ISO script (June 2024)
-* https://github.com/EndeavourOS-Community-Editions/sway/blob/main/setup_sway_isomode.bash
+* https://raw.githubusercontent.com/EndeavourOS-Community-Editions/sway/main/setup_sway_isomode.bash
+* Read here on how to use it: https://github.com/EndeavourOS-Community-Editions/.github/blob/main/profile/README.md
 * [July 2024] start getting big fixes and changes from BluishHumility
   
 # Sway-WM Setup and Theme for EndeavourOS
