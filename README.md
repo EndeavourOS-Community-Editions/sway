@@ -16,13 +16,15 @@
 
 In the live environment, choose "Fetch your install customization file" from the Welcome app.
 
-![Welcome-installation](https://private-user-images.githubusercontent.com/16797647/266017970-0b5fb0dc-609f-479e-9669-94b961db089d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjI0ODQwMDYsIm5iZiI6MTcyMjQ4MzcwNiwicGF0aCI6Ii8xNjc5NzY0Ny8yNjYwMTc5NzAtMGI1ZmIwZGMtNjA5Zi00NzllLTk2NjktOTRiOTYxZGIwODlkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODAxVDAzNDE0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUxZmU1OGQ2MzdkZjBiOTAwOGVhMDE3OTE4ZDgyMGUzNmZhODcxNDZlYWRmZmI1MjBjMTA2MDkyNjU4NzI2ZjUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.3-mqDee1I2M_8TUnpsW7UJo-uZ8dwTyLAgHFpiI_7wk)
+![welcome_install-file](https://github.com/user-attachments/assets/0e6d57c2-1254-4179-8084-8797b9644682)
 
 Type or paste the URL for the Sway user_commands.bash file.
 
     https://github.com/EndeavourOS-Community-Editions/sway/blob/main/setup_sway_isomode.bash
 
 Proceed with the installation normally. Be sure to choose "no desktop" on the DE selection screen.
+
+![installer_no-desktop](https://github.com/user-attachments/assets/ca5582a9-094e-45d7-af1a-ebcf45e4dea5)
 
 ### Manually (Post-Installation)
 
