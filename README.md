@@ -53,7 +53,7 @@ https://forum.endeavouros.com/t/sway-edition-general-conversation
 ## Tutorial for sway-wm settings:
 
  - Background handled by swaybg
- - Gtk3 theme handled by lxappearance
+ - Gtk3 theme handled by nwg-look
  - Filebrowser = Thunar
  - Default Terminal-Emulator = Foot
  - Text-Editor = xed/nano
