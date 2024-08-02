@@ -34,3 +34,5 @@ rm -rf sway
 # Enable the Greetd service
 echo "Enabling the Greetd service..."
 systemctl enable greetd.service
+
+echo "Installation complete."
