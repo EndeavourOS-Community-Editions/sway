@@ -1,3 +1,6 @@
+# Apply xed settings with self-destructing script
+exec ~/.config/sway/scripts/xed_setup.sh
+
 # Auth with polkit-gnome:
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
