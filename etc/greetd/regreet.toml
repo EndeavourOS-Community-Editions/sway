@@ -48,4 +48,4 @@ poweroff = [ "systemctl", "poweroff" ]
 
 [appearance]
 # The message that initially displays on startup
-greeting_msg = "- custom message -"
+greeting_msg = "Welcome Back!"
