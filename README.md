@@ -31,7 +31,7 @@ https://github.com/EndeavourOS-Community-Editions/sway/blob/main/setup_sway_isom
 
     cd sway
 
-    bash sway-install.sh
+    sudo ./sway-install.sh
    
 You can examine the contents of the script here: https://github.com/EndeavourOS-Community-Editions/sway/blob/main/sway-install.sh
     
