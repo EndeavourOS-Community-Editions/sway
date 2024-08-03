@@ -17,7 +17,7 @@
 1. In the live environment, choose "Fetch your install customization file" from the Welcome app.
 2. Type or paste the URL for the Sway user_commands.bash file.
 ```
-https://github.com/EndeavourOS-Community-Editions/sway/blob/main/setup_sway_isomode.bash
+https://raw.githubusercontent.com/EndeavourOS-Community-Editions/sway/main/setup_sway_isomode.bash
 ```
 ![welcome_install-file](https://github.com/user-attachments/assets/0e6d57c2-1254-4179-8084-8797b9644682)
 
