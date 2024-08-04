@@ -16,6 +16,7 @@ jq
 mako
 network-manager-applet
 nwg-look
+pamixer
 polkit-gnome
 slurp
 swappy
