@@ -6,6 +6,7 @@
 input type:touchpad {
     dwt enabled
     tap enabled
+    tap_button_map lmr # Fixed autoscroll without having to scroll on browser (this thing is tested)
     natural_scroll enabled
 }
 
