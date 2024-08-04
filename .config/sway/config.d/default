@@ -7,9 +7,6 @@ set $down j
 set $up k
 set $right l
 
-# Start foot server
-exec_always --no-startup-id foot --server
-
 # Set default terminal emulator
 set $term footclient
 

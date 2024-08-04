@@ -17,6 +17,9 @@ exec mako
 # Network Applet
 exec nm-applet --indicator
 
+# Start foot server
+exec_always --no-startup-id foot --server
+
 # Autotiling
 exec_always ~/.config/sway/scripts/autotiling
      
