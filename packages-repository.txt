@@ -6,6 +6,7 @@ dex
 egl-wayland
 file-roller
 foot
+fuzzel
 greetd
 greetd-regreet
 grim
@@ -35,7 +36,6 @@ ttf-ubuntu-font-family
 waybar
 wayland-protocols
 wl-clipboard
-wofi
 xdg-desktop-portal-wlr
 xed
 xorg-xwayland

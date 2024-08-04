@@ -64,7 +64,7 @@ Main shortcuts: `~/.config/sway/cheatsheet`
  - <kbd>MOD</kbd>+<kbd>Return</kbd> = open floating terminal (Foot)
  - <kbd>MOD</kbd>+<kbd>O</kbd> = open Browser (firefox)
  - <kbd>MOD</kbd>+<kbd>N</kbd> = open File Manager (thunar)
- - <kbd>MOD</kbd>+<kbd>D</kbd>= app menu (wofi)
+ - <kbd>MOD</kbd>+<kbd>D</kbd>= app menu (Fuzzel)
  - <kbd>MOD</kbd>+<kbd>Q</kbd> = close focused app [kill]
  - <kbd>Shift</kbd>+<kbd>PrtSc</kbd> = screenshot/bring up screenshot menu
  - <kbd>MOD</kbd>+<kbd>SHIFT</kbd>+<kbd>E</kbd> = power-menu

@@ -29,7 +29,7 @@ MOD+Return
 # kill focused window
 MOD+q
 
-# Application menu - wofi:
+# Application menu - Fuzzel:
 MOD+d
 
 # Activities:
