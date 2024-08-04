@@ -1,7 +1,7 @@
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 
-# Home row direction keys, like vim
+# Add Vim key support
 set $left h
 set $down j
 set $up k
@@ -49,11 +49,9 @@ exec swayidle -w\
     # Activities
     bindsym $mod+p exec ~/.config/wofi/windows.py
 
-    # Drag floating windows by holding down $mod and left mouse button.
+    # Move windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
-    # Despite the name, also works for non-floating windows.
-    # Change normal to inverse to use left mouse button for resizing and right
-    # mouse button for dragging.
+    # Change "normal" to "inverse" to switch left and right
     floating_modifier $mod normal
 
     # Reload the configuration file
@@ -62,27 +60,28 @@ exec swayidle -w\
 #
 # Moving around:
 #
-    # Move your focus around
-    bindsym $mod+$left focus left
-    bindsym $mod+$down focus down
-    bindsym $mod+$up focus up
-    bindsym $mod+$right focus right
-    # Or use $mod+[up|down|left|right]
+    # Change window focus
     bindsym $mod+Left focus left
     bindsym $mod+Down focus down
     bindsym $mod+Up focus up
     bindsym $mod+Right focus right
+    # Vim key support
+    bindsym $mod+$left focus left
+    bindsym $mod+$down focus down
+    bindsym $mod+$up focus up
+    bindsym $mod+$right focus right    
 
-    # Move the focused window with the same, but add Shift
-    bindsym $mod+Shift+$left move left
-    bindsym $mod+Shift+$down move down
-    bindsym $mod+Shift+$up move up
-    bindsym $mod+Shift+$right move right
-    # Ditto, with arrow keys
+    # Move the focused window
     bindsym $mod+Shift+Left move left
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
+    # Vim key support
+    bindsym $mod+Shift+$left move left
+    bindsym $mod+Shift+$down move down
+    bindsym $mod+Shift+$up move up
+    bindsym $mod+Shift+$right move right
+
 #
 # Workspaces:
 #
@@ -113,11 +112,11 @@ exec swayidle -w\
 #
 # Layout stuff:
 #
-    # You can "split" the current object of your focus with
-    # $mod+b or $mod+v, for horizontal and vertical splits
-    # respectively.
-    bindsym $mod+b splith
+    # Set how the current window will be split
+    # Split the window vertically
     bindsym $mod+v splitv
+    # Split the window horizontally
+    bindsym $mod+b splith
 
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
@@ -127,7 +126,7 @@ exec swayidle -w\
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
 
-    # Toggle the current focus between tiling and floating mode
+    # Toggle between tiling and floating mode
     bindsym $mod+Shift+space floating toggle
 
     # Swap focus between the tiling area and the floating area
@@ -150,30 +149,25 @@ exec swayidle -w\
 #
 # Resizing containers:
 #
-mode "resize" {
-    # left will shrink the containers width
-    # right will grow the containers width
-    # up will shrink the containers height
-    # down will grow the containers height
-    bindsym $left resize shrink width 10px
-    bindsym $right resize grow width 10px
-    bindsym $up resize shrink height 10px
-    bindsym $down resize grow height 10px
+    mode "resize" {
+        # Resize with arrow keys
+        bindsym Left resize shrink width 10px
+        bindsym Down resize grow height 10px
+        bindsym Up resize shrink height 10px
+        bindsym Right resize grow width 10px
+        # Resize with Vim keys
+        bindsym $left resize shrink width 10px
+        bindsym $down resize grow height 10px
+        bindsym $up resize shrink height 10px
+        bindsym $right resize grow width 10px
+        # Return to default mode
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+    }
+    bindsym $mod+r mode "resize"
 
-    # Ditto, with arrow keys
-    bindsym Left resize shrink width 10px
-    bindsym Right resize grow width 10px
-    bindsym Up resize shrink height 10px
-    bindsym Down resize grow height 10px
-
-    # Return to default mode
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
-
-bindsym $mod+r mode "resize"
-
-# Resize floating windows with mouse scroll:
+    # Resize floating windows with mouse scroll:
     bindsym --whole-window --border $mod+button4 resize shrink height 5 px or 5 ppt
     bindsym --whole-window --border $mod+button5 resize grow height 5 px or 5 ppt
     bindsym --whole-window --border $mod+Shift+button4 resize shrink width 5 px or 5 ppt
