@@ -6,6 +6,7 @@
 input type:touchpad {
     dwt enabled
     tap enabled
+    tap_button_map lrm # Fixed autoscroll without having to scroll on browser (this thing is tested) , right click menu was not showing up idk how this works but it supresses the autoscroll
     natural_scroll enabled
 }
 
