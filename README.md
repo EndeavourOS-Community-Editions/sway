@@ -10,34 +10,30 @@
 
 [![Maintenance](https://img.shields.io/maintenance/yes/2024.svg)]()
 
-## To Install Manually
+## To Install Sway
+
+### With the EOS Installer
+
+1. In the live environment, choose "Fetch your install customization file" from the Welcome app.
+2. Type or paste the URL for the Sway user_commands.bash file.
+```
+https://raw.githubusercontent.com/EndeavourOS-Community-Editions/sway/main/setup_sway_isomode.bash
+```
+![welcome_install-file](https://github.com/user-attachments/assets/0e6d57c2-1254-4179-8084-8797b9644682)
+
+3. Click <kbd> OK </kbd>, then proceed with the installation normally. Be sure to choose "no desktop" on the DE selection screen.
+
+![installer_no-desktop](https://github.com/user-attachments/assets/ca5582a9-094e-45d7-af1a-ebcf45e4dea5)
+
+### Manually (Post-Installation)
 
     git clone https://github.com/EndeavourOS-Community-Editions/sway.git
 
     cd sway
 
-    bash sway-install.sh
+    sudo ./sway-install.sh
    
-## Contained In The Script
-    cp -R .config/* ~/.config/
-    
-    cp .profile ~/.profile
-    
-    cp .gtkrc-2.0 ~/.gtkrc-2.0
-    
-    chmod -R +x ~/.config/sway/scripts
-    
-    chmod -R +x ~/.config/waybar/scripts
-    
-    sudo pacman -Syu --needed --noconfirm - < packages-repository.txt
-    
-    dbus-launch dconf load / < xed.dconf
-    
-SDDM is the default display manager
-    
-    systemctl enable sddm.service
-    
-    systemctl start sddm.service
+You can examine the contents of the script here: https://github.com/EndeavourOS-Community-Editions/sway/blob/main/sway-install.sh
     
 ## Post install
 
@@ -68,7 +64,7 @@ Main shortcuts: `~/.config/sway/cheatsheet`
  - <kbd>MOD</kbd>+<kbd>Return</kbd> = open floating terminal (Foot)
  - <kbd>MOD</kbd>+<kbd>O</kbd> = open Browser (firefox)
  - <kbd>MOD</kbd>+<kbd>N</kbd> = open File Manager (thunar)
- - <kbd>MOD</kbd>+<kbd>D</kbd>= app menu (wofi)
+ - <kbd>MOD</kbd>+<kbd>D</kbd>= app menu (Fuzzel)
  - <kbd>MOD</kbd>+<kbd>Q</kbd> = close focused app [kill]
  - <kbd>Shift</kbd>+<kbd>PrtSc</kbd> = screenshot/bring up screenshot menu
  - <kbd>MOD</kbd>+<kbd>SHIFT</kbd>+<kbd>E</kbd> = power-menu

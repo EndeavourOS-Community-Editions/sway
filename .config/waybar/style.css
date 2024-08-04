@@ -68,7 +68,6 @@
 #battery,
 #backlight,
 #clock,
-#temperature,
 #custom-weather,
 #tray {
     padding:0.5rem 0.6rem;
@@ -183,10 +182,6 @@
 #backlight.icon {
     padding-right:1px;
     font-size: 13px;
-}
-
-#temperature.critical {
-    color: red;
 }
 
 #custom-power {

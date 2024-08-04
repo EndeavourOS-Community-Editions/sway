@@ -35,7 +35,7 @@
 
     "custom/launcher": {
         "format":"<span size='x-large'></span>",
-        "on-click": "exec wofi -c ~/.config/wofi/config -I",
+        "on-click": "exec fuzzel",
         "tooltip": false,
     },
 
@@ -183,7 +183,7 @@
 
     "custom/power": {
         "format":"⏻",
-        "on-click": "exec ~/.config/waybar/scripts/power-menu.sh",
+        "on-click": "exec ~/.config/sway/scripts/power_menu.sh",
         "tooltip": false,
     },
 }

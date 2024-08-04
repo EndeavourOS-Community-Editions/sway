@@ -1,6 +1,3 @@
-# Initial Setup 
-exec ~/set_once.sh
-
 # Config for sway
 #
 # Read `man 5 sway` for a complete reference.
@@ -8,6 +5,3 @@ exec ~/set_once.sh
 #
 # user config directory
 include $HOME/.config/sway/config.d/*
-
-# only enable this if every app you use is compatible with wayland
-# xwayland disable

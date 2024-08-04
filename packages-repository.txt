@@ -1,13 +1,14 @@
 acpi
 arc-gtk-theme-eos
 awesome-terminal-fonts
-bluez-utils
 brightnessctl
 dex
 egl-wayland
-eos-sddm-theme
 file-roller
 foot
+fuzzel
+greetd
+greetd-regreet
 grim
 gtk-engine-murrine
 gtk-layer-shell
@@ -16,8 +17,8 @@ jq
 mako
 network-manager-applet
 nwg-look
+pamixer
 polkit-gnome
-sddm
 slurp
 swappy
 sway
@@ -35,7 +36,6 @@ ttf-ubuntu-font-family
 waybar
 wayland-protocols
 wl-clipboard
-wofi
 xdg-desktop-portal-wlr
 xed
 xorg-xwayland
