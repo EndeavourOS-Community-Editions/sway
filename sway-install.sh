@@ -15,6 +15,7 @@ pacman -S --noconfirm --noprogressbar --needed --disable-download-timeout $(< pa
 # Deploy user configs
 echo "Deploying user configs..."
 rsync -a .config "/home/${username}/"
+rsync -a .local "/home/${username}/"
 rsync -a home_config/ "/home/${username}/"
 # Restore user ownership
 chown -R "${username}:${username}" "/home/${username}"

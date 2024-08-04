@@ -12,6 +12,7 @@ pacman -S --noconfirm --noprogressbar --needed --disable-download-timeout $(< ./
 # Deploy user configs
 echo "Deploying user configs..."
 rsync -a sway/.config "/home/${username}/"
+rsync -a sway/.local "/home/${username}/"
 rsync -a sway/home_config/ "/home/${username}/"
 # Restore user ownership
 chown -R "${username}:${username}" "/home/${username}"
