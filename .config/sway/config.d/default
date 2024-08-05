@@ -17,17 +17,9 @@ set $launcher fuzzel
 set $powermenu ~/.config/sway/scripts/power_menu.sh
 
 ### Idle configuration
-exec swayidle -w\
-    timeout 1070 'swaylock -f -C ~/.config/swaylock/config'\
-    timeout 770 'swaymsg "output * power off"' \
-    resume 'swaymsg "output * power on"' \
-    before-sleep 'swaylock -C ~/.config/swaylock/config'
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
-
-## Lock Screen
-    bindsym $mod+f1 exec ~/.config/sway/scripts/lockman.sh
+exec swayidle idlehint 1
+exec_always swayidle -w before-sleep "$lock"
+set $lock swaylock -C ~/.config/swaylock/config
 
 ### Key bindings
 #
@@ -44,6 +36,9 @@ exec swayidle -w\
 
     # Start your launcher
     bindsym $mod+d exec $launcher
+
+    # Lock screen
+    bindsym $mod+f1 exec $lock
 
     # Activities
     bindsym $mod+p exec ~/.config/sway/scripts/window_switcher.sh
