@@ -41,7 +41,7 @@ You can examine the contents of the script here: https://github.com/EndeavourOS-
 - Screen settings in: `~/.config/sway/config.d/output`
 - Keybindings Cheatsheet: press keyboard icon in waybar
 
-- If your experiencing issues with your cursor - edit file `~/.profile` and comment out `export WLR_NO_HARDWARE_CURSORS=1`     
+- If your experiencing issues with your cursor - edit file `/etc/greetd/regreet.toml` and uncomment `export WLR_NO_HARDWARE_CURSORS = "1"`     
  
 ## Get involved at our forum:
 https://forum.endeavouros.com/t/sway-edition-general-conversation
@@ -49,7 +49,6 @@ https://forum.endeavouros.com/t/sway-edition-general-conversation
 ## Tutorial for sway-wm settings:
 
  - Background handled by swaybg
- - Gtk3 theme handled by lxappearance
  - Filebrowser = Thunar
  - Default Terminal-Emulator = Foot
  - Text-Editor = xed/nano
@@ -91,7 +90,8 @@ Is set to default for swaywm and can be changed to:
 
 
 ![sway](https://forum.endeavouros.com/uploads/default/original/3X/b/c/bc09b71d718cb09a8efd4545cc65366c5f855441.png)
-![wofi](https://forum.endeavouros.com/uploads/default/original/3X/9/d/9daff7f842bd9db097e0bb9d6be5cf5b65e6baa0.jpeg)
+
+![fuzzel](https://github.com/user-attachments/assets/88fdbf21-83b6-44b3-a2c4-c84cbfcac585)
 
 Waybar :
 ![waybar](https://forum.endeavouros.com/uploads/default/original/3X/7/3/73b22b2a678c6836c3b2d15747b0ef28e064fbc2.png)

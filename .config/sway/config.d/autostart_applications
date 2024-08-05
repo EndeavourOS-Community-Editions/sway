@@ -22,6 +22,10 @@ exec_always --no-startup-id foot --server
 
 # Autotiling
 exec_always ~/.config/sway/scripts/autotiling
+
+# cliphist
+exec wl-paste --type text --watch cliphist store
+exec wl-paste --type image --watch cliphist store
      
 # Welcome App
 exec dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
