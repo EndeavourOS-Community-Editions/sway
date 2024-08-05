@@ -188,8 +188,17 @@ set $lock swaylock -C ~/.config/swaylock/config
 #
 # App shortcuts
 #
+    # Launch the file explorer
     bindsym $mod+n exec thunar
+
+    # Launch the browser
     bindsym $mod+o exec firefox
+
+    # Launch the clipboard manager
+    bindsym $mod+Ctrl+v exec cliphist list | fuzzel -d -w 90 -l 30 -p "Select an entry to copy it to your clipboard buffer:"| cliphist decode | wl-copy
+    # Delete an entry from the clipboard manager
+    bindsym $mod+Ctrl+x exec cliphist list | fuzzel -d -w 90 -l 30 -t cc9393ff -S cc9393ff -p "Select an entry to delete it from cliphist:"| cliphist delete
+    # Note: you can clear all cliphist entries by running `cliphist wipe`
 #
 # Screenshots
 #
