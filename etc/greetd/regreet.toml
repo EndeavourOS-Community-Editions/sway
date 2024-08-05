@@ -19,10 +19,10 @@ XDG_CURRENT_DESKTOP = "sway"
 XDG_SESSION_DESKTOP = "sway"
 
 # Specify Wayland backends for various applications
-MOZ_ENABLE_WAYLAND=1
-OZONE_PLATFORM=wayland
-GDK_BACKEND=wayland
-QT_QPA_PLATFORM=wayland
+MOZ_ENABLE_WAYLAND = "1"
+OZONE_PLATFORM = "wayland"
+GDK_BACKEND = "wayland"
+QT_QPA_PLATFORM = "wayland"
 
 # Prevent using hardware cursors in Wayland, forcing software-rendered cursors.
 # Uncomment if you experience issues with your cursor
