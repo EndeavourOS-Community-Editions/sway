@@ -2,6 +2,7 @@ acpi
 arc-gtk-theme-eos
 awesome-terminal-fonts
 brightnessctl
+cliphist
 dex
 egl-wayland
 file-roller

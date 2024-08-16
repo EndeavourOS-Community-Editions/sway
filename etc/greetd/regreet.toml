@@ -13,13 +13,22 @@ fit = "Cover"
 
 # The entries defined in this section will be passed to the session as environment variables when it is started
 [env]
+# Set desktop and session type
 XDG_SESSION_TYPE = "wayland"
 XDG_CURRENT_DESKTOP = "sway"
 XDG_SESSION_DESKTOP = "sway"
 
+# Specify Wayland backends for various applications
+MOZ_ENABLE_WAYLAND = "1"
+OZONE_PLATFORM = "wayland"
+GDK_BACKEND = "wayland"
+QT_QPA_PLATFORM = "wayland"
+
+# Prevent using hardware cursors in Wayland, forcing software-rendered cursors.
 # Uncomment if you experience issues with your cursor
 #export WLR_NO_HARDWARE_CURSORS = "1"
 
+# Allow the Wayland renderer to fall back to software rendering if necessary.
 # Uncomment if you are running in a virtual machine or have an underpowered GPU
 #export WLR_RENDERER_ALLOW_SOFTWARE = "1"
 
