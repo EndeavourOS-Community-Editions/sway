@@ -33,7 +33,7 @@ fi
 
 # Enable the Greetd service
 echo "Enabling the Greetd service..."
-systemctl enable greetd.service
+systemctl -f enable greetd.service
 
 # Remove the repo
 echo "Removing the EOS Community Sway repo..."
