@@ -11,22 +11,13 @@ for_window [app_id=thunar] focus
 assign [class="Telegram"] 4
 for_window [class="Telegram"] focus
 
-
-for_window [app_id="xed"] focus
-
-
 # set floating (nontiling)for apps needing it:
 for_window [class="Yad" instance="yad"] floating enable
 for_window [app_id="yad"] floating enable
 for_window [app_id="blueman-manager"] floating enable,  resize set width 40 ppt height 30 ppt
 
 # set floating (nontiling) for special apps:
-for_window [class="Xsane" instance="xsane"] floating enable
 for_window [app_id="pavucontrol" ] floating enable, resize set width 40 ppt height 30 ppt
-for_window [class="qt5ct" instance="qt5ct"] floating enable, resize set width 60 ppt height 50 ppt
-for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
-for_window [app_id="pamac-manager"] floating enable, resize set width 80 ppt height 70 ppt
-for_window [class="Lxappearance"] floating enable, resize set width 60 ppt height 50 ppt
 
 # set floating for window roles
 for_window [window_role="pop-up"] floating enable
@@ -42,7 +33,6 @@ for_window [app_id="floating_shell_portrait"] floating enable, border pixel 1, s
 for_window [title="Picture in picture"] floating enable, sticky enable
 for_window [title="waybar_htop"] floating enable, resize set width 70 ppt height 70 ppt
 for_window [title="waybar_nmtui"] floating enable
-for_window [app_id="xsensors"] floating enable
 for_window [title="Save File"] floating enable
 for_window [app_id="firefox" title="Firefox — Sharing Indicator"] kill
 
