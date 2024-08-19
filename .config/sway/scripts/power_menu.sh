@@ -1,33 +1,33 @@
 #!/bin/bash
 
-SELECTION="$(printf "1 - Lock\n2 - Suspend\n3 - Log out\n4 - Reboot\n5 - Reboot to UEFI\n6 - Shutdown" | fuzzel --dmenu -a top-right -l 6 -w 20 -p "Select an option: ")"
+SELECTION="$(printf "󰌾 Lock %11s(1)\n󰤄 Suspend %8s(2)\n󰍃 Log out %8s(3)\n Reboot %9s(4)\n Reboot to UEFI %1s(5)\n󰐥 Shutdown %7s(6)" | fuzzel --dmenu -a top-right -l 6 -w 22 -p "Select an option: ")"
 
 confirm_action() {
     local action="$1"
-    CONFIRMATION="$(printf "1 - No\n2 - Yes" | fuzzel --dmenu -a top-right -l 2 -w 20 -p "$action?")"
-    [ "$CONFIRMATION" = "2 - Yes" ]
+    CONFIRMATION="$(printf "No %12s(1)\nYes %11s(2)" | fuzzel --dmenu -a top-right -l 2 -w 20 -p "$action?")"
+    [[ "$CONFIRMATION" == *"Yes"* ]]
 }
 
 case $SELECTION in
-    *"Lock")
+    *"Lock"*)
         swaylock;;
-    *"Suspend")
+    *"Suspend"*)
         if confirm_action "Suspend"; then
             systemctl suspend
         fi;;
-    *"Log out")
+    *"Log out"*)
         if confirm_action "Log out"; then
             swaymsg exit
         fi;;
-    *"Reboot")
+    *"Reboot"*)
         if confirm_action "Reboot"; then
             systemctl reboot
         fi;;
-    *"Reboot to UEFI")
+    *"Reboot to UEFI"*)
         if confirm_action "Reboot to UEFI"; then
             systemctl reboot --firmware-setup
         fi;;
-    *"Shutdown")
+    *"Shutdown"*)
         if confirm_action "Shutdown"; then
             systemctl poweroff
         fi;;
