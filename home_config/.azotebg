@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+pkill swaybg
+swaybg -o '*' -i "~/.config/sway/sway.png" -m fill &
+ 

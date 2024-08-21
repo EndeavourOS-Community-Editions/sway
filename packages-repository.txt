@@ -1,6 +1,7 @@
 acpi
 arc-gtk-theme-eos
 awesome-terminal-fonts
+azote
 brightnessctl
 cliphist
 dex

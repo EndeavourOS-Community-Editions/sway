@@ -15,8 +15,8 @@ font pango:Noto Sans Regular 10
 smart_borders on
 
 # Set wallpaper:
-exec swaybg -i ~/.config/sway/sway.png
-
+# exec swaybg -i ~/.config/sway/sway.png
+exec ~/.azotebg
 # Title format for windows
 for_window [shell="xdg_shell"] title_format "%title (%app_id)"
 for_window [shell="x_wayland"] title_format "%class - %title"
