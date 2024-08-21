@@ -1,5 +1,6 @@
 acpi
 arc-gtk-theme-eos
+autotiling
 awesome-terminal-fonts
 azote
 brightnessctl

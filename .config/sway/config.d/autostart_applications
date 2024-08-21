@@ -21,7 +21,7 @@ exec nm-applet --indicator
 exec_always --no-startup-id foot --server
 
 # Autotiling
-exec_always ~/.config/sway/scripts/autotiling
+exec autotiling
 
 # cliphist
 exec wl-paste --type text --watch cliphist store
