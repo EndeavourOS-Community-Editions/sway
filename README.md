@@ -19,21 +19,22 @@
 ```
 https://raw.githubusercontent.com/EndeavourOS-Community-Editions/sway/main/setup_sway_isomode.bash
 ```
-![welcome_install-file](https://github.com/user-attachments/assets/0e6d57c2-1254-4179-8084-8797b9644682)
+![welcome_install-customization-file](https://github.com/user-attachments/assets/b4b9e882-0e53-4e11-be10-a92e5b55cefb)
 
-3. Click <kbd> OK </kbd>, then proceed with the installation normally. Be sure to choose "no desktop" on the DE selection screen.
+3. Click <kbd> OK </kbd>, then back in the Welcome app click <kbd> Start the Installer </kbd> and proceed with an online installation. Be sure to choose "no desktop" on the DE selection screen.
 
-![installer_no-desktop](https://github.com/user-attachments/assets/ca5582a9-094e-45d7-af1a-ebcf45e4dea5)
+![installer-no_desktop](https://github.com/user-attachments/assets/f9146bf2-e0ab-4e0a-9b6a-89ad5eed5a29)
+
 
 ### Manually (Post-Installation)
+
+Alternatively, you can add Sway after the installation is complete by cloning the repo and running the `sway-install.sh` script.
 
     git clone https://github.com/EndeavourOS-Community-Editions/sway.git
 
     cd sway
 
     sudo ./sway-install.sh
-   
-You can examine the contents of the script here: https://github.com/EndeavourOS-Community-Editions/sway/blob/main/sway-install.sh
     
 ## Post install
 
@@ -41,7 +42,7 @@ You can examine the contents of the script here: https://github.com/EndeavourOS-
 - Screen settings in: `~/.config/sway/config.d/output`
 - Keybindings Cheatsheet: press keyboard icon in waybar
 
-- If your experiencing issues with your cursor - edit file `/etc/greetd/regreet.toml` and uncomment `export WLR_NO_HARDWARE_CURSORS = "1"`     
+- If your experiencing issues with your cursor - edit file `/etc/greetd/regreet.toml` and uncomment `WLR_NO_HARDWARE_CURSORS = "1"`     
  
 ## Get involved at our forum:
 https://forum.endeavouros.com/t/sway-edition-general-conversation
@@ -87,12 +88,11 @@ Is set to default for swaywm and can be changed to:
      - navigate lists with <kbd>MOD</kbd>+<kbd>↑ ↓ → ←</kbd> 
    - <kbd>MOD</kbd>+<kbd>E</kbd> = Back to tiling
    
+![sway](https://github.com/user-attachments/assets/9f4bbdac-e478-4918-bdac-da4d83cece42)
 
+Fuzzel:
+![fuzzel](https://github.com/user-attachments/assets/fa4d38ba-abcd-4cd9-af9b-4ef6f678b594)
 
-![sway](https://forum.endeavouros.com/uploads/default/original/3X/b/c/bc09b71d718cb09a8efd4545cc65366c5f855441.png)
-
-![fuzzel](https://github.com/user-attachments/assets/88fdbf21-83b6-44b3-a2c4-c84cbfcac585)
-
-Waybar :
-![waybar](https://forum.endeavouros.com/uploads/default/original/3X/7/3/73b22b2a678c6836c3b2d15747b0ef28e064fbc2.png)
+Waybar:
+![waybar](https://github.com/user-attachments/assets/90f7ef07-4423-4c78-bc01-f31dbf503e05)
 
