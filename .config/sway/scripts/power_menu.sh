@@ -1,10 +1,10 @@
 #!/bin/bash
 
-SELECTION="$(printf "󰌾 Lock %11s(1)\n󰤄 Suspend %8s(2)\n󰍃 Log out %8s(3)\n Reboot %9s(4)\n Reboot to UEFI %1s(5)\n󰐥 Shutdown %7s(6)" | fuzzel --dmenu -a top-right -l 6 -w 22 -p "Select an option: ")"
+SELECTION="$(printf "󰌾 Lock %12s(1)\n󰤄 Suspend %9s(2)\n󰍃 Log out %9s(3)\n Reboot %10s(4)\n Reboot to UEFI %2s(5)\n󰐥 Shutdown %8s(6)" | fuzzel --dmenu -a top-right -l 6 -w 24 -x 25 -p "Select an option: ")"
 
 confirm_action() {
     local action="$1"
-    CONFIRMATION="$(printf "No %12s(1)\nYes %11s(2)" | fuzzel --dmenu -a top-right -l 2 -w 20 -p "$action?")"
+    CONFIRMATION="$(printf "No %17s(1)\nYes %16s(2)" | fuzzel --dmenu -a top-right -l 2 -w 24 -x 25 -p "$action?")"
     [[ "$CONFIRMATION" == *"Yes"* ]]
 }
 
