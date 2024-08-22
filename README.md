@@ -94,5 +94,5 @@ Fuzzel:
 ![fuzzel](https://github.com/user-attachments/assets/fa4d38ba-abcd-4cd9-af9b-4ef6f678b594)
 
 Waybar:
-![waybar](https://github.com/user-attachments/assets/90f7ef07-4423-4c78-bc01-f31dbf503e05)
+![waybar](https://github.com/user-attachments/assets/6a4cc6f0-95dc-4a47-a6f9-7c5f853b9b70)
 
