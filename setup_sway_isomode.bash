@@ -25,7 +25,7 @@ rsync -a --chown=root:root sway/etc/ /etc/
 if systemd-detect-virt | grep -vq "none"; then
   echo "Virtual machine detected; enabling WLR_RENDERER_ALLOW_SOFTWARE variable in ReGreet config..."
   # Uncomment WLR_RENDERER_ALLOW_SOFTWARE variable in ReGreet config
-  sed -i '/^#export WLR_RENDERER_ALLOW_SOFTWARE/s/^#//' /etc/greetd/regreet.toml
+  sed -i '/^#WLR_RENDERER_ALLOW_SOFTWARE/s/^#//' /etc/greetd/regreet.toml
 fi
 
 # Remove the repo
