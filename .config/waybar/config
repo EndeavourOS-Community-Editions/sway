@@ -67,7 +67,7 @@
         "format-disabled": " Disabled  ",
         "format-wifi": "  {bandwidthDownBits:>} 󰶡 {bandwidthUpBits:>} 󰶣  ",
         "tooltip-format-wifi": "{essid}",
-        "format-ethernet": "  {bandwidthDownBits:>} 󰶡 {bandwidthUpBits:>} 󰶣  ",
+        "format-ethernet": "󰈀  {bandwidthDownBits:>} 󰶡 {bandwidthUpBits:>} 󰶣  ",
         "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
         "format-disconnected": " Disconnected  ",
         "on-click": "footclient -T waybar_nmtui -e nmtui",
@@ -86,7 +86,7 @@
     
     "memory": {
         "interval": 5,
-        "format": "{:>3}% ",
+        "format": "{:>3}% ",
         "on-click": "footclient -T waybar_htop -e htop", 
         "states": {
             "warning": 70,
