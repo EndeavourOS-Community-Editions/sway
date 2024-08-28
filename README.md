@@ -34,6 +34,8 @@ Alternatively, you can add Sway after the installation is complete by cloning th
 
     cd sway
 
+    chmod +x sway-install.sh
+
     sudo ./sway-install.sh
     
 ## Post install
