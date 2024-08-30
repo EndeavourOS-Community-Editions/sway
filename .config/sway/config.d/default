@@ -54,27 +54,29 @@ set $lock swaylock -C ~/.config/swaylock/config
 #
 # Moving around:
 #
-    # Change window focus
-    bindsym $mod+Left focus left
-    bindsym $mod+Down focus down
-    bindsym $mod+Up focus up
-    bindsym $mod+Right focus right
-    # Vim key support
-    bindsym $mod+$left focus left
-    bindsym $mod+$down focus down
-    bindsym $mod+$up focus up
-    bindsym $mod+$right focus right    
-
-    # Move the focused window
-    bindsym $mod+Shift+Left move left
-    bindsym $mod+Shift+Down move down
-    bindsym $mod+Shift+Up move up
-    bindsym $mod+Shift+Right move right
-    # Vim key support
-    bindsym $mod+Shift+$left move left
-    bindsym $mod+Shift+$down move down
-    bindsym $mod+Shift+$up move up
-    bindsym $mod+Shift+$right move right
+    bindsym {
+        # Change window focus
+        $mod+Left focus left
+        $mod+Down focus down
+        $mod+Up focus up
+        $mod+Right focus right
+        # Vim key support
+        $mod+$left focus left
+        $mod+$down focus down
+        $mod+$up focus up
+        $mod+$right focus right        
+        
+        # Move the focused window
+        $mod+Shift+Left move left
+        $mod+Shift+Down move down
+        $mod+Shift+Up move up
+        $mod+Shift+Right move right
+        # Vim key support
+        $mod+Shift+$left move left
+        $mod+Shift+$down move down
+        $mod+Shift+$up move up
+        $mod+Shift+$right move right
+    }
 
 #
 # Workspaces:
@@ -95,6 +97,7 @@ set $lock swaylock -C ~/.config/swaylock/config
         $mod+17 workspace number 8
         $mod+18 workspace number 9
         $mod+19 workspace number 10
+        
         # Move focused container to workspace
         $mod+Shift+10 move container to workspace number 1
         $mod+Shift+11 move container to workspace number 2
@@ -169,28 +172,33 @@ set $lock swaylock -C ~/.config/swaylock/config
     bindsym $mod+r mode "resize"
 
     # Resize floating windows with mouse scroll:
-    bindsym --whole-window --border $mod+button4 resize shrink height 5 px or 5 ppt
-    bindsym --whole-window --border $mod+button5 resize grow height 5 px or 5 ppt
-    bindsym --whole-window --border $mod+Shift+button4 resize shrink width 5 px or 5 ppt
-    bindsym --whole-window --border $mod+Shift+button5 resize grow width 5 px or 5 ppt
+    bindsym --whole-window --border {
+        # Resize vertically
+        $mod+button4 resize shrink height 5 px or 5 ppt
+        $mod+button5 resize grow height 5 px or 5 ppt
+        # Resize horizontally
+        $mod+Shift+button4 resize shrink width 5 px or 5 ppt
+        $mod+Shift+button5 resize grow width 5 px or 5 ppt
+    }
 
 #
-# Volume
+# Media Keys
 #
-    bindsym XF86AudioRaiseVolume exec pamixer -ui 2
-    bindsym XF86AudioLowerVolume exec pamixer -ud 2
-    bindsym XF86AudioMute exec pamixer --toggle-mute
-#
-# Player
-#
-    bindsym XF86AudioPlay exec playerctl play-pause
-    bindsym XF86AudioNext exec playerctl next
-    bindsym XF86AudioPrev exec playerctl previous
-#
-# Backlight
-#
-    bindsym XF86MonBrightnessUp exec brightnessctl -c backlight set +5%
-    bindsym XF86MonBrightnessDown exec brightnessctl -c backlight set 5%-
+    bindsym {
+        # Volume
+        XF86AudioRaiseVolume exec pamixer -ui 2
+        XF86AudioLowerVolume exec pamixer -ud 2
+        XF86AudioMute exec pamixer --toggle-mute
+
+        # Player
+        XF86AudioPlay exec playerctl play-pause
+        XF86AudioNext exec playerctl next
+        XF86AudioPrev exec playerctl previous
+
+        # Backlight
+        XF86MonBrightnessUp exec brightnessctl -c backlight set +5%
+        XF86MonBrightnessDown exec brightnessctl -c backlight set 5%-
+    }
 #
 # App shortcuts
 #
