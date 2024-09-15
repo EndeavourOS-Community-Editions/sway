@@ -28,7 +28,7 @@ exec wl-paste --type text --watch cliphist store
 exec wl-paste --type image --watch cliphist store
      
 # Welcome App
-exec dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
+exec dex -a -e sway -s /etc/xdg/autostart/:~/.config/autostart/  
 
 # Sway Fader
 # exec python3 ~/.config/sway/scripts/swayfader.py      
