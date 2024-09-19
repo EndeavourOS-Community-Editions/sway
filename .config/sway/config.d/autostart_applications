@@ -14,9 +14,6 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
 # Desktop notifications
 exec mako
 
-# Network Applet
-exec nm-applet --indicator
-
 # Start foot server
 exec_always --no-startup-id foot --server
 
@@ -27,8 +24,14 @@ exec autotiling
 exec wl-paste --type text --watch cliphist store
 exec wl-paste --type image --watch cliphist store
      
+# Network Applet
+exec nm-applet --indicator
+
+# Firewall Applet
+exec QT_QPA_PLATFORM=xcb firewall-applet
+
 # Welcome App
-exec dex -a -e sway -s /etc/xdg/autostart/:~/.config/autostart/  
+exec eos-welcome --startdelay=3
 
 # Sway Fader
 # exec python3 ~/.config/sway/scripts/swayfader.py      
