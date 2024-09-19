@@ -1,7 +1,6 @@
 ## unmaintained needs contributors or maintainer
 
 * WIP at the moment try it and report if you want to contribute!
-* https://github.com/EndeavourOS-Community-Editions/sway/blob/main/setup_sway_isomode.bash
 * [July 2024] start getting big fixes and changes from BluishHumility
   
 # Sway-WM Setup and Theme for EndeavourOS
