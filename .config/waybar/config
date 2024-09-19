@@ -65,7 +65,7 @@
 
     "network": {
         "format-disabled": " Disabled  ",
-        "format-wifi": "  {bandwidthDownBits:>} 󰶡 {bandwidthUpBits:>} 󰶣  ",
+        "format-wifi": " {bandwidthDownBits:>} 󰶡 {bandwidthUpBits:>} 󰶣  ",
         "tooltip-format-wifi": "{essid}",
         "format-ethernet": "󰈀  {bandwidthDownBits:>} 󰶡 {bandwidthUpBits:>} 󰶣  ",
         "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
@@ -169,7 +169,7 @@
     },
 
     "tray": {
-        "icon-size": 18,
+        "icon-size": 16,
         "spacing":10,
      },
 
