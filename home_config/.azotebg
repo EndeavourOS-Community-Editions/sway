@@ -1,4 +1,4 @@
 #!/bin/bash
 pkill swaybg
-swaybg -i "${HOME}/.config/sway/sway.png" -m fill &
+swaybg -i "${HOME}/.config/sway/EndeavourOS_SpaceStation__3840x2160.png" -m fill &
  
