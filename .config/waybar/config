@@ -14,20 +14,19 @@
     ],
  
     "modules-center": [
+        "network",
     ],
 
     "modules-right": [
-        "network",
-        "idle_inhibitor",
-        "memory",
-        "cpu",
-        "pulseaudio",
         "custom/keyboard-layout",
-        "battery",
+        "idle_inhibitor",
+        "cpu",
+        "memory",
         "backlight",
+        "pulseaudio",
+        "battery",
         "clock",
         "tray",
-        //"custom/weather",
         "custom/power",
     ],
 
@@ -172,14 +171,6 @@
         "icon-size": 16,
         "spacing":10,
      },
-
-    // to use the weather module replace <your_location> with your city or town
-    // note: do not use spaces: new york would be newyork
-    "custom/weather": {
-        "exec": "~/.config/waybar/scripts/weather.sh <your_location>", 
-        "return-type": "json",
-        "interval": 600,
-    },
 
     "custom/power": {
         "format":"⏻",
