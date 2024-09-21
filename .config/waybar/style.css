@@ -68,7 +68,6 @@
 #battery,
 #backlight,
 #clock,
-#custom-weather,
 #tray {
     padding:0.5rem 0.6rem;
     margin: 1px 0px;
@@ -121,6 +120,14 @@
     color: orange;
 }
 
+#cpu.warning {
+    color: orange;
+}
+
+#cpu.critical {
+    color: red;
+}
+
 #memory {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -139,12 +146,9 @@
     padding-right:5px;
 }
 
-#cpu.warning {
-    color: orange;
-}
-
-#cpu.critical {
-    color: red;
+#backlight.icon {
+    padding-right:1px;
+    font-size: 13px;
 }
 
 #pulseaudio {
@@ -177,11 +181,6 @@
 #battery.critical.discharging {
     animation-name: blink-critical;
     animation-duration: 2s;
-}
-
-#backlight.icon {
-    padding-right:1px;
-    font-size: 13px;
 }
 
 #custom-power {

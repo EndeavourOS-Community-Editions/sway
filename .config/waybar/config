@@ -1,41 +1,24 @@
-// Global 
 {
-    "layer": "top",
-    "position": "top",
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    // "height": 30, // Auto-height is used when commented
+    // "width": 1280, // Full screen width when commented
+    "spacing": 10, // Gaps between modules (in px)
+    // See `man waybar` for more configuration options
 
-    // If height property would be not present, it'd be calculated dynamically
-    "height": 30,
+// Configuration - modules-left
 
     "modules-left": [
         "custom/launcher",
         "sway/workspaces",
         "sway/mode",
-        "sway/window",
+        "sway/window"
     ],
- 
-    "modules-center": [
-        "network",
-    ],
-
-    "modules-right": [
-        "custom/keyboard-layout",
-        "idle_inhibitor",
-        "cpu",
-        "memory",
-        "backlight",
-        "pulseaudio",
-        "battery",
-        "clock",
-        "tray",
-        "custom/power",
-    ],
-
-    // Modules
-
+    
     "custom/launcher": {
         "format":"<span size='x-large'></span>",
         "on-click": "exec fuzzel",
-        "tooltip": false,
+        "tooltip": false
     },
 
     "sway/workspaces": {
@@ -62,19 +45,50 @@
         "max-length": 120
     },
 
+// Configuration - modules-center
+    
+    "modules-center": [
+        "network"
+    ],
+
     "network": {
-        "format-disabled": " Disabled  ",
-        "format-wifi": " {bandwidthDownBits:>} 󰶡 {bandwidthUpBits:>} 󰶣  ",
+        "format-disabled": " Disabled",
+        "format-wifi": " {bandwidthDownBits:>} 󰶡 {bandwidthUpBits:>} 󰶣",
         "tooltip-format-wifi": "{essid}",
-        "format-ethernet": "󰈀  {bandwidthDownBits:>} 󰶡 {bandwidthUpBits:>} 󰶣  ",
+        "format-ethernet": "󰈀 {bandwidthDownBits:>} 󰶡 {bandwidthUpBits:>} 󰶣",
         "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
-        "format-disconnected": " Disconnected  ",
+        "format-disconnected": " Disconnected",
         "on-click": "footclient -T waybar_nmtui -e nmtui",
         "interval": 2,
     },
 
+// Configuration - modules-right
+    
+    "modules-right": [
+        "custom/keyboard-layout",
+        "idle_inhibitor",
+        "cpu",
+        "memory",
+        "backlight",
+        "pulseaudio",
+        "battery",
+        "clock",
+        "tray",
+        "custom/power"
+    ],
+
+    "custom/keyboard-layout": {
+      	"exec": "i=$(swaymsg -t get_inputs); echo \"\"; echo \"$i\" | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
+        "format": "",
+        // Interval set only as a fallback; use signal to update the module more immediately
+        "interval": 30,
+        // See example config for sending signal to Waybar in ~/.config/sway/config.d/input
+        "signal": 1,
+        "on-click": "~/.config/waybar/scripts/keyhint.sh",
+    },
+
     "idle_inhibitor": {
-        "format": "{icon}   ",
+        "format": "{icon}",
         "format-icons": {
             "activated": "",
             "deactivated": ""
@@ -82,10 +96,20 @@
         "tooltip-format-activated": "Idle Inhibitor Activated",
         "tooltip-format-deactivated": "Idle Inhibitor Deactivated"
     },
+
+    "cpu": {
+        "interval": 5,
+        "format": "{usage:>3}%",
+        "states": {
+            "warning": 70,
+            "critical": 90,
+        },
+        "on-click": "footclient -T waybar_htop -e htop",
+    },
     
     "memory": {
         "interval": 5,
-        "format": "{:>3}% ",
+        "format": "{:>3}%",
         "on-click": "footclient -T waybar_htop -e htop", 
         "states": {
             "warning": 70,
@@ -93,20 +117,18 @@
         }
     },
 
-    "cpu": {
-        "interval": 5,
-        "format": "{usage:>3}% ",
-        "states": {
-            "warning": 70,
-            "critical": 90,
-        },
-        "on-click": "footclient -T waybar_htop -e htop",
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰄰", "󰪞", "󰪟", "󰪠", "󰪡", "󰪢", "󰪣", "󰪤", "󰪥"],
+        "tooltip-format": "Backlight (Scroll): {percent:}%",
+        "on-scroll-down": "brightnessctl -c backlight set 5%-",
+        "on-scroll-up": "brightnessctl -c backlight set +5%"
     },
 
     "pulseaudio": {
         "scroll-step": 2,
-        "format": "{icon} {volume}% ",
-        "format-muted":"󰝟 muted ",
+        "format": "{icon} {volume}%",
+        "format-muted":"󰝟 muted",
         "format-icons": {
             "headphones": "",
             "handsfree": "",
@@ -119,31 +141,13 @@
         "on-click": "pavucontrol"
     },
 
-    "custom/keyboard-layout": {
-      	"exec": "i=$(swaymsg -t get_inputs); echo \"\"; echo \"$i\" | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
-        "format": "   ",
-        // Interval set only as a fallback; use signal to update the module more immediately
-        "interval": 30,
-        // See example config for sending signal to Waybar in ~/.config/sway/config.d/input
-        "signal": 1,
-        "on-click": "~/.config/waybar/scripts/keyhint.sh",
-    },
-
     "battery": {
         "states": {
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon} {capacity}% ",
+        "format": "{icon} {capacity}%",
         "format-icons": ["", "", "", "", ""]
-    },
-
-    "backlight": {
-        "format": "{icon} {percent}% ",
-        "format-icons": ["󰄰", "󰪞", "󰪟", "󰪠", "󰪡", "󰪢", "󰪣", "󰪤", "󰪥"],
-        "tooltip-format": "Backlight (Scroll): {percent:}%",
-        "on-scroll-down": "brightnessctl -c backlight set 5%-",
-        "on-scroll-up": "brightnessctl -c backlight set +5%"
     },
 
     "clock": {
