@@ -10,7 +10,7 @@
  * Keyframes
  * -------------------------------------------------------------------------- */
 
-@define-color highlight #5294e2 ;
+@define-color highlight #685878 ;
 @define-color base1  #19191e ;
 
 @keyframes blink-warning {
@@ -78,7 +78,6 @@
  * -------------------------------------------------------------------------- */
 
 #custom-launcher {
-    font-size:15px;
     margin-left:15px;
     margin-right:10px;
 }
@@ -88,15 +87,15 @@
 }
 
 #workspaces button {
-    border-bottom: 3px solid transparent;
-    margin-bottom: 0px;
-    padding:0px;
+    border-radius: 5px;
+    color: #eceff4;
+    padding: 1px 6px;
+    margin-right: 2px;
+    margin-left: 2px;
 }
 
 #workspaces button.focused {
-    border-bottom: 3px solid  @highlight;
-    margin-bottom: 1px;
-    padding-left:0;
+    border: 1px solid #d8dee9;
 }
 
 #workspaces button.urgent {

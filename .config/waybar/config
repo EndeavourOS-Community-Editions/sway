@@ -3,7 +3,7 @@
     "position": "top", // Waybar position (top|bottom|left|right)
     // "height": 30, // Auto-height is used when commented
     // "width": 1280, // Full screen width when commented
-    "spacing": 10, // Gaps between modules (in px)
+    "spacing": 16, // Gaps between modules (in px)
     // See `man waybar` for more configuration options
 
 // Configuration - modules-left
@@ -14,7 +14,7 @@
         "sway/mode",
         "sway/window"
     ],
-    
+
     "custom/launcher": {
         "format":"<span size='x-large'></span>",
         "on-click": "exec fuzzel",
@@ -25,13 +25,16 @@
         "disable-scroll": true,
         "disable-markup" : false,
         "all-outputs": true,
-        "format": "  {icon}  ",
-        //"format":"{icon}",
+        "format": "{icon}",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
         }
     },
 
@@ -42,6 +45,7 @@
 
     "sway/window": {
         "format": "{}",
+        //"all-outputs": true, // Active window shows only on active display when commented
         "max-length": 120
     },
 

@@ -1,25 +1,8 @@
-# Assign workspaces
-assign [app_id="firefox"] 2
-for_window [app_id="firefox"] focus
-
-assign [class="firefox"] 2
-for_window [class="firefox"] focus
-
-assign [app_id=thunar] 3
-for_window [app_id=thunar] focus
-
-assign [app_id="org.telegram.desktop"] 4
-for_window [app_id="org.telegram.desktop"] focus
-
-# set floating (nontiling)for apps needing it:
+# Custom windowing rules
 for_window [class="Yad" instance="yad"] floating enable
 for_window [app_id="yad"] floating enable
 for_window [app_id="blueman-manager"] floating enable,  resize set width 40 ppt height 30 ppt
-
-# set floating (nontiling) for special apps:
 for_window [app_id="pavucontrol" ] floating enable, resize set width 40 ppt height 30 ppt
-
-# set floating for window roles
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="bubble"] floating enable
 for_window [window_role="task_dialog"] floating enable
@@ -28,7 +11,6 @@ for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
 for_window [window_role="About"] floating enable
 for_window [title="File Operation Progress"] floating enable, border pixel 1, sticky enable, resize set width 40 ppt height 30 ppt
-for_window [app_id="firefox" title="^Library$"] floating enable, border pixel 1, sticky enable, resize set width 40 ppt height 30 ppt
 for_window [app_id="floating_shell_portrait"] floating enable, border pixel 1, sticky enable, resize set width 30 ppt height 40 ppt
 for_window [title="Picture in picture"] floating enable, sticky enable
 for_window [title="waybar_htop"] floating enable, resize set width 70 ppt height 70 ppt
