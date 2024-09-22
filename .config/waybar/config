@@ -17,7 +17,7 @@
 
     "custom/launcher": {
         "format":"<span size='x-large'></span>",
-        "on-click": "exec fuzzel",
+        "on-click": "exec nwg-drawer",
         "tooltip": false
     },
 
@@ -38,7 +38,7 @@
     },
 
     "sway/mode": {
-        "format": "{}",
+        "format": "<span style=\"italic\">{}</span>",
         "tooltip": false
     },
 
@@ -62,7 +62,7 @@
         "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
         "format-disconnected": " Disconnected",
         "on-click": "footclient -T waybar_nmtui -e nmtui",
-        "interval": 2,
+        "interval": 2
     },
 
 // Configuration - modules-right
@@ -87,7 +87,7 @@
         "interval": 30,
         // See example config for sending signal to Waybar in ~/.config/sway/config.d/input
         "signal": 1,
-        "on-click": "~/.config/waybar/scripts/keyhint.sh",
+        "on-click": "~/.config/waybar/scripts/keyhint.sh"
     },
 
     "idle_inhibitor": {
@@ -107,7 +107,7 @@
             "warning": 70,
             "critical": 90,
         },
-        "on-click": "footclient -T waybar_htop -e htop",
+        "on-click": "footclient -T waybar_htop -e htop"
     },
     
     "memory": {
@@ -175,12 +175,12 @@
 
     "tray": {
         "icon-size": 16,
-        "spacing":10,
+        "spacing":10
      },
 
     "custom/power": {
         "format":"⏻",
         "on-click": "exec ~/.config/sway/scripts/power_menu.sh",
-        "tooltip": false,
+        "tooltip": false
     },
 }

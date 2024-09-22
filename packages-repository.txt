@@ -18,6 +18,7 @@ htop
 jq
 mako
 network-manager-applet
+nwg-drawer
 nwg-look
 pamixer
 polkit-gnome
