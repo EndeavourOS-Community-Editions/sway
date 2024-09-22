@@ -60,13 +60,13 @@
 /* Every modules */
 #mode,
 #network,
-#idle_inhibitor,
-#memory,
-#cpu,
-#pulseaudio,
 #custom-keyboard-layout,
-#battery,
+#idle_inhibitor,
+#cpu,
+#memory,
 #backlight,
+#pulseaudio,
+#battery,
 #clock,
 #tray {
     padding:0.5rem 0.6rem;
@@ -74,7 +74,7 @@
 }
 
 /* -----------------------------------------------------------------------------
- * Modules styles
+ * Module styles
  * -------------------------------------------------------------------------- */
 
 #custom-launcher {
@@ -146,12 +146,9 @@
 }
 
 #backlight.icon {
-    padding-right:1px;
-    font-size: 13px;
 }
 
 #pulseaudio {
-    padding-top:6px;
 }
 
 #pulseaudio.muted {

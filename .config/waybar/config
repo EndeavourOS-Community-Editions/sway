@@ -23,7 +23,6 @@
 
     "sway/workspaces": {
         "disable-scroll": true,
-        "disable-markup" : false,
         "all-outputs": true,
         "format": "{icon}",
         "format-icons": {
@@ -34,7 +33,7 @@
             "7": "7",
             "8": "8",
             "9": "9",
-            "10": "10",
+            "10": "10"
         }
     },
 
@@ -67,7 +66,7 @@
     },
 
 // Configuration - modules-right
-    
+
     "modules-right": [
         "custom/keyboard-layout",
         "idle_inhibitor",
@@ -155,7 +154,6 @@
     },
 
     "clock": {
-        "interval": 10,
         "format": "󰅐 {:%H:%M}",
         "format-alt": "󰅐 {:%OI:%M %p}",
         "tooltip-format": " {:%A %m/%d}\n\n<tt><small>{calendar}</small></tt>",
