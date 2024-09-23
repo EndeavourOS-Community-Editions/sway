@@ -228,7 +228,3 @@ set $lock swaylock -C ~/.config/swaylock/config
     bindsym Ctrl+Print exec ~/.config/sway/scripts/screenshot_window.sh
     # Screenshot the current display and pipe to swappy
     bindsym Shift+Print exec ~/.config/sway/scripts/screenshot_display.sh
-#
-# Keybindings List
-#
-    bindsym $mod+t exec xed ~/.config/sway/cheatsheet
