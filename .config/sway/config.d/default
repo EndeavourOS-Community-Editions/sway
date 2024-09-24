@@ -70,8 +70,8 @@ set $lock swaylock -C ~/.config/swaylock/config
         $mod+$left focus left
         $mod+$down focus down
         $mod+$up focus up
-        $mod+$right focus right        
-        
+        $mod+$right focus right
+
         # Move the focused window
         $mod+Shift+Left move left
         $mod+Shift+Down move down
@@ -90,7 +90,7 @@ set $lock swaylock -C ~/.config/swaylock/config
     # Workspace bindings are using bindcode instead of bindsym for better Azerty compatibility.
     # https://github.com/EndeavourOS-Community-Editions/sway/pull/81
     # Use wev to find keycodes for setting up other bindings this way.
-    
+
     bindcode {
         # Switch to workspace
         $mod+10 workspace number 1
@@ -103,7 +103,7 @@ set $lock swaylock -C ~/.config/swaylock/config
         $mod+17 workspace number 8
         $mod+18 workspace number 9
         $mod+19 workspace number 10
-        
+
         # Move focused container to workspace
         $mod+Shift+10 move container to workspace number 1
         $mod+Shift+11 move container to workspace number 2
@@ -156,26 +156,17 @@ set $lock swaylock -C ~/.config/swaylock/config
     # Show the next scratchpad window or hide the focused scratchpad window.
     # If there are multiple scratchpad windows, this command cycles through them.
     bindsym $mod+minus scratchpad show
-#
-# Resizing containers:
-#
-    mode "resize" {
-        # Resize with arrow keys
-        bindsym Left resize shrink width 10px
-        bindsym Down resize grow height 10px
-        bindsym Up resize shrink height 10px
-        bindsym Right resize grow width 10px
-        # Resize with Vim keys
-        bindsym $left resize shrink width 10px
-        bindsym $down resize grow height 10px
-        bindsym $up resize shrink height 10px
-        bindsym $right resize grow width 10px
-        # Return to default mode
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
-    }
-    bindsym $mod+r mode "resize"
+    #
+    # Resizing containers:
+    bindsym $mod+ctrl+Right resize shrink width 10 px
+    bindsym $mod+ctrl+Up resize grow height 10 px
+    bindsym $mod+ctrl+Down resize shrink height 10 px
+    bindsym $mod+ctrl+Left resize grow width 10 px
+    # Same but vim keys
+    bindsym $mod+ctrl+l resize shrink width 10 px
+    bindsym $mod+ctrl+k resize grow height 10 px
+    bindsym $mod+ctrl+j resize shrink height 10 px
+    bindsym $mod+ctrl+h resize grow width 10 px
 
     # Resize floating windows with mouse scroll:
     bindsym --whole-window --border {
