@@ -144,6 +144,7 @@ set $lock swaylock -C ~/.config/swaylock/config
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
+
 #
 # Scratchpad:
 #
@@ -156,17 +157,22 @@ set $lock swaylock -C ~/.config/swaylock/config
     # Show the next scratchpad window or hide the focused scratchpad window.
     # If there are multiple scratchpad windows, this command cycles through them.
     bindsym $mod+minus scratchpad show
-    #
-    # Resizing containers:
-    bindsym $mod+ctrl+Right resize shrink width 10 px
-    bindsym $mod+ctrl+Up resize grow height 10 px
-    bindsym $mod+ctrl+Down resize shrink height 10 px
-    bindsym $mod+ctrl+Left resize grow width 10 px
-    # Same but vim keys
-    bindsym $mod+ctrl+l resize shrink width 10 px
-    bindsym $mod+ctrl+k resize grow height 10 px
-    bindsym $mod+ctrl+j resize shrink height 10 px
-    bindsym $mod+ctrl+h resize grow width 10 px
+
+#
+# Resizing containers:
+#
+    bindsym {
+        # Resize with arrow keys
+        $mod+ctrl+Right resize shrink width 10 px
+        $mod+ctrl+Up resize grow height 10 px
+        $mod+ctrl+Down resize shrink height 10 px
+        $mod+ctrl+Left resize grow width 10 px
+        # Resize with Vim keys
+        $mod+ctrl+l resize shrink width 10 px
+        $mod+ctrl+k resize grow height 10 px
+        $mod+ctrl+j resize shrink height 10 px
+        $mod+ctrl+h resize grow width 10 px
+    }
 
     # Resize floating windows with mouse scroll:
     bindsym --whole-window --border {
@@ -196,6 +202,7 @@ set $lock swaylock -C ~/.config/swaylock/config
         XF86MonBrightnessUp exec brightnessctl -c backlight set +5%
         XF86MonBrightnessDown exec brightnessctl -c backlight set 5%-
     }
+
 #
 # App shortcuts
 #
@@ -210,6 +217,7 @@ set $lock swaylock -C ~/.config/swaylock/config
     # Delete an entry from the clipboard manager
     bindsym $mod+Ctrl+x exec cliphist list | fuzzel -d -w 90 -l 30 -t cc9393ff -S cc9393ff -p "Select an entry to delete it from cliphist:"| cliphist delete
     # Note: you can clear all cliphist entries by running `cliphist wipe`
+
 #
 # Screenshots
 #
@@ -219,3 +227,4 @@ set $lock swaylock -C ~/.config/swaylock/config
     bindsym Ctrl+Print exec ~/.config/sway/scripts/screenshot_window.sh
     # Screenshot the current display and pipe to swappy
     bindsym Shift+Print exec ~/.config/sway/scripts/screenshot_display.sh
+
