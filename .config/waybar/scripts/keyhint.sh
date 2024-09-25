@@ -53,7 +53,7 @@ cheat=(
     "<span font='$font 14'>Snip a screenshot</span>"
     "<span font='$font 14'>Print</span>"
     "<span font='$font 14'>Resize a window</span>"
-    "<span font='$font 14'> + </span><span font='$font 18'>󰰞</span><span font='$font 14'> , </span><span font='$font 18'>󰜳 󰜰 󰜹 󰜶</span><span font='$font 14'> , Esc</span>"
+    "<span font='$font 14'> + Ctrl + </span><span font='$font 18'>󰜳 󰜰 󰜹 󰜶</span>"
     ""
     "<span font='$font 14'>Screenshot a window</span>"
     "<span font='$font 14'>Ctrl + Print</span>"
