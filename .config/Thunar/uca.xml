@@ -5,7 +5,7 @@
 	<name>Open Terminal Here</name>
 	<unique-id>1611168259857250-1</unique-id>
 	<command>sh -c &apos;cd %f; footclient&apos;</command>
-	<description>Example for a custom action</description>
+	<description>Open a terminal at the current location</description>
 	<patterns>*</patterns>
 	<startup-notify/>
 	<directories/>
