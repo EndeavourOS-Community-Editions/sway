@@ -27,8 +27,8 @@ EOF
     cat <<EOF > /etc/dracut.conf.d/nvidia-modules.conf
 force_drivers+=" nvidia nvidia_modeset nvidia_uvm nvidia_drm "
 EOF
-    echo "Regenerating initrds..."
-    reinstall-kernels || dracut-rebuild
+    # echo "Regenerating initrds..."
+    # reinstall-kernels || dracut-rebuild
 fi
 
 # Install the custom package list
