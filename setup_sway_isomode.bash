@@ -12,9 +12,9 @@ git clone --branch nvidia-testing https://github.com/EndeavourOS-Community-Editi
 # Check if nvidia-inst is installed
 # If it is, do the Nvidia stuff
 if pacman -Qq nvidia-inst 2>/dev/null | grep -q .; then
-    # Add the --unsupported-gpu flag to the sway call in greetd.conf
+    echo "Adding the --unsupported-gpu flag to the sway call in greetd.conf..."
     sed -i 's|sway -c|sway --unsupported-gpu -c|' sway/etc/greetd/greetd.conf
-    # Create a custom desktop file that uses sway --unsupported-gpu
+    echo "Adding a custom desktop file for Nvidia sessions..."
     mkdir -p /usr/share/wayland-sessions
     cat <<EOF > /usr/share/wayland-sessions/sway-nvidia.desktop
 [Desktop Entry]
