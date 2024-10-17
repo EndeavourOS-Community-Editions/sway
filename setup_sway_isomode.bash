@@ -23,6 +23,12 @@ Comment=Sway with Nvidia
 Exec=sway --unsupported-gpu
 Type=Application
 EOF
+    echo "Adding dracut config for early module loading..."
+    cat <<EOF > /etc/dracut.conf.d/nvidia-modules.conf
+force_drivers+=" nvidia nvidia_modeset nvidia_uvm nvidia_drm "
+EOF
+    echo "Regenerating initrds..."
+    dracut-rebuild
 fi
 
 # Install the custom package list
