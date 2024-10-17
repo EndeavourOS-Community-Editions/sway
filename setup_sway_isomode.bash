@@ -15,6 +15,7 @@ if pacman -Qq nvidia-inst 2>/dev/null | grep -q .; then
     # Add the --unsupported-gpu flag to the sway call in greetd.conf
     sed -i 's|sway -c|sway --unsupported-gpu -c|' sway/etc/greetd/greetd.conf
     # Create a custom desktop file that uses sway --unsupported-gpu
+    mkdir -p /usr/share/wayland-sessions
     cat <<EOF > /usr/share/wayland-sessions/sway-nvidia.desktop
 [Desktop Entry]
 Name=Sway-Nvidia
