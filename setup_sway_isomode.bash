@@ -8,8 +8,8 @@ git clone https://github.com/EndeavourOS-Community-Editions/sway.git
 # Check if nvidia-inst is installed
 if pacman -Qq nvidia-inst 2>/dev/null | grep -q .; then
     # If it is, do the Nvidia stuff
-#    some Nvidia stuff
-#    some other Nvidia stuff
+    sed -i 's|sway -c|sway --unsupported-gpu -c|' sway/etc/greetd/greetd.conf
+    
 fi
 
 # Install the custom package list
