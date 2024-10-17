@@ -28,7 +28,7 @@ EOF
 force_drivers+=" nvidia nvidia_modeset nvidia_uvm nvidia_drm "
 EOF
     echo "Regenerating initrds..."
-    dracut-rebuild
+    reinstall-kernels || dracut-rebuild
 fi
 
 # Install the custom package list
