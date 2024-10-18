@@ -1,13 +1,9 @@
 #!/usr/bin/env bash
 username="$1"
 
-# # Clone the repo
-# echo "Cloning the EOS Community Sway repo..."
-# git clone https://github.com/EndeavourOS-Community-Editions/sway.git
-
-# Clone the nvidia-testing branch of the repo
-echo "Cloning the EOS Community Sway repo (nvidia-testing branch)..."
-git clone --branch nvidia-testing https://github.com/EndeavourOS-Community-Editions/sway.git
+# Clone the repo
+echo "Cloning the EOS Community Sway repo..."
+git clone https://github.com/EndeavourOS-Community-Editions/sway.git
 
 # Check if nvidia-inst is installed
 # If it is, do the Nvidia stuff
