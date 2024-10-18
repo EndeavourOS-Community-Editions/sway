@@ -5,6 +5,28 @@ username="$1"
 echo "Cloning the EOS Community Sway repo..."
 git clone https://github.com/EndeavourOS-Community-Editions/sway.git
 
+# Check if nvidia-inst is installed
+# If it is, do the Nvidia stuff
+if pacman -Qq nvidia-inst 2>/dev/null | grep -q .; then
+    echo "Adding the --unsupported-gpu flag to the sway call in greetd.conf..."
+    sed -i 's|sway -c|sway --unsupported-gpu -c|' sway/etc/greetd/greetd.conf
+    echo "Adding a custom desktop file for Nvidia sessions..."
+    mkdir -p /usr/share/wayland-sessions
+    cat <<EOF > /usr/share/wayland-sessions/sway-nvidia.desktop
+[Desktop Entry]
+Name=Sway-Nvidia
+Comment=Sway with Nvidia
+Exec=sway --unsupported-gpu
+Type=Application
+EOF
+    echo "Adding dracut config for early module loading..."
+    cat <<EOF > /etc/dracut.conf.d/nvidia-modules.conf
+force_drivers+=" nvidia nvidia_modeset nvidia_uvm nvidia_drm "
+EOF
+    echo "Regenerating initrds..."
+    reinstall-kernels || dracut-rebuild
+fi
+
 # Install the custom package list
 echo "Installing needed packages..."
 pacman -S --noconfirm --noprogressbar --needed --disable-download-timeout $(< ./sway/packages-repository.txt)
