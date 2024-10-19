@@ -28,7 +28,7 @@ exec wl-paste --type image --watch cliphist store
 exec nm-applet --indicator
 
 # Firewall Applet
-exec QT_QPA_PLATFORM=xcb firewall-applet
+exec sleep 2 && firewall-applet
 
 # Welcome App
 exec eos-welcome --startdelay=3
