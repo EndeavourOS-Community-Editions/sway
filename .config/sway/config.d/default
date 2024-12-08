@@ -21,8 +21,8 @@ set $powermenu ~/.config/sway/scripts/power_menu.sh
 
 ### Idle configuration
 exec swayidle idlehint 1
-exec_always swayidle -w before-sleep "$lock"
 set $lock swaylock -C ~/.config/swaylock/config
+exec_always swayidle -w before-sleep "$lock"
 
 ### Key bindings
 #
