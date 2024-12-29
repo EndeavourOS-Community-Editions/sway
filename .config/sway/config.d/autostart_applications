@@ -7,9 +7,13 @@ exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # Import environment variables for user systemd service manager
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
-# Update dbux environments with display variables
+# Update dbus environments with display variables
 exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
+# Idle configuration
+exec swayidle idlehint 1
+exec_always swayidle -w before-sleep "gtklock -d"
 
 # Desktop notifications
 exec mako

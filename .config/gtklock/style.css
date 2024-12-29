@@ -1,0 +1,47 @@
+* {
+  border: none;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8)
+}
+window {
+  background-image: url("EndeavourOS_Astronaut_SpaceWalk.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+#clock-label {
+  font-family: JetBrainsMono;
+  font-size: 64.0px;
+}
+#unlock-button {
+  background: none;
+  background-color: rgba(127, 63, 191, 0.4);
+  border: 2px solid rgba(127, 63, 191, 0.5);
+  padding: 4px;
+}
+#unlock-button:hover {
+  background-color: rgba(127, 63, 191, 0.9);
+}
+#input-field {
+  border-radius: 10px;
+  background-color: rgba(127, 127, 255, 0.1);
+  border: 2px solid rgba(127, 63, 191, 0.5);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#powerbar-box button {
+  background: none;
+  background-color: rgba(127, 63, 191, 0.4);
+  border: 2px solid rgba(127, 63, 191, 0.5);
+  border-radius: 10px;
+  padding: 4px;
+}
+#powerbar-box button:hover {
+  background-color: rgba(127, 63, 191, 0.9);
+}
+#input-label {
+  font-size: 0px;
+}
+#window-box infobar {
+  background-color: transparent;
+}

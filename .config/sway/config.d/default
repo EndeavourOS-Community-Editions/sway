@@ -19,11 +19,6 @@ set $menu nwg-drawer
 # Power Menu
 set $powermenu ~/.config/sway/scripts/power_menu.sh
 
-### Idle configuration
-exec swayidle idlehint 1
-set $lock swaylock -C ~/.config/swaylock/config
-exec_always swayidle -w before-sleep "$lock"
-
 ### Key bindings
 #
 # Basics:
@@ -44,7 +39,7 @@ exec_always swayidle -w before-sleep "$lock"
     bindsym $mod+Shift+d exec $menu
 
     # Lock screen
-    bindsym $mod+f1 exec $lock
+    bindsym $mod+f1 exec gtklock
 
     # Activities
     bindsym $mod+p exec ~/.config/sway/scripts/window_switcher.sh
