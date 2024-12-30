@@ -2,6 +2,10 @@
 
 username="$(logname)"
 
+# Redirect stdout and stderr to the log file
+exec > >(tee -a "/home/${username}/installation_log.txt")
+exec 2>&1
+
 # Check for sudo
 if [ "$EUID" -ne 0 ]; then
     echo "This script must be run with sudo."
