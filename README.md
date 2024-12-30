@@ -65,7 +65,7 @@ Main shortcuts: `~/.config/sway/cheatsheet`
 
 <kbd>MOD</kbd> key is set to the <kbd>WINKEY</kbd>/<kbd>LINKEY</kbd>
 
- - <kbd>MOD</kbd>+<kbd>Return</kbd> = open floating terminal (Foot)
+ - <kbd>MOD</kbd>+<kbd>Return</kbd> = open terminal (Foot)
  - <kbd>MOD</kbd>+<kbd>O</kbd> = open Browser (firefox)
  - <kbd>MOD</kbd>+<kbd>N</kbd> = open File Manager (thunar)
  - <kbd>MOD</kbd>+<kbd>D</kbd>= app menu (wofi)
