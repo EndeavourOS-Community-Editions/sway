@@ -55,17 +55,19 @@ Main shortcuts: `~/.config/sway/cheatsheet`
 
 <kbd>MOD</kbd> key is set to the <kbd>WINKEY</kbd>/<kbd>LINKEY</kbd>
 
- - <kbd>MOD</kbd>+<kbd>Return</kbd> = open floating terminal (Foot)
- - <kbd>MOD</kbd>+<kbd>O</kbd> = open Browser (firefox)
- - <kbd>MOD</kbd>+<kbd>N</kbd> = open File Manager (thunar)
+ - <kbd>MOD</kbd>+<kbd>Return</kbd> = open terminal (Foot)
+ - <kbd>MOD</kbd>+<kbd>O</kbd> = open Browser (Firefox)
+ - <kbd>MOD</kbd>+<kbd>N</kbd> = open File Manager (Thunar)
  - <kbd>MOD</kbd>+<kbd>D</kbd>= app menu (Fuzzel)
  - <kbd>MOD</kbd>+<kbd>Q</kbd> = close focused app [kill]
  - <kbd>Shift</kbd>+<kbd>PrtSc</kbd> = screenshot/bring up screenshot menu
  - <kbd>MOD</kbd>+<kbd>SHIFT</kbd>+<kbd>E</kbd> = power-menu
- - <kbd>MOD</kbd>+<kbd>R</kbd> = resize mode
- - <kbd>MOD</kbd>+<kbd>SHIFT</kbd>+<kbd>SPACE</kbd>  = float window
-     - <kbd>MOD</kbd>+<kbd>HOLD DOWN</kbd> = drag floating window
- - <kbd>MOD</kbd>+<kbd>↑ ↓ → ←</kbd>  = switch focus respectively 
+ - <kbd>CTRL</kbd>+<kbd>MOD</kbd>+<kbd>↑ ↓ → ←</kbd> = resize window
+ - <kbd>MOD</kbd>+ right click = resize window
+ - <kbd>MOD</kbd>+<kbd>SHIFT</kbd>+<kbd>SPACE</kbd> = float window
+ - <kbd>MOD</kbd>+<kbd>SHIFT</kbd>+<kbd>↑ ↓ → ←</kbd> = move window
+ - <kbd>MOD</kbd>+ left click = move window
+ - <kbd>MOD</kbd>+<kbd>↑ ↓ → ←</kbd> = switch focused window
  - <kbd>MOD</kbd>+<kbd>SHIFT</kbd>+<kbd>MINUS</kbd> = send to scratchpad
  - <kbd>MOD</kbd>+<kbd>MINUS</kbd> = cycle through scratchpad
  
