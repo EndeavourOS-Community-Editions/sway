@@ -2,7 +2,7 @@
 
 **Sway EndeavourOS Community Edition**
 
-[![Maintenance](https://img.shields.io/maintenance/yes/2024.svg)]()
+[![Maintenance](https://img.shields.io/maintenance/yes/2025.svg)]()
 
 ## To Install Sway
 
@@ -36,53 +36,55 @@ Alternatively, you can add Sway after the installation is complete by cloning th
 - Screen settings in: `~/.config/sway/config.d/output`
 - Keybindings Cheatsheet: press keyboard icon in waybar
 
-- If your experiencing issues with your cursor - edit file `/etc/greetd/regreet.toml` and uncomment `WLR_NO_HARDWARE_CURSORS = "1"`     
+- If you are experiencing issues with your cursor, edit `/etc/greetd/regreet.toml` and uncomment `WLR_NO_HARDWARE_CURSORS = "1"`
  
 ## Get involved at our forum:
 https://forum.endeavouros.com/t/sway-edition-general-conversation
 
 ## Tutorial for sway-wm settings:
 
- - Background handled by swaybg
+ - Background handled by Azote
  - Filebrowser = Thunar
  - Default Terminal-Emulator = Foot
  - Text-Editor = xed/nano
  - Bar = Waybar
  - Sound = Pulseaudio
 
-Main shortcuts: `~/.config/sway/cheatsheet`
+Keyboard shortcuts:
 
+<kbd>Mod</kbd> key is set to the Super/Windows󰖳/Command󰘳 key
 
-<kbd>MOD</kbd> key is set to the <kbd>WINKEY</kbd>/<kbd>LINKEY</kbd>
+ - <kbd>Mod</kbd>+<kbd>Return</kbd> = Open terminal (Foot)
+ - <kbd>Mod</kbd>+<kbd>O</kbd> = Open Browser (Firefox)
+ - <kbd>Mod</kbd>+<kbd>N</kbd> = Open File Manager (Thunar)
+ - <kbd>Mod</kbd>+<kbd>D</kbd>= App launcher (Fuzzel)
+ - <kbd>Mod</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd>= App menu (nwg-drawer)
+ - <kbd>Mod</kbd>+<kbd>Q</kbd> = Close focused app [kill]
+ - <kbd>PrtSc</kbd> = Snip a screenshot
+ - <kbd>Ctrl</kbd>+<kbd>PrtSc</kbd> = Screenshot a window
+ - <kbd>Shift</kbd>+<kbd>PrtSc</kbd> = Screenshot the display
+ - <kbd>Mod</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> = Power menu
+ - <kbd>Ctrl</kbd>+<kbd>Mod</kbd>+<kbd>↑ ↓ → ←</kbd> = Resize window
+ - <kbd>Mod</kbd>+ right click = Resize window
+ - <kbd>Mod</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd> = Float window
+ - <kbd>Mod</kbd>+<kbd>Shift</kbd>+<kbd>↑ ↓ → ←</kbd> = Move window
+ - <kbd>Mod</kbd>+ left click = Move window
+ - <kbd>Mod</kbd>+<kbd>↑ ↓ → ←</kbd> = Switch focused window
+ - <kbd>Mod</kbd>+<kbd>Shift</kbd>+<kbd>-</kbd> = Send to scratchpad
+ - <kbd>Mod</kbd>+<kbd>-</kbd> = Cycle through scratchpad
 
- - <kbd>MOD</kbd>+<kbd>Return</kbd> = open terminal (Foot)
- - <kbd>MOD</kbd>+<kbd>O</kbd> = open Browser (Firefox)
- - <kbd>MOD</kbd>+<kbd>N</kbd> = open File Manager (Thunar)
- - <kbd>MOD</kbd>+<kbd>D</kbd>= app menu (Fuzzel)
- - <kbd>MOD</kbd>+<kbd>Q</kbd> = close focused app [kill]
- - <kbd>Shift</kbd>+<kbd>PrtSc</kbd> = screenshot/bring up screenshot menu
- - <kbd>MOD</kbd>+<kbd>SHIFT</kbd>+<kbd>E</kbd> = power-menu
- - <kbd>CTRL</kbd>+<kbd>MOD</kbd>+<kbd>↑ ↓ → ←</kbd> = resize window
- - <kbd>MOD</kbd>+ right click = resize window
- - <kbd>MOD</kbd>+<kbd>SHIFT</kbd>+<kbd>SPACE</kbd> = float window
- - <kbd>MOD</kbd>+<kbd>SHIFT</kbd>+<kbd>↑ ↓ → ←</kbd> = move window
- - <kbd>MOD</kbd>+ left click = move window
- - <kbd>MOD</kbd>+<kbd>↑ ↓ → ←</kbd> = switch focused window
- - <kbd>MOD</kbd>+<kbd>SHIFT</kbd>+<kbd>MINUS</kbd> = send to scratchpad
- - <kbd>MOD</kbd>+<kbd>MINUS</kbd> = cycle through scratchpad
- 
- 
+See also a keybinding cheatsheet when you click the keyboard icon in the Waybar.
  
 
 ## Tiling:
 
-Is set to default for swaywm and can be changed to:
+Windows are set to tile by default in Sway. This can be changed to:
 
 - stacking: Only the focused window in the container is displayed. You get a list of windows at the top of the container. 
-   - <kbd>MOD</kbd>+<kbd>S</kbd> = Vertical List
-   - <kbd>MOD</kbd>+<kbd>W</kbd> = Horizontal List
-     - navigate lists with <kbd>MOD</kbd>+<kbd>↑ ↓ → ←</kbd> 
-   - <kbd>MOD</kbd>+<kbd>E</kbd> = Back to tiling
+   - <kbd>Mod</kbd>+<kbd>S</kbd> = Vertical List
+   - <kbd>Mod</kbd>+<kbd>W</kbd> = Horizontal List
+     - navigate lists with <kbd>Mod</kbd>+<kbd>↑ ↓ → ←</kbd> 
+   - <kbd>Mod</kbd>+<kbd>E</kbd> = Back to tiling
    
 ![sway](https://github.com/user-attachments/assets/9f4bbdac-e478-4918-bdac-da4d83cece42)
 
