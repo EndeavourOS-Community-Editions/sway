@@ -50,31 +50,12 @@ https://forum.endeavouros.com/t/sway-edition-general-conversation
  - Bar = Waybar
  - Sound = Pulseaudio
 
-Keyboard shortcuts:
+## Keyboard shortcuts:
 
-<kbd>Mod</kbd> key is set to the Super/Windows/Command key
+Click the keyboard icon in the Waybar to launch the keybinding cheatsheet.
 
- - <kbd>Mod</kbd>+<kbd>Return</kbd> = Open terminal (Foot)
- - <kbd>Mod</kbd>+<kbd>O</kbd> = Open Browser (Firefox)
- - <kbd>Mod</kbd>+<kbd>N</kbd> = Open File Manager (Thunar)
- - <kbd>Mod</kbd>+<kbd>D</kbd>= App launcher (Fuzzel)
- - <kbd>Mod</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd>= App menu (nwg-drawer)
- - <kbd>Mod</kbd>+<kbd>Q</kbd> = Close focused app [kill]
- - <kbd>PrtSc</kbd> = Snip a screenshot
- - <kbd>Ctrl</kbd>+<kbd>PrtSc</kbd> = Screenshot a window
- - <kbd>Shift</kbd>+<kbd>PrtSc</kbd> = Screenshot the display
- - <kbd>Mod</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> = Power menu
- - <kbd>Ctrl</kbd>+<kbd>Mod</kbd>+<kbd>↑ ↓ → ←</kbd> = Resize window
- - <kbd>Mod</kbd>+ right click = Resize window
- - <kbd>Mod</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd> = Float window
- - <kbd>Mod</kbd>+<kbd>Shift</kbd>+<kbd>↑ ↓ → ←</kbd> = Move window
- - <kbd>Mod</kbd>+ left click = Move window
- - <kbd>Mod</kbd>+<kbd>↑ ↓ → ←</kbd> = Switch focused window
- - <kbd>Mod</kbd>+<kbd>Shift</kbd>+<kbd>-</kbd> = Send to scratchpad
- - <kbd>Mod</kbd>+<kbd>-</kbd> = Cycle through scratchpad
+![cheatsheet](https://github.com/user-attachments/assets/83ab7d12-0c94-457f-b8ee-90b7ff970954)
 
-See also a keybinding cheatsheet when you click the keyboard icon in the Waybar.
- 
 
 ## Tiling:
 
