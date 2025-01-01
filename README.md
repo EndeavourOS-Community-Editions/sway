@@ -52,7 +52,7 @@ https://forum.endeavouros.com/t/sway-edition-general-conversation
 
 Keyboard shortcuts:
 
-<kbd>Mod</kbd> key is set to the Super/Windows󰖳/Command󰘳 key
+<kbd>Mod</kbd> key is set to the Super/Windows/Command key
 
  - <kbd>Mod</kbd>+<kbd>Return</kbd> = Open terminal (Foot)
  - <kbd>Mod</kbd>+<kbd>O</kbd> = Open Browser (Firefox)
