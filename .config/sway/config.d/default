@@ -163,10 +163,10 @@ set $powermenu ~/.config/sway/scripts/power_menu.sh
         $mod+ctrl+Down resize shrink height 10 px
         $mod+ctrl+Left resize grow width 10 px
         # Resize with Vim keys
-        $mod+ctrl+l resize shrink width 10 px
-        $mod+ctrl+k resize grow height 10 px
-        $mod+ctrl+j resize shrink height 10 px
-        $mod+ctrl+h resize grow width 10 px
+        $mod+ctrl+$right resize shrink width 10 px
+        $mod+ctrl+$up resize grow height 10 px
+        $mod+ctrl+$down resize shrink height 10 px
+        $mod+ctrl+$left resize grow width 10 px
     }
 
     # Resize floating windows with mouse scroll:
