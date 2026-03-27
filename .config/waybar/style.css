@@ -41,9 +41,6 @@
 
 /* Reset all styles */
 * {
-    border: none;
-    border-radius: 0;
-    min-height: 0;
     margin: 1px;
     padding: 0;
 }
@@ -55,6 +52,9 @@
     background-color: @base1;
     font-family: JetBrainsMono;
     font-size: 13px;
+    /* Avoid rounded borders under each workspace name */
+    border: none;
+    border-radius: 0;
 }
 
 /* Every modules */
