@@ -1,6 +1,9 @@
 #!/bin/bash
 
-SELECTION="$(printf "󰌾 Lock\n󰤄 Suspend\n󰍃 Log out\n Reboot\n Reboot to UEFI\n󰐥 Shutdown" | fuzzel --dmenu -a top-right -l 6 -w 18 -p "Select an option: ")"
+MENU="$(printf "󰌾 Lock\n󰤄 Suspend\n󰍃 Log out\n Reboot\n Reboot to UEFI\n󰐥 Shutdown")"
+LINE_COUNT="$(printf '%s' "$MENU" | grep -c .)"
+
+SELECTION="$(printf "$MENU" | fuzzel --dmenu -a top-right -l "$LINE_COUNT" -w 18 -p "Select an option: ")"
 
 confirm_action() {
     local action="$1"
