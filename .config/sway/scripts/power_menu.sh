@@ -1,6 +1,9 @@
 #!/bin/bash
 
 MENU="$(printf "󰌾 Lock\n󰤄 Suspend\n󰍃 Log out\n Reboot\n Reboot to UEFI\n󰐥 Shutdown")"
+if [[ "$(systemctl is-enabled suspend.target 2>/dev/null)" == "masked" ]]; then
+    MENU="$(echo "$MENU" | grep -v Suspend)"
+fi
 LINE_COUNT="$(printf '%s' "$MENU" | grep -c .)"
 
 SELECTION="$(printf "$MENU" | fuzzel --dmenu -a top-right -l "$LINE_COUNT" -w 18 -p "Select an option: ")"
