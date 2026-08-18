@@ -188,6 +188,9 @@ set $powermenu ~/.config/sway/scripts/power_menu.sh
         XF86AudioLowerVolume exec pamixer -ud 2
         XF86AudioMute exec pamixer --toggle-mute
 
+        # Microphone
+        XF86AudioMicMute exec pamixer --default-source --toggle-mute
+
         # Player
         XF86AudioPlay exec playerctl play-pause
         XF86AudioNext exec playerctl next
@@ -222,4 +225,3 @@ set $powermenu ~/.config/sway/scripts/power_menu.sh
     bindsym Ctrl+Print exec ~/.config/sway/scripts/screenshot_window.sh
     # Screenshot the current display and pipe to swappy
     bindsym Shift+Print exec ~/.config/sway/scripts/screenshot_display.sh
-
