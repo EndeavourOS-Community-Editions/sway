@@ -38,6 +38,10 @@ Alternatively, you can add Sway after the installation is complete by cloning th
 
 - If you are experiencing issues with your cursor, edit `/etc/greetd/regreet.toml` and uncomment `WLR_NO_HARDWARE_CURSORS = "1"`
  
+> [!TIP]
+> **For new users:** If you are new to sway, you may want to activate [autotiling](https://github.com/nwg-piotr/autotiling), which can offer more intuitive tiling behavior. You can do so by editing `~/.config/sway/config.d/autostart_applications`.
+>
+
 ## Get involved at our forum:
 https://forum.endeavouros.com/t/sway-edition-general-conversation
 
