@@ -37,6 +37,10 @@ Alternatively, you can add Sway after the installation is complete by cloning th
 - Keybindings Cheatsheet: press keyboard icon in waybar
 
 - If you are experiencing issues with your cursor, edit `/etc/greetd/regreet.toml` and uncomment `WLR_NO_HARDWARE_CURSORS = "1"`
+
+> [!NOTE] 
+> **For experienced users**:  
+> This repo includes [autotiling](https://github.com/nwg-piotr/autotiling), which affects default tiling behavior. You may want to disable this in `~/.config/sway/config.d/autostart_applications`.
  
 ## Get involved at our forum:
 https://forum.endeavouros.com/t/sway-edition-general-conversation

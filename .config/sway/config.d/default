@@ -54,6 +54,7 @@ set $powermenu ~/.config/sway/scripts/power_menu.sh
 
 #
 # Moving around:
+# Note for experienced users: This repo includes "autotiling" (see config.d/autostart_applications), which may change the expected behavior of some of these keybindings.
 #
     bindsym {
         # Change window focus
@@ -116,6 +117,7 @@ set $powermenu ~/.config/sway/scripts/power_menu.sh
 
 #
 # Layout stuff:
+# Note for experienced users: This repo includes "autotiling" (see config.d/autostart_applications), which may change the expected behavior of some of these keybindings.
 #
     # Set how the current window will be split
     # Split the window vertically
