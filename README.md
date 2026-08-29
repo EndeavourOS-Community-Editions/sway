@@ -59,19 +59,24 @@ Click the keyboard icon in the Waybar to launch the keybinding cheatsheet.
 
 ## Tiling:
 
-Windows are set to tile by default in Sway. This can be changed to:
+Windows are set to tile by default in Sway. This can be changed to stacking, where only the focused window in the container is displayed. You get a "list" of windows at the top of the container. Navigate between the lists with <kbd>Mod</kbd>+<kbd>↑ ↓ → ←</kbd> 
+   - <kbd>Mod</kbd>+<kbd>S</kbd> = Stack with a vertical list
+   - <kbd>Mod</kbd>+<kbd>W</kbd> = Stack with a horizontal list (like browser tabs)
+   - <kbd>Mod</kbd>+<kbd>E</kbd> = Revert back to tiling
+ 
+The autotiling script (https://github.com/nwg-piotr/autotiling) has been installed and enabled by default. The orientation of window splits is handled automatically, based on the focused window's aspect ratio. The script also allows being overridden by manually defining the next split with <kbd>Mod</kbd>+<kbd>V</kbd> (vertical split) or <kbd>Mod</kbd>+<kbd>B</kbd> (horizontal split).
 
-- stacking: Only the focused window in the container is displayed. You get a list of windows at the top of the container. 
-   - <kbd>Mod</kbd>+<kbd>S</kbd> = Vertical List
-   - <kbd>Mod</kbd>+<kbd>W</kbd> = Horizontal List
-     - navigate lists with <kbd>Mod</kbd>+<kbd>↑ ↓ → ←</kbd> 
-   - <kbd>Mod</kbd>+<kbd>E</kbd> = Back to tiling
+If you prefer the traditional splitting behavior of i3 (where changing the split orientation needs to be done manually every time), comment out the `exec autotiling` line in `~/.config/sway/config.d/autostart_applications`.
+
+## Screenshots:
    
 ![sway](https://github.com/user-attachments/assets/9f4bbdac-e478-4918-bdac-da4d83cece42)
 
-Fuzzel:
+### Fuzzel:
+
 ![fuzzel](https://github.com/user-attachments/assets/fa4d38ba-abcd-4cd9-af9b-4ef6f678b594)
 
-Waybar:
+### Waybar:
+
 ![waybar](https://github.com/user-attachments/assets/6a4cc6f0-95dc-4a47-a6f9-7c5f853b9b70)
 
